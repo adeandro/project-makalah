@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Makalah — Sejarah Komputer</title>
+  <style>
+    /* --- preset nganu --- */
+    * { box-sizing: border-box; }
+    html,body { margin:0; padding:0; font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color:#111; background:#fff; }
+    .container { max-width:900px; margin:32px auto; padding:28px; border:1px solid #e6e6e6; border-radius:6px; background:#fff; }
+
+    /* --- judule --- */
+    header.title-page { text-align:center; padding:36px 20px; }
+    header.title-page h1 { margin:0 0 12px; font-size:28px; letter-spacing:1px; }
+    header.title-page .meta { margin-top:18px; font-size:15px; line-height:1.6; }
+
+    /* --- di gawe oleh --- */
+    .authors { margin:26px auto; text-align:center; }
+    .authors strong { display:block; font-size:16px; }
+    .authors p { margin:6px 0; font-size:15px; }
+
+    /* --- Kata Pengantar, Daftar Isi, Bab --- */
+    nav.toc { border-left:4px solid #f0f0f0; padding:12px 18px; margin-bottom:18px; background:#fbfbfb; }
+    nav.toc ul { margin:0; padding-left:1.2rem; }
+    section { margin:20px 0; line-height:1.75; }
+    h2 { margin-top:0; font-size:20px; border-bottom:1px solid #eee; padding-bottom:6px; }
+    h3 { margin:10px 0 6px; font-size:16px; }
+
+    /* --- Table to display daftar isi (optional) --- */
+    .daftar-isi { width:100%; border-collapse:collapse; margin-top:12px; }
+    .daftar-isi td { padding:6px 8px; vertical-align:top; }
+
+    /* --- Print styles --- */
+    @media print {
+      body, .container { border: none; margin:0; padding:0; }
+      nav.toc { page-break-after: avoid; border-left: none; }
+      header.title-page { page-break-after: always; }
+      h2 { page-break-after: avoid; }
+      .page-break { page-break-before: always; }
+    }
+
+    /* --- Small helpers --- */
+    .small { font-size:13px; color:#555; }
+    footer { text-align:center; margin-top:30px; font-size:13px; color:#666; }
+    a.toc-link { color:inherit; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Halaman Judul -->
+    <header class="title-page" id="judul">
+      <h1>MAKALAH</h1>
+      <h2 style="margin-top:8px; font-size:22px;">STOP BULLYING
+DON’T BE SILENT, SPEAK UP</h2>
+
+      <div class="meta small">
+        <p>Disusun oleh:</p>
+        <div class="authors">
+          <strong>SALSABILA NIDA KHASANAH 0093787379</strong>
+          <p>YAYASAN PERSAUDARAAN HAJI ALMABRUR (YPHA) <br>SMK AL MABRUR PEJAWARAN — BANJARNEGARA</p>
+          <p><em>2025/2026</em></p>
+        </div>
+      </div>
+    </header>
+    
+     <!-- Kata Pengantar -->
+    <section id="kata-pengantar">
+      <h2>Kata Pengantar</h2>
+      <p>Assalamualaikum wr.wb<p>
+        <p>  Dengan mengucapkan puji syukur kehadirat Tuhan Yang Maha Esa atas rahmat 
+dan hidayat-Nya, sehingga kami dapat menyelesaikan makalah ini dengan sebaik-
+baiknya.</p>
+        <p>Kami mengucapkan terimakasih kepada semua pihak yang telah membantu dalam 
+penyusunan makalah ini. Dan kami juga menyadari pentingnya akan sumber bacaan 
+dan referensi internet yang telah membantu dalam memberikan informasi yang akan 
+menjadi bahan makalah.</p>
+        <p>Kami menyadari bahwa makalah ini masih banyak kekurangan dan kelemahan 
+baik dalam penyairan maupun isinya. Kritik dan saran dari bapak tetap kami harapkan 
+guna perbaikan dan penyempurnaan untuk belajar kedepanya. Semoga makalah ini 
+dapat bermanfaat dan senantiasa menjadi sumber belajar bagi teman-teman.</p>
+      
+      </p>
+      <p class="small">Banjarnegara, 25 Agustus 2025</p>
+
+    <!-- Daftar Isi (link ke anchor) -->
+    <nav class="toc" aria-label="Daftar isi">
+      <strong>DAFTAR ISI</strong>
+      <ul>
+        <li><a class="toc-link" href="#kata-pengantar">Kata Pengantar</a></li>
+        <li><a class="toc-link" href="#bab1">BAB I — Pendahuluan</a>
+          <ul>
+            <li><a class="toc-link" href="#latar">Latar Belakang</a></li>
+            <li><a class="toc-link" href="#rumusan">Perumusan Masalah</a></li>
+            <li><a class="toc-link" href="#tujuan">Maksud dan Tujuan</a></li>
+          </ul>
+        </li>
+        <li><a class="toc-link" href="#bab2">BAB II — Pembahasan</a></li>
+        <li><a class="toc-link" href="pengertian">Pengertian Bullying</a></li>
+        <li><a class="toc-link" href="jenis jenis">Jenis-Jenis Bullying</a></li
+        <li><a class="toc-link" href="dampak">Dampak Bullying</a></li>
+        <li><a class="toc-link" href="penyebab">Penyebab Bullying</a></li>
+        <li><a class="toc-link" href="mengatasi">Cara Mengatasi Bullying</a></li>
+        <li><a class="toc-link" href="#bab3">BAB III — Penutup</a></li>
+        <li><a class="toc-link" href="kesimpulan">Kesimpulan</a></li>
+        <li><a class="toc-link" href="saran">Saran</a></li>
+    </nav>
+    
+
+    <!-- BAB I Pendahuluan -->
+    <section id="bab1">
+      <h2>BAB I — Pendahuluan</h2>
+
+      <h3 id="latar">Latar Belakang</h3>
+      <p>
+        Bullying sering terjadi di sekolah dan lingkungan sehari-hari yang memakan 
+jiwa. Aksi bullying ini merugikan korban. Hingga mempengaruhi psikisnya. 
+Fenomena bullying menyebabkan pelaku bertindak semena-mena pada korban. 
+Perilaku bullying bertentangan dengan UUD 1945 pasal 28B ayat 2 yang berbunyi. 
+“menyatakan bahwa setiap anak berhak atas kelangsungan hidup,tumbuh dan 
+berkembang,serta berhak atas perlindungan dari kekerasan dan diskriminasi”
+      </p>
+      <p>Peristiwa bullying sering terjadi di sekolah,di rumah,tempat 
+kerja,masyarakat,dan sampai dunia maya. Aktivitas bullying tidak memilih umur 
+dan jenis kelamin. Para pelaku memilih seseorang dari 
+pemalu,pendiam,sepesial,cantik,dan sampai mempunyai kekurangan untuk di jadikan ejekan.</p>
+
+      <h3 id="rumusan">Perumusan Masalah</h3>
+      <ol>
+        <li>Apa itu bullying?</li>
+        <li>Apa saja jenis-jenis bullying?</li>
+        <li>Apa dampak bullying?</li>
+        <li>Apa penyebab terjadinya bullying?</li>
+        <li>Bagaimana cara mengatasi bullying?</li>
+      </ol>
+
+      <h3 id="tujuan">Maksud Dan Tujuan</h3>
+      <p>
+        Maksud dari pelaksanaan projek “cegah perundungan stop bullying “bagi anak-
+anak mengenal pengetahuan hukum tentang bullying adalah untuk memberikan 
+pemahaman terhadap anak sekolah menengah atas (SMA) tentang pentingnya 
+memahami hukum,mentaati peraturan,hukum yang berlaku,dan juga 
+menumbuhkan kesadaran. Sejak dari tentang perlunya menghindari bullying dalam kehidupan sehari-hari.
+      </p>
+      <p>
+        Aturan hukum mengenai bullying terhadap anak sudah di atur oleh negara 
+dalam bentuk undang-undang. Sementara pemahaman secara jelas mengenai 
+bullying belum di miliki oleh sebagian remaja baik di dalam lingkungan sekolah 
+maupun di luar lingkungan sekolah. Padahal perbuatan bullying dapat merugikan 
+orang lain bahkan dapat menyebabkan kehilangan masa depan seorang anak yang 
+menjadi korban. Perbuatan tersebut sehingga kiranya untuk menghindari terjadinya 
+hal-hal yang buruk terhadap siswa siswi maka perlu diharapkan pemahaman 
+tentang bullying kepada siswa siswi sekolah menengah atas (SMA).
+      </p>
+    </section>
+
+    <!-- BAB II Pembahasan -->
+    <section id="bab2" class="page-break">
+      <h2>BAB II — Pembahasan</h2>
+
+      <h3>Pengertian Bullying</h3>
+      <p>
+        Bullying adalah segala bentuk penindasan atau kekerasan,yang di lakukan 
+secara sengaja oleh satu orang atau kelompok yang lebih kuat. Tujuan dari bullying 
+ini untuk menyakiti orang lain dan di lakukan terus-menerus. Kata bullying berasal 
+dari bahasa Inggris, sedangkan dalam bahasa Indonesia di sebut penindasan atau 
+risak,kasus bullying ini sering terjadi di Indonesia. Contohnya saja kasus 
+penindasan di sekolah.
+      </p>
+
+      <h3>Jenis-Jenis Bullying</h3>
+      <p>
+        Perilaku bullying di bagi menjadi beberapa jenis,seperti verbal dan non-verbal. 
+Bullying non-verbal berdampak pada ancaman pelaku hingga kekerasam fisik. 
+Sedangkan bullying verbal menggunakan kata-kata kasar sampai menyebarkan aib 
+korban ke orang lain. Bullying di kelompokkan dalam 6 kategori,yaitu:
+        <p>1. Kontak Verbal Langsung 
+Bullying berupa tindakan mengancam, mempermalukan, mengganggu, 
+memberi panggilan nama, merendahkan, intimidasi, memaki dan menyebarkan 
+gosip buruk.
+</p>
+        <p>2. Kontak Fisik Langsung
+Pelaku mendorong, menendang, menjambak, memukul, mencakar, mencabut, 
+memeras, mengunci seseorang dalam ruangan, hingga menghancurkan barang 
+milik orang lain.</p>
+        <p>3. Perilaku Non-Verbal Langsung
+Tindakan bullying melihat sinis, menampilkan ekspresi merendahkan, 
+mengancam, mengejek, menjulurkan lidah sampai melakukan kekerasan fisik 
+pada korban.</p>
+        <p>4. Perilaku Non-Verbal Tidak Langsung
+Tindakan bullying berupa memanipulasi persahabatan mengucilkan atau 
+mengabaikan, mengirimkam surat sampai mendiamkan seseorang.</p> 
+        <p>5. Pelecehan Seksual 
+Tindakan bullying ini masuk dalam kategori kekerasan fisik atau verbal.</p>
+        <p>6. Cyber Bullying
+Tindakan kekerasan dengan cara menyakiti orang lain melalui media sosial. 
+Seperti memberi komentar jelek, pencemaran nama baik lewat media sosial, dan menyebarkan rekaman video intimidasi.
+      </p>
+
+      <h3>Dampak Bullying</h3>
+      <p>
+        Bullying berdampak pada kesehatan mental terutama pada anak-anak dan 
+remaja. Pelaku yang melakukan pembullyan bisa memberi pengaruh buruk pada 
+kesehatan buruk dan mental korbanya. Dampak paling fatal dari kasus bullying 
+adalah Tindakan bunuh diri yang dilakukan oleh korban.
+      </p>
+        <p>1) Dampak Bullying Bagi Korban 
+• Memicu depresi, setres, gangguan kesehatan mental, sampai memicu 
+kemarahan
+• Berdampak pada menurunkan tingkat kecerdasan dan kemampuan analisis 
+anak-anak
+• Remaja dan anak-anak yang mendapat perilaku bullying akan menurun 
+secara akademik dan memilih mengasingkan diri.</p>
+        <p>2) Dampak Bullying Pada Pelaku 
+• Pelaku berubah menjadi agresif, menyukai kekerasan, mudah marah, 
+impulsif dan toleransi rendah.
+• Kurang berempati dan lebih menyukai mendominasi orang lain.
+• Pelaku merasa harga diri tinggi dan percaya diri 
+• Menyukai kekuasaan untuk merendahkan orang lain.</p>
+        <p>3) Dampak Bullying Bagi Yang Menyelesaikan
+• Jika dibiarkan terus menerus, penonton yang menyaksikan bullying merasa 
+bahwa perilaku tersebut dianggap biasa. Penonton akan berpikir bahwa 
+perilaku ini bisa diterima secara sosial, bahkan bisa meniru perilaku 
+terutama anak-anak.
+• Para penonton memilih menjadi penindas karna takut mereka akan menjadi 
+korban selanjutnya, sedangkan beberapa orang memilih diam tanpa 
+bertanya atau menghentikan aksi bullying tersebut.</p>
+        <p>4) Penyebab Bullying 
+• Penampilan Fisik
+Seseorang yang memiliki penampilan fisik berbeda dari orang lain, bisa 
+menjadi target bullying. Para penindas akan mengejek, intimidasi, hingga 
+mengancam penampila anak tersebut. Mereka akan menyebut dengan kata-
+kata yang menyakiti hati. Tujuan dari kata-kata ini supaya orang itu merasa 
+rendah diri sampai terasingkan.
+• Perbedaan Kelas 
+Perbedaan kelas seperti senior dan junior, ekonomi, gender, etnis, dan 
+agama bisa memicu tindakan bullying. 
+• Tradisi Senioritas 
+Disekolah sering terjadi tradisi senioritas selama beberapa generasi. Tradisi 
+ini menyebabkan korban merasa terintimidasi karena mendapat kekerasan. 
+• Keluarga
+Keluarga besar yang tidak akur bisa mengakibatkan Tindakan bullying 
+          antar keluarga.
+• Karakter Seseorang
+1. Munculnya sikap dendam atau iri hati 
+2. Adanya rasa ingin mendominasi hingga menimbulkan kekuasaan 
+korban, fisik, dan kekerasan seksual
+3. Persepsi tentang perilaku hormat</p>
+      <h3>Cara mengatasi bullying</h3>
+      <p>
+        Bullying bisa diatasi dengan mencegah sejak dini seperti ketika masih anak-
+anak,keluarga,sekolah,dan masyarakat. Berikut beberapa cara mengatasi bullying:
+      </p>
+        <p>1) Masa anak-anak
+• Beri pengetahuan dan cara untuk mampu melewati tindakan bullying 
+• Beri contoh cara seperti mendukung, mendamaikan, dan melaporkan pada 
+orang dewasa untuk membantu korban bullying</p>
+        <p>2) Keluarga 
+• Tanamkan rasa kasih sayang dan nilai keagamaan pada anak-anak 
+• Beri perhatian dan interaksi pada anak-anak untuk memberikan 
+kemampuan berani dan tegas
+• Bantu anak untuk melihat informasi di media sosial dan televisi</p>
+        <p>3) Mengatasi Bullying Disekolah
+• Pendidikan membuat program pencegahan anti bullying dan hukuman bagi 
+pelaku yang melakukan tindakan tersebut
+• Membangun diskusi dan ceramah tentang mengatasi aksi peninsan
+• Memberi bantuan dan dukungan pada korban bullying</p>
+
+     
+    </section>
+
+    <!-- BAB III Penutup -->
+    <section id="bab3">
+      <h2>BAB III — Penutup</h2>
+
+      <h3>Kesimpulan</h3>
+      <p>
+        Tindakan perilaku bullying memberikan dampak negative bagi korban,jenis-
+jenis bullying yang di terima korban snagat fariatif, mulai dari bullying fisik 
+hingga bullying non-fisik secara verbal maupun non-verbal. Akibat dari tindakan 
+bullying yang di terima,tumbuh kembang diri dan potensi korban menjadi sangat 
+terganggu. Akibat dari tindakan perilaku bullying ini keadaan kondisi psikologis 
+korban cenderung terganggu, korban menjadi memiliki rasa cemas yang berlebiha, 
+merasa rendah hati, sedih, sakit hati, marah, sulit mengobrol, emosi, dan 
+korbanpun menjadi memiliki rasa trauma dan depresi.
+      </p>
+      <p>Keadaan sosial korban terutama di lingkungan sekolah setelah mendapatkan 
+Tindakan perilaku bullying menjadi terganggu juga, pasalnya korban menjadi 
+cenderung menutup diri, korban memilih diam dan tidak banyka ber komunikasi 
+dengan teman-teman di lingkungan sekolahnya, korbanpun menjadi cenderung 
+selektif untuk memilih teman, karena takut Ketika korban menerima sembarangan 
+teman ia akan mendpatkan Tindakan perilaku bullying yang selama ini telah di 
+terimanya.</p>
+      <p>Faktor penyebab korban mendapat Tindakan perilaku bullying di antaranya 
+karena ada kesempatan yang di dapatkan para pelaku dari klemahan korban, seperti 
+dari bentuk fisik korban, sifat korban yang cenderung diam dan tidak melawan 
+ataupun melapor, serta korban yang tidak memiliki ruang lingkup pertemanan 
+yang banyak yang membuat korban leluasa di bulliy oleh para pelaku.</p>
+
+      <h3>Saran</h3>
+      <p>
+        Dari kesimpulan diatas, dapat di ajukkan beberapa saran sebagai berikut:
+      </p> 
+      <p>1) Bagi korban bullying 
+• Sebaiknya jika mendapatkan Tindakan perilaku bullying lebih berani 
+untuk melawan pelaku ataupun melapor kepada pihak sekolah seperti 
+wali kelas atau guru bk, agar sipelaku kapok dan tidak mengulangi 
+perilakunya.
+• Upaya memiliki pertahanan pesikis dan lebih memiliki rasa percaya diri, 
+lebih berani, ber akal sehat, dan memiliki kemampuan melihat situasi dan 
+menyelesaikan masalah. 
+• Periksalah cara bersikap yaitu harus bisa tegas, berjalan dengan tegak, 
+dan jangan memperlihatkan ketakutan, berbicara tegas, dan percaya diri.</p>
+      <p>2) Bagi Pihak Sekolah
+• Agar lebih mengedukasi dan membuat semacam informasib bahaya-
+bahaya dari Tindakan bullying ataupun ancaman hukuman bagi pelaku. 
+• Alangkah baiknya pihak sekolah bisa menciptakan kondisi dan suasana 
+yang suportif, saling menyayangi, antar pihak sekolah dan para siswa 
+siswinya.</p>
+      <p>3) Bagi Pihak Keluarga atau Orang tua
+• Alangkah baiknya sering menjalin komunikasi dengan anak terutama 
+perihal kegiatan di sekolah, dengan membuka obrolan terlebih dahulu 
+anak akan lebih berpikir mendaptkan dukungan dan memilih bercerita 
+tentang bagaimana ia di sekolah. Karena tidak semua anak bisa terbuka 
+kepada keluarga atau orang tua. Apalagi tanpa di mulai obrolan dari orang 
+tuanya terlebih dahulu. 
+• Orang tua lebih bisa memupuk keberanian dan rasa percaya diri kepada 
+anak-anak.
+• Orang tua harus lebih mengenal dan mempelajari karakter anak serta 
+memperhatikan perilaku-perilaku anaknya.</p>
+      <p>4) Bagi Lembaga Yang Menangani Kasus Ataupun Fenomena-Fenomena 
+Terkait
+Sebaiknya agar bisa lebih menangani kasus ini dengan serius, karena 
+bagi korban maupun pelaku tindakan bullying, mereka sama-sama harus 
+mendapat perlindungan, pembelajaran, dan pemahaman.</p>
+    </section>
+      <p>STOP BULLYING</p>  
+      <p>DON’T BE SILENT, SPEAK UP</p>
+      <p>TAKE CARE OTHER PEOPLE’S FEELINGS</p>
+      <p>DON’T HURT THEM</p>
+    </footer>
+  </div>
+
+  <!-- Opsional: skrip kecil untuk smooth scroll saat klik TOC -->
+  <script>
+    document.querySelectorAll('a.toc-link').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>

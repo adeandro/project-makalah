@@ -1,0 +1,83 @@
+body {
+  font-family: "Times New roman", serif;
+  margin: 50px;
+  background-color: #fff;
+  color: #000;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.identitas {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+.daftar-isi {
+  margin-bottom: 40px;
+}
+.daftar-isi ul {
+  list-style-type: decimal;
+}
+p {
+  text-align: justify;
+  line-height: 1.7;
+}
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+  color: #555;
+}
+.toc {
+  margin-top: 40px;
+  border: 5px solid black;
+  padding: 20px;
+  background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 5px 10px #888888;
+}
+.toc h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.toc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+}
+.toc table td {
+  padding: 4px 0;d
+}
+.toc table td:first-child {
+  position: relative;
+  padding-right: 10px;
+}
+.toc table td:first-child::after {
+  content: ".....................................................................................................................................................";
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.toc table td:last-child {
+  text-align: right;
+  width: 40px;
+}
+
+.work{
+  image-rendering: pixelated;
+}

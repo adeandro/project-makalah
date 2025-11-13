@@ -1,0 +1,56 @@
+body {
+  text-align: justify;
+  text-indent: 30px;
+  background-image: url('sya.jpg');
+  background-size: contain;
+  color: #000; /* warna teks default */
+}
+
+/* Judul */
+h1, h2 {
+  text-align: center;
+  color: brown;
+}
+
+/* Paragraf, list, subjudul */
+p, ol, li, h3, h4, h5, td, tr{
+  color: white; /* hot white */
+  text-shadow: 0.5px 0.5px 1px grey;
+}
+
+
+#bg-video {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+
+/* Tombol Media Sosial yang Animatif*/
+.social-button {
+      text-align: center;
+      margin-top: 30px;
+}
+.social-button {
+      display: inline-block;
+      margin: 0 20px;
+      transition: transform 0.4s cubic-bezier(0.68, 0.55, 0.27, 1.55);
+}
+.social-button:hover {
+      transform: rotate(360deg) scale(1.3);
+}
+.social-button img {
+      width: 70px;
+      height: auto;
+      border-radius: 70%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0. 6);
+      border: 2px solid var(--acent-color);
+}
+ #audio-player {
+  margin-top: 20px;
+  width: 100%;
+}

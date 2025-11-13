@@ -1,0 +1,48 @@
+body{
+  text-align: justify;
+  text-indent: 30px;
+  background-image: url('tri.jpg');
+  background-size: contain;
+  text-align: center;
+  
+h1,h2,h3,h4
+  text-align: center;
+  color:#fffbf0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+p{
+  color:#2b0d0d;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+.logo{
+  width: 200px;
+  padding:78px;
+  padding-block: -50px;
+  margin-left:5%;
+}
+
+/* Tombol Media Sosial yang Animatif */
+ .social-buttons {
+     text-align: center;
+     margin-top: 30px;
+ }
+ .social-button {
+     display: inline-block;
+     margin: 0 20px;
+     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+ }
+ .social-button:hover {
+     transform: rotate(360deg) scale(1.3);
+ }
+ .social-button img {
+     width: 70px;
+     height: auto;
+     border-radius: 70%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+     border: 2px solid var(--accent-color);
+ }
+ .m{
+ width: 500px;
+  padding:78px;
+  margin-left:10%;
+ }

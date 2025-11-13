@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Makalah komputer dan perannya dalam kehidupan sehari-hari</title>
+  <style>
+    :root {
+      --primary: #000;
+      --bg: #f9fafc;
+      --text: #222;
+      --border: #b9dcff;
+    }
+    body {
+      font-family: 'Segoe UI',Arial, Sans-Serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0,05);
+      border-radius: 10px;
+      padding: 40px 50px;
+    }
+    h1, h2, h3 {
+      color:var(--primary);
+    }
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 4px;
+    }
+    p {text-align: justify; margin: 8px 0;}
+    hr {border: 0; border-top: 1px solid var(--border); margin: 30px 0;}
+    
+    /* cover makalah seee*/
+    .cover  {
+      text-align: center;
+      padding:60px 30px;
+      border-bottom: 3px solid var(--primary);
+    }
+    .cover h1 {font-size: 28px; color: var(--primary);margin-bottom: 20px;}
+    .cover  .subbtitle {font-style: Arial; color:#444; margin-bottom: 20px;}
+    .cover .info {margin-top: 40px; font-size:16px; line-height: 1.6;}
+    /*TOC ALIAS DAFTAR ISI*/
+    .toc {
+      background: #f0f4ff;
+      padding: 15px 25px;
+      border-radius: 8px;
+      margin: 30px 0;
+    }
+    .toc ol {margin-left:20px;}
+    .toc a {text-decoration: none; color: var(--primary);}
+    .toc a:hover {text-decoration: underline;}
+    
+    /*SECTION ATAU KELOMPOK*/
+    section {margin-top 40px}
+    
+    /*FOOTER ATAU KAKI MAKALAH*/
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      margin-top:50px;
+      border-top:1px solid var(--border);
+      padding-top:10px;
+    }
+    
+    @media print {
+      body {background: white;box-shadow: none;}
+      .container{box-shadow: none;}
+      a::after {content:"("atter(href)")";}
+    }
+
+    .toc {
+  margin-top: 80px; margin-bottom: 80px;
+}
+    .toc h2 {
+        text-align: center;
+          text-transform: uppercase;
+        font-family: 'Arial', serif;
+      font-size: 20px;
+  margin-bottom: 40px;
+}
+  .toc table {
+      width: 100%;
+        border-collapse: collapse;
+      font-family: 'Arial', serif;
+  font-size: 16px;
+}
+    .toc table td {
+        padding: 4px 0;
+}
+.toc table td:first-child {
+        position: relative;
+    padding-right: 10px;
+}
+.toc table td:first-child::after {
+        content: " .........................................................................................................................";
+      position: absolute;
+  left: 0;
+     right: 0;
+              color: #000;
+            overflow: hidden;
+          white-space: nowrap;
+}
+  .toc table td:last-child {
+        text-align: right;
+        width: 40px;
+  }
+  
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+
+  <!-- cover nganunya -->
+  <div class="cover">
+      <h1>MAKALAH</h1>
+        <h2>KOMPUTER DAN PERANNYA DALAM KEHIDUPAN SEHARI-HARI</h2>
+    <p style="text-align:center;" class="subtitle">Disusun untuk memenuhi tugas sekolah SMK Al-Mabrur Pejawaran, Banjarnegara</p>
+  <img src="SMK.jpg" alt="logo smk islam al-mabrur" width="225px"height="225px" style="margin-top:100px">
+    <div class="info">
+      
+   <p style="text-align:center; margin-top:100px; margin-bottom:50px;"><strong>Disusun oleh:<br>
+      FAREL AFGAN SAPUTRA (0086902059)</strong><br></p>
+      <p style="text-align:center"><strong>YAYASAN PERSAUDARAAN HAJI AL-MABRUR<br>SMK ISLAM AL-MABRUR PEJAWARAN BANJARNEGARA<br>TAHUN 2025</strong></p>
+      </div>
+</div>
+
+    
+    <div class="toc">
+  <h2>DAFTAR ISI</h2>
+  <table>
+    <tr><td>KATA PENGANTAR</td><td>I</td></tr>
+    <tr><td>DAFTAR ISI</td><td>II</td></tr>
+    <tr><td><strong>BAB I PENDAHULUAN</strong></td><td></td></tr>
+    <tr><td>1.1. Latar Belakang</td><td>1</td></tr>
+    <tr><td>1.2. Rumusan Masalah</td><td>2</td></tr>
+    <tr><td>1.3. Tujuan</td><td>3</td></tr>
+    <tr><td><strong>BAB II PEMBAHASAN</strong></td><td></td></tr>
+    <tr><td>2.1. Pengertian Komputer</td><td>1</td></tr>
+    <tr><td>2.2. Sejarah Komputer</td><td>2</td></tr>
+    <tr><td>2.3. Jenis-Jenis Komputer</td><td>3</td></tr>
+    <tr><td>2.4. Peran Komputer Dalam Kehidupan</td><td>4</td></tr>
+    <tr><td>2.5. Dampak Positif dan Negatif</td><td>5</td></tr>
+    <tr><td><strong>BAB III PENUTUP</strong></td><td></td></tr>
+    <tr><td>3.1. Kesimpulan</td><td>1</td></tr>
+    <tr><td>3.2. Saran</td><td>2</td></tr>
+    <tr><td><strong>Daftar Pustaka</strong></td><td>1</td></tr>
+  </table>
+</div>
+                    <!--======= UJUNG DAFTAR ISI =======-->
+    <!-- KATA PENGANTAR -->
+      <section id="kata-pengantar">
+ <h2>Kata Pengantar</h2>
+ <style>
+  p {
+    text-indent: 30px;
+    text-align: justify;}
+    
+</style>
+    <p>Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa, karena berkat rahmat dan karunia-Nya penulis dapat menyelesaikan makalah dengan judul <em>“Komputer dan Perannya dalam Kehidupan Sehari-hari.”</em></p>
+      <p>Makalah ini disusun untuk memberikan pengetahuan mengenai apa itu komputer, bagaimana perkembangannya, serta perannya dalam kehidupan manusia modern. Penulis menyadari bahwa dalam penyusunan makalah ini masih terdapat kekurangan, oleh karena itu kritik dan saran sangat diharapkan demi perbaikan di masa mendatang.</p>
+    
+        <p>Semoga makalah ini dapat bermanfaat bagi pembaca.</p>
+    
+          <p style="text-align:right; margin-top:50px; margin-bottom: 70px;">September 2025<br><strong>Penyusun</strong></p>
+    
+              </section>
+        
+        <!-- CODING BAB 1 -->
+      <section id="pendahuluan">
+    <h2 style="margin-top:100px">BAB I – Pendahuluan</h2>
+<style>
+  .geser {
+    text-indent: 40px; 
+    margin-left: 25px; 
+  }
+</style>
+<h3>1.1 Latar Belakang</h3>
+       <p class="geser">Di era globalisasi saat ini, perkembangan teknologi semakin pesat. Salah satu teknologi yang paling berpengaruh dalam kehidupan manusia adalah komputer. Dari awalnya hanya digunakan oleh kalangan tertentu, kini komputer telah menjadi kebutuhan pokok yang hampir dimiliki oleh semua orang.</p></li>
+
+    <h3>1.2 Rumusan Masalah</h3>
+   
+      <p class="margin"><strong>1. Apa itu komputer?</strong></p>
+      <p class="margin"><strong>2. Bagaimana sejarah perkembangan komputer?</strong></p>
+      <p Varel#12062008><strong>3. Apa saja jenis-jenis komputer?</strong></p>
+      <p class="margin"><strong>4. Bagaimana peran komputer dalam kehidupan sehari-hari?</strong></p>
+      <p class="margin"><strong>5. Apa dampak negatif dan positif?</strong></p>
+   
+    
+    <h3>1.3 Tujuan</h3>
+    
+      <p class="margin"><strong>1. Menjelaskan pengertian komputer</strong></p>
+      <p class="margin"><strong>2. Mengetahui sejarah singkat perkembangan komputer</strong></p>
+      <p class="margin"><strong>3. Mengetahui jenis-jenis komputer</strong></p>
+      <p class="margin"><strong>4. Menjelaskan peran komputer dalam kehidupan sehari-hari</strong></p>
+      <p class="margin"><strong>5. Mengetahui dampak positif dan negative komputer</strong></p>
+   </section>
+    
+    <!-- BARU BAB 2 UDAH CAPEE😤-->
+    <section id="pembahasan">
+    <h2 style="margin-top:100px">BAB II – Pembahasan</h2>
+    
+    <h3>2.1 Pengertian Komputer</h3>
+    <p class="geser">Komputer adalah sebuah alat yang digunakan untuk mengolah data berdasarkan perintah yang telah diprogram. Menariknya, kata komputer pada awalnya dipakai untuk menyebut seseorang yang pekerjaannya melakukan perhitungan aritmetika, baik dengan ataupun tanpa bantuan alat. Namun, seiring perkembangan zaman, istilah tersebut kemudian beralih kepada mesin yang mampu melakukan perhitungan secara otomatis.</p>
+    
+    <p class= "geser">Pada awal kemunculannya, komputer memang identik dengan pengolahan informasi yang berkaitan dengan perhitungan matematika. Akan tetapi, komputer modern saat ini jauh lebih canggih. Komputer tidak hanya digunakan untuk menghitung angka, tetapi juga untuk berbagai tugas lain, seperti pengolahan teks, desain grafis, simulasi ilmiah, pengendalian mesin, hingga menjadi pusat hiburan </p>
+
+    <p class="geser">Secara umum, komputer dapat didefinisikan sebagai perangkat elektronik yang terdiri dari berbagai komponen, yang saling bekerja sama untuk menghasilkan informasi berdasarkan data dan instruksi yang diberikan. Konsep kerja sama antar komponen ini berasal dari arsitektur von Neumann, yang diperkenalkan oleh John von Neumann pada tahun 1945.
+</p>
+
+ <p class="geser">Arsitektur ini menjelaskan bagaimana komputer sebaiknya dirancang agar mampu bekerja secara efisien, yaitu dengan membagi sistem komputer ke dalam beberapa bagian penting, seperti unit pemrosesan, memori, serta alat input dan output. Hingga sekarang, sebagian besar komputer modern masih menggunakan prinsip dasar dari arsitektur von Neumann ini.
+</p>
+
+<h3>2.2 Sejarah Komputer</h3>
+<style>
+  .geser2 {
+    text-indent: 40px;
+    margin-left: 45px;
+    }
+    </style>
+    
+        <p class= "geser">Sejarah komputer berawal dari abad ke-19, ketika seorang ilmuwan asal Inggris bernama Charles Babbage mencoba mendesain komputer mekanik yang diberi namaMesin Analitikal. Walaupun mesin tersebut tidak pernah benar-benar selesai dibuat karena keterbatasan teknologi pada masanya, desainnya menjadi dasar dari kerangka komputer modern yang kita kenal sekarang. Secara garis besar, perkembangan komputer terbagi ke dalam empat generasi utama: </p>
+
+<p><strong>• Generasi pertama tahun 1940 - 1950 an</strong></p>
+      <p class="geser2">Komputer mulai digunakan dalam bidang akademik dan militer. Salah satu yang terkenal adalah Atanasoff-Berry Computer yang dibuat pada tahun 1937 untuk menyelesaikan sistem persamaan linear. Pada masa Perang Dunia II, komputer Colossus digunakan Inggris untuk memecahkan kode rahasia Jerman Nazi.
+    </p>
+
+    <p class="geser2">Kemudian pada tahun 1946, lahirlah ENIAC (Electronic Numerical Integrator and Computer) yang dikenal sebagai komputer pertama untuk tujuan umum. Ukuran komputer ini sangat besar hingga memenuhi satu ruangan, dan menggunakan tabung vakum sebagai penyimpan data. Konon, saat pertama kali dinyalakan, seluruh kota Philadelphia mengalami mati listrik karena daya yang dibutuhkan sangat besar</p>
+
+<p><strong>• Generasi ke-dua tahun 1950 - 1960 an</strong></p>
+        <p class="geser2">Pada generasi ini, transistor menggantikan tabung vakum. Hasilnya, komputer menjadi lebih kecil, lebih cepat, lebih awet, dan hemat energi. Komputer juga mulai digunakan secara komersial.
+</p>
+
+      <p class="geser2">Pada tahun 1951, UNIVAC (Universal Automatic Computer) diperkenalkan ke publik sebagai komputer komersial pertama. Tidak lama kemudian, pada tahun 1953, perusahaan IBM masuk ke bisnis komputer dengan meluncurkan produk IBM650 dan IBM 700. Pada masa ini juga mulai muncul bahasa pemrograman, sistem operasi, dan memori yang lebih baik.</p>
+
+<p><strong>• Generasi ke-tiga 1960 - 1970 an</strong></p>
+  <p class="geser2">Kemajuan teknologi transistor berkembang menjadi sirkuit terpadu (Integrated Circuit/IC). Dengan IC, ukuran komputer semakin mengecil, tetapi kemampuannya meningkat pesat.
+</p>
+
+  <p class="geser2">Salah satu inovasi penting dari generasi ini adalah munculnya komputer mini, yang kemudian memengaruhi perkembangan komputer selanjutnya. NASA bahkan menggunakan komputer generasi ketiga untuk mendukung Program Apollo, seperti pada Apollo Guidance Computer yang membantu pengendalian misi luar angkasa.</p>
+  <p class="geser2">Pada masa ini, perusahaan Digital Equipment Corporation (DEC) menjadi pesaing kuat IBM dengan produk komputer PDP dan VAX. Generasi ini juga melahirkan salah satu sistem operasi paling berpengaruh, yaitu Unix, yang kelak menjadi dasar banyak sistem operasi modern.</p>
+
+<p><strong>• Generasi ke-empat 1970 - sekarang</strong></p>
+<p class="geser2">Generasi keempat dimulai dengan penemuan MOSFET (Metal–Oxide–Semiconductor Field-Effect Transistor) dan teknologi integrasi skala besar (VLSI Very Large Scale Integration). Penemuan ini membawa pada lahirnya mikroprosesor di awal tahun 1970-an.</p>
+
+<p class="geser2">Dengan adanya mikroprosesor, ukuran komputer semakin kecil dan murah, sehingga lahirlah komputer pribadi (Personal Computer/PC) yang bisa digunakan oleh masyarakat umum. Dari sinilah berkembang komputer rumahan, komputer meja, hingga laptop dan ponsel pintar (smartphone).</p>
+
+<p class="geser2">Komputer tidak lagi hanya menjadi alat akademis atau militer, tetapi sudah menjadi bagian dari kehidupan sehari-hari manusia. Perkembangan smartphone bahkan memicu “perang paten” di antara perusahaan teknologi besar, menunjukkan betapa pentingnya perangkat ini dalam kehidupan modern.</p>
+
+<h3>2.3 Jenis-Jenis Komputer</h3>
+  <p><strong>• PC atau Personal Computer</strong></p>
+      <p class="geser2">Komputer pribadi yang mudah ditemukan di rumah, kantor, atau toko. Termasuk mikrokomputer yang ringkas, murah, dan mampu menjalankan instruksi dari ratusan hingga jutaan per detik. Umumnya digunakan untuk browsing web, dokumen, game ringan, multimedia, dan mesin kasir.</p>
+
+<p><strong>• Komputer Server</strong></p>
+      <p class="geser2">Dirancang untuk memberikan layanan ke komputer lain dalam jaringan, seperti server web, database, atau FTP. Memiliki prosesor kuat, RAM besar, penyimpanan besar—dibangun untuk andal dan selalu aktif. Fungsi utamanya adalah mengelola akses dan berbagi data.</p>
+
+<p><strong>• Komputer Desktop</strong></p>
+    <p class="geser2">Biasanya dipakai di rumah atau kantor, terdiri dari bagian CPU, monitor, keyboard—umumnya cukup besar. Cocok untuk pekerjaan sehari-hari dan pengelolaan data.</p>
+
+<p><strong>• Laptop</strong></p>
+    <p class="geser2">Versi portabel dari desktop, dengan semua komponen dalam satu perangkat. Mudah dibawa ke mana saja dan tersedia dalam berbagai spesifikasi sesuai kebutuhan pengguna.</p>
+
+<p><strong>• Komputer Workstation</strong></p>
+    <p class="geser2">Komputer kelas profesional dengan memori besar, grafis tinggi, dan kecepatan tinggi. Dipakai untuk desain grafis, animasi 3D, pemodelan ilmiah, teknik, riset, dan aplikasi berat lainnya.</p>
+
+<p><strong>Komputer Hybrid</strong></p>
+    <p class="geser2">Dirancang khusus untuk aplikasi kuantitatif dan kualitatif, sering dipakai dalam kontrol robot atau mesin industri. Umumnya ditemukan di pabrik dan sistem produksi otomatis.</p>
+
+<p><strong>• Komputer Tablet</strong></p>
+    <p class="geser2">Perangkat portabel dengan layar sentuh, mirip laptop tapi lebih ringan dan fleksibel. Cocok untuk browsing, membaca, hiburan, dan desain ringan. Daya tahan baterai tahan lama dan grafik terintegrasi membuatnya nyaman digunakan.</p>
+
+<p><strong>• Komputer Mainframe</strong></p>
+    <p class="geser2">Komputer raksasa yang mampu memproses data dalam jumlah sangat besar dengan kecepatan jutaan instruksi per detik. Dipakai oleh pemerintah, bank, atau perusahaan besar untuk aplikasi besar dan kritis.</p>
+
+<p><strong>• Smartphone</strong></p>
+
+          <p class="geser2">Komputer mini portabel dengan layar sentuh. Mirip dengan tablet, tetapi lebih kecil. Bisa digunakan untuk internet, hiburan, aplikasi kerja, dan komunikasi—ada di genggaman banyak orang hari ini.</p>
+
+              <p class="geser2">Komputer terkuat dengan kecepatan pemrosesan luar biasa tinggi. Digunakan untuk pemodelan iklim, penelitian nuklir, fluida dinamis, astrofisika, dan simulasi ilmiah rumit lainnya.</p>
+
+    <h3>2.4 Peran Komputer dalam Kehidupan</h3>
+    
+          <p class="geser">Teknologi Komputer adalah salah satu hadiah paling cemerlang dalam hal ilmu pengetahuan. Komputer adalah perangkat listrik untuk kuat dan menganalisis informasi di dalamnya untuk menghitung atau dimaksudkan untuk mengendalikan mesin otomatis. Charles Babbage dikembangkan perangkat ini pertama di 1812 diikuti oleh George Boole pada tahun 1854, Howard dan Aitten pada tahun 1937, Dr. John Nouchly J. P Eckert pada tahun 1946. Komputer ini telah bernama peralatan era pertama. Hari ini dengan teknologi kecerdasan buatan kami memanfaatkan komputer generasi kelima. </p>
+    
+        <p class="geser">Setiap generasi baru dari sistem komputer telah menjadi lebih kecil, lebih ringan, lebih cepat dan lebih kuat daripada semakin cepat orang-orang. Sekarang komputer notebook ukuran seperti laptop cukup umum. Komputer sudah telah mendominasi teknologi sejak tahun 1970 dan sekarang telah masuk ke semua lapisan masyarakat dan mayoritas mayarakat modern telah mengetahui beberapa cara mudah belajar komputer</p>
+
+      <p class="geser">Menyusun program sangat penting untuk mengelola komputer. Pekerjaan ini diselesaikan oleh insinyur perangkat lunak. Pc program adalah daftar lengkap petunjuk yang menerima pc untuk memecahkan masalah. Ada banyak bahasa yang berbeda yang dapat Anda gunakan untuk program saya pc. BASIC, COBOL, FORTRAN, C, C++, JAVA dan terlihat dasar adalah beberapa dari mereka.
+</p>
+
+    <p class="geser">Tingkat akurasi, keandalan dan kejujuran adalah beberapa karakteristik dari komputer. Hal ini dapat melaksanakan instruksi lebih dari satu juta per detik tanpa melakukan kesalahan. Bisa melaksanakan perhitungan hanya dalam beberapa menit yang akan memerlukan kali jika dilakukan secara manual. Ini akan membantu kami dalam memecahkan masalah-masalah sulit yang banyak beberapa perhitungan. Komputer memiliki memori besar. Itu dapat menyimpan data dalam jumlah besar. Teknologi perangkat lunak telah melihat percepatan pengembangan dan perusahaan-perusahaan seperti Microsoft dan Infosys telah menetapkan diri sebagai pemimpin pasar, perintis ini revolusi dunia.
+</p>
+
+    <p class="geser">Di bawah umur 50 tahun komputer memiliki dipengaruhi hampir setiap bidang kegiatan. Banyak kegiatan rutin hari menjadi dilakukan oleh komputer. Pemanfaatan komputer telah mengurangi dokumen. Sekarang sebagian besar fungsi dilakukan secara langsung pada komputer. Lalu lintas di kota-kota besar dikontrol oleh sistem komputer. Otomatisasi di Bank dan Stasiun jalan rayap telah menawarkan bantuan kepada publilc staf atau semacamnya. Reservasi telah menjadi lebih efisien nyaman, berbagai jenis video game seperti catur kartu kredit juga dapat dimainkan pada sistem komputer.</p>
+    
+    <p class="geser">Sambungan antar komputer di seluruh dunia, Internets merevolusi konsep dan membawa keluar dari bisnis. Audio visual dan akses ke kantor di seluruh dunia melalui jaringan menawarkan diberikan naik ke kantor digital. Satu dapat memiliki akses cepat ke informasi melalui internet. Ini benar-benar adalah Samudera pengetahuan untuk mendapatkan siswa. Ini adalah sebuah perpustakaan yang besar. Siswa yang mengejar program melalui pengaturan pendidikan jarak dapat mempelajari topik online. Internet adalah cara tercepat dan termurah untuk mempertimbangkan masuk di sebuah organisasi Asing, mengumpulkan informasi geografis setiap wilayah chatting dengan siapa pun di setiap sudut dunia atau mencari pasangan hidup hanya satu pilihan.</p>
+    
+    <p class="geser">Otoritas pemerintah negara pemerintah pusat telah menempatkan fokus khusus pada pendidikan komputer di indonesia. Aplikasi komputer juga sedang diperluas ke arena hukum. Ruang Sidang tertinggi indonesia telah menjadi pengadilan 1 di negara untuk memasok e-mengisi kasus.</p>
+
+    <p class="geser">Komputerisasi telah menciptakan banyak karir bagi pakar DTP operator, pengembang, hardware dan software. Hotel ini menyediakan bukaan yang luar biasa untuk memukul jenis baru pengusaha merek.</p>
+
+    <p class="geser">Komputer sistem dapat digunakan sebagai mesin tik, ketika dilengkapi dengan telepon modem, dengan menggunakan komputer kita dapat chatting di seluruh dunia. Telekonferensi dan video Rapat juga tersedia. Internet kucing untuk tetap berhubungan mungkin keluarga kami teman-teman. Anda bisa mendapatkan informasi tentang setiap subjek yang dikenal manusia mulai dari peraturan pemerintah layanan perdagangan Festival, konferensi pasar informasi pendidikan dan masyarakat untuk politik nasional.</p>
+
+    <p class="geser">Komputer telah membuktikan kali f sebagai teman hamba Sains, teknologi dan industri. Komputer melalui internet membuka peluang bisnis. Komputerisasi telah dilakukan dalam bisnis, bank, penerbitan elektronik, teknik, inovatif merancang, fashion merancang dan sebagainya yang digunakan dalam kereta api maskapai, Layanan pertahanan, penelitian organisasi tempat semua Departemen percakapan, Meteorologi, teknologi medis, dll brooking stock.</p>
+
+    <p class="geser">Dalam pertahanan mereka membantu radar dan rudal dan meluncurkan meroket. Mereka telah membuka jalan baru untuk membeli dan hiburan.lTelekomunikasi dan citra satelit adalah pc berbasis. Komputerisasi dapat melakukan peran penting di daerah pedesaan di studi biji, tanaman penyakit manajemen dan perangkat lunak sektor pemakaman pembangunan</p>
+
+    <p class="geser">Komputer juga memiliki yang suram. Teknologi disalahgunakan untuk melakukan penipuan keuangan untuk hacking untuk memberikan ancaman melalui email yang berkaitan dengan mengirim pesan vulgar yang dimaksudkan untuk terlibat dalam anti tindakan nasional dan bahkan untuk memeras orang. Chat Room yang digunakan untuk memanjakan diri dalam diskusi tidak senonoh. Situs web tertentu menawarkan materi pornografi yang sangat merugikan bagi anak-anak.</p>
+
+    <p class="geser">Untuk memeriksa semua kejahatan tersebut pemerintah telah membentuk jaringan yang terpisah dari itu ahli dan lunak khusus yang dikembangkan untuk melacak varietas baru berpendidikan penjahat. Tapi keuntungan dan pentingnya komputer melebihi kerugian. Melalui komputerisasi dunia telah menjadi sebuah desa global hari ini.</p>
+
+<h3>
+  2.5 Dampak Positif dan Negatif
+  </h3>
+  
+    <p class="geser">Positif dan Negatif adalah dua kubu magnit yang saling bertolak belakang, hal ini dapat digambarkan dalam kehidupan manusia sehari hari, begitu pula terjadi pada setiap benda sebagaimana manfaatnya bisa menjadi baik dan juga bisa menjadi tidak baik atau buruk, kali ini saya ingin mengajak pembaca melihat sisi baik dan buruknya benda yang disebut komputer, perkembangan teknologi melaju sangat pesat sehingga ada istilah.</p>
+    
+    <p class="geser">Jika ingin menjadi milyuner kita harus bisa beradaptasi dengan kemajuan teknologi, jika tidak, maka kita akan ketinggalan seribu langkah kedepan untuk maju” begitu juga kemajuan teknologi komputerisasi semakin maju pesat, sehingga komputer telah menjadi partner manusia dalam bekerja, komputer bisa membantu kita memudahkan pekerjaa sehari-hari, berbagai sarana yang dapat membantu kita seperti program office, design, movie, games maupun internet.</p>
+
+    <p class="geser">Setiap orang yang akrab dengan bidang teknologi informasi dan komunikasi pasti sering berhadapan dengan komputer.Apalagi di zaman milenial ini, sekarang banyak situs jejaring sosial media seperti facebook, twitter, Instagram, youtube, dan lain-lain, inilah yang disebut dampak baik atau positif, sebagaimana diketahui selain dampak baik (positif) setiap benda juga memiliki dampak buruk (negatif) yang sangat berpengaruh pada kehidupan kita.</p>
+
+<h3>
+      <p style="margin-left :0px; text-indent:0px;"><strong>Berikut ini dampak positif dan negatif dalam kehidupan kita sehari hari diantaranya :</strong></p>
+  </h3>
+  
+        <p><strong>A.Dampak Positif:</strong>
+    
+      <p class="geser2">seseorang yang sudah terbiasa dan sering menggunakan komputer, akan sulit untuk melepaskan diri dari komputer di kehidupan sehari -hari. Sangat banyak manfaat yang bisa di dapat dari komputer ini.</p>
+
+     <p class="geser2">Komputer dapat memberi kemudahan dalam melakukan pekerjaan, selain itu komputer juga dapat mempersingkat waktu pengerjaan kita sehari-hari.Membantu proses globalisasi, dengan adanya komputer, membuat dunia menjadi seperti tanpa batas dan sangat dekat antara bealahan dunia yang satu dengan belahan dunia yang lain nya, sehingga orang-orang akan lebih mudah dalam menyampaikan gagasan maupun pendapat serta lebih mudah untuk mendapatkan informasi walaupun nyata nya orang-orang terpisah sangat jauh.</p>
+
+     <p class="geser2">Memudahkan dalam hal komunikasi, keberadaan komputer, tidak jauh dengan yang namanya internet. Dengan adanya teknologi ini, dapat membantu banyak orang dalam berkomunikasi walaupun jaraknya sangatlah jauh serta akan lebih mudah, murah, cepat, dan efisien. Membantu dalam mencari informasi, dengan teknologi komputer dan internet, membuat orang – orang dapat dengan mudah mengakses berbagai macam hal yang ingin diketahui di internet kapanpun dan dimanapun.</p>
+
+    <p class="geser2">Selain dalam hal mencari informasi, kemudahan lain yang didapat yaitu kemudahan dalam penukaran data. Adanya koneksi antara komputer dengan internet ataupun Bluetooth membuat banyak orang dapat menukar data sehingga bisa lebih memudahkan dalam pekerjaan masing-masing.</p>
+
+    <p style="margin-top: 20px"><strong>B.Dampak Negatif:</strong> 
+    
+    <p class="geser2">Komputer sudah pasti sangat dekat kaitan nya dengan internet dengan adanya internet, mebuat beberapa orang menyalahgunakan fungsi dari internet.Salah satunya yaitu pornografi, tidak heran jika internet indentik dengan pornografi. Sangat banyak bermunculan situs-situs yang sangat meresahkan para orang tua terhadap anak-anak nya. Kemudahan komputer dan internet untuk diakses yang membuat Sebagian orang menjadi menyalahgunakan kegunaak dari komputer dan internet ini.Kekejaman dan Kesadisan, komputer sudah pasti sangat dekat kaitan nya dengan internet. Dengan adanya internet, mebuat beberapa orang menyalahgunakan fungsi dari internet. Salah satunya yaitu pornografi.</p>
+ 
+    <p class="geser2">Tidak heran jika internet indentik dengan pornografi. Sangat banyak bermunculan situs-situs yang sangat meresahkan para orang tua terhadap anak-anak nya.Kemudahan komputer dan internet untuk diakses yang membuat Sebagian orang menjadi menyalahgunakan kegunaan dari komputer dan internet ini. Anti Sosial, dampak negatif lain yang dapat ditimbulkan dari komputer ini adalah anti sosial. Sikap ini muncul karena sifat dari komputer yang adiktif dan membuat pengguna komputer menjadi nyaman untuk menggunakan nya.Anti sosial ini dimana pengguna nya tidak peduli dan abai terhadap keadaan yang ada di lingkungan sekitarnya. </p>
+
+    <p class="geser2">Jika hal ini terus berlanjut, maka akan membuat penggunanya tidak akan berkembang dalam segi emosional maupun interaksi nya.Dan bila hal ini terus berlanjut secara serius, maka pengguna nya akan bersikap lebih individualis dan tidak akan bisa lagi berinteraksi serta bersosialisasi dengan lingkungan di sekitarnya.</p>
+
+    <p class="geser2"> Kecanduan dengan Game Online, karena komputer yang dekat kaitan nya dengan internet, sehingga dengan perkembangan teknologi yang membuat internet memiliki game-game yang dapat digunakan jika pengguna nya merasa bosan dengan pekerjaan nya. Namun, banyak orang yang malah menggunakan game ini sebagai prioritas utama nya sehingga membuat pengguna itu akan menjadi kecanduan. Kecanduan game online juga sangat buruk karena dapat mengganggu kesehatan, mempersingkat jam istirahat serta pola makan seseorang, terbengkalainya pekerjaan serta kegiatana seseorang di dunia nyata, serta dapat mendorong seseorang untuk melakukan hal-hal yang negatif jika sudah mengalami gangguan kejiwaan.</p>
+    </section>
+    
+                    <!-- AKHIRNYA BAB 3 AHAHAHAHHAHAH -->
+     
+  <section id="penutup">
+    <h2 style="margin-top:100px">BAB III – Penutup</h2>
+    <h3>3.1 Kesimpulan</h3>
+    <p class="geser">Komputer merupakan salah satu penemuan terbesar yang sangat berpengaruh 
+dalam kehidupan manusia. Perkembangannya, mulai dari generasi pertama hingga 
+sekarang, telah membawa perubahan besar dalam bidang pendidikan, bisnis, kesehatan, 
+komunikasi, hingga hiburan.</p>
+<p class="geser">Komputer mempermudah manusia dalam mengolah data, 
+menyampaikan informasi, serta mempersingkat waktu pekerjaan. Namun, di balik manfaat 
+yang besar, komputer juga memiliki dampak negatif, seperti kecanduan, pornografi, dan 
+sikap anti-sosial apabila tidak digunakan secara bijak. Oleh karena itu, komputer harus 
+dipandang sebagai alat bantu yang mendukung produktivitas dan perkembangan ilmu 
+pengetahuan, bukan sekadar sarana hiburan semata.</p>
+
+
+<style>
+  .margin{
+    text-indent:0px;
+    margin-left:30px;
+    margin-bottom:0px;
+  }
+</style>
+
+    <h3>3.2 Saran</h3>
+    <p class="margin"><strong>1. Gunakan komputer secara bijak, utamakan untuk hal-hal yang bermanfaat seperti belajar, bekerja, dan mengembangkan keterampilan</strong></p>.
+    
+     <p class="margin"><strong>2. Batasi penggunaan untuk hiburan, agar tidak menimbulkan kecanduan atau mengganggu aktivitas sehari-hari. </strong></p>
+     
+      <p class="margin"><strong>3. Tingkatkan literasi digital, khususnya bagi pelajar dan masyarakat umum, agar mampu memanfaatkan teknologi komputer dengan tepat. </strong></p>
+      
+     <p class="margin"><strong> 4. Waspadai dampak negatif, seperti penyalahgunaan internet, pornografi, dan game online berlebihan dengan cara pengawasan dan pengendalian diri.</strong></p>
+     
+      <p class="margin"><strong> 5. Manfaatkan komputer untuk produktivitas dan peluang bisnis, sehingga dapat memberi nilai tambah dalam kehidupan sehari-hari maupun masa depan.</strong></p>
+    </ul>
+  </section>
+
+  <!-- Daftar Pustaka -->
+  <section id="daftar-pustaka">
+    <h2 style="margin-top:100px">Daftar Pustaka</h2>
+    <ul>
+      <li>Razak, M. Azhar. “Dampak Positif dan Negatif Komputer.” Mapikornews.com (2022).</li>
+      <li>“Brief History Of Computer.” People.bu.edu, diakses 17 Oktober 2020.</li>
+      <li>“Computer Basics: What is a Computer?” GCFGlobal.org, diakses 20 Agustus 2020.</li>
+      <li>“Computer | History, Networking, Operating Systems, & Facts.” Encyclopedia Britannica.</li>
+      <li>Doran Contributor. “10 Jenis Komputer di Dunia.” Doran.id (2024).</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Farel Afgan Saputra — SMK Al-Mabrur Kab. Banjarnegara Kec. Pejawaran
+  </footer>
+</body>
+</html>

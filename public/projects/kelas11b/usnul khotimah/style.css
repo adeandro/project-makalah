@@ -1,0 +1,36 @@
+body {
+    font-family: Times New Roman;
+    margin: 20px;
+    background-color:
+}
+.video-backgroud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:50% ;
+  height: 50%;
+  z-index:-1;
+  overflow: hidden;
+}
+.video-backgroud{
+  position: fixed;
+  min-width: 50%;
+  min-height: 50%;
+  width: auto;
+  height: auto;
+  top: 10%
+  left: 10%;
+  transform: translate(-20%,-20%);
+  object-fit: cover;
+}
+.content { 
+  position: relative;
+  z-index: 1;
+  color: pink;
+  text-align: center;
+  padding-top: 50px;
+  .p { text-align: left;}
+}
+  .daftar-abc {
+    list-style-type: upper-alpha;
+  }

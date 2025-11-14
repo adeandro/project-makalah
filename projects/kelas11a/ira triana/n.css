@@ -1,17 +1,29 @@
 body{
   text-align: justify;
   text-indent: 30px;
-  background-image: url('tri.jpg');
-  background-size: contain;
+  background-image: url('nanana.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
+  hr{
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background: #b08968;
+    margin: 30px auto;
+    border-radius: 5px;
+  }
+
+  
   
 h1,h2,h3,h4
   text-align: center;
-  color:#fffbf0;
+  color:#3e5f8a;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-}
+
 p{
-  color:#2b0d0d;
+  color:#6b6b6b;
 text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 .logo{
@@ -21,7 +33,6 @@ text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
   margin-left:5%;
 }
 
-/* Tombol Media Sosial yang Animatif */
  .social-buttons {
      text-align: center;
      margin-top: 30px;

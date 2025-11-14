@@ -1,0 +1,276 @@
+/* =========================================================
+                     BUTTON
+   ========================================================= */
+   
+                             /* TO MAKALAH */
+.button {
+  --😀: radial-gradient(circle, rgba(22, 23, 27, 1) 0%, rgba(181, 193, 193, 1) 100%);
+  --😀😀: #fff ;
+  --😀😀😀: #fff;
+  cursor: pointer;
+  width: 164px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 5px 5px 10px var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+  position:fixed;
+  left:40%;
+  bottom:20%;
+  transform: translateX(-50%) skew(-10%);
+}
+
+.button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
+}
+
+
+
+              /*================ MENU BUTTON ================*/
+/* ====== LAYOUT ====== */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0b0e1a, #1b2238);
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* ====== MENU WRAPPER ====== */
+.menu-wrapper {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  z-index: 100;
+}
+
+/* ====== TOGGLE BUTTON ====== */
+#menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 18px;
+  gap: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.03);
+}
+
+.menu-text {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Bars (ikon menu) */
+.bar {
+  width: 26px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* Animasi ke bentuk X */
+#menu-toggle:checked + .menu-btn .bar:nth-child(2) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+#menu-toggle:checked + .menu-btn .bar:nth-child(3) {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn .bar:nth-child(4) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* ====== MENU ITEMS ====== */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  transform: scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(184, 235, 255, 0.08); 
+  border: 1px solid rgba(184, 235, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Link menu: sejajar justify */
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: rgba(184, 235, 255, 0.2);
+  transform: translateY(-2px);
+}
+/*================ BUTTON END ================*/
+
+
+/* =========================================================
+               BACKGROUND VIDEO
+   ========================================================= */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* =========================================================
+               MEDSOS AING NIEH
+   ========================================================= */
+/* container kanan atas */
+/* POSITION WRAPPER MENU */
+.social-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* TOMBOL UTAMA */
+.social-main-btn {
+  background: #444444 ;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+.social-main-btn:hover {
+  background: #888888;
+}
+
+/* DROPDOWN BOX (iOS style) */
+.social-dropdown {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  opacity: 0;
+  transform: translateY(-8px) scale(0.96);
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* AKTIF DROPDOWN */
+.social-dropdown.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* BUTTON ITEM */
+.social-item {
+  padding: 8px 14px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.6);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s;
+}
+
+/* ICON SVG */
+.social-item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* HOVER ANIM */
+.social-item:hover {
+  transform: scale(1.05);
+}
+
+/* HOVER WARNA */
+.social-item[data-app="wa"]:hover {
+  background: #25D366;
+  color: #fff;
+}
+.social-item[data-app="ig"]:hover {
+  background: linear-gradient(to right,#feda75,#d62976,#962fbf,#4f5bd5);
+  color: #fff;
+}
+.social-item[data-app="tt"]:hover {
+  background: #000;
+  color: #fff;
+}

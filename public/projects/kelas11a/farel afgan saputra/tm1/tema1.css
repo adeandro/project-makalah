@@ -1,0 +1,693 @@
+/* =========================================================
+/* =========================================================
+   VARIABEL UTAMA
+   ========================================================= */
+:root {
+  --primary: #fff; /* teks utama */
+  --bg: transparent;
+  --text: #fff;
+  --border: #b9dcff;
+}
+
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+body {
+  font-family: 'Segoe UI', Arial, Sans-Serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+.container {
+  position: relative;
+  z-index: 1;
+
+  /* konten cuma ambil 50% layar */
+  width: 50%;
+
+  /* geser ke tengen, tapi ada jarak men rapi */
+  margin-left: 32px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  /* ✅ hapus max-width biar ga nge-cage konten */
+  /* max-width: 850px; (hapus/boleh dikomen) */
+
+  background: transparent;
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: none;
+
+  padding: 0 12px;
+  color: #fff;
+  text-align: left;
+}
+
+
+/* =========================================================
+   TEKS & JUDUL
+   ========================================================= */
+ 
+   
+   
+         .geser {
+    text-indent: 50px; 
+    margin-left: 35px; 
+  }
+  
+    .geser2 {
+    text-indent: 50px;
+    margin-left: 55px;
+    }
+    
+      .margin{
+    text-indent:0px;
+    margin-left:30px;
+    margin-bottom:0px;
+  }
+   
+   
+h1, h2, h3 {
+  color: var(--primary);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 4px;
+}
+
+p {
+  text-indent: 40px;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+
+
+/* =========================================================
+   COVER
+   ========================================================= */
+.cover {
+  text-align: center; /* dari center jadi left */
+  padding: 60px 30px;
+  border-bottom: 3px solid var(--primary);
+}
+
+.cover h1 {
+  font-size: 28px;
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center; /* pastikan nempel kiri */
+}
+
+.cover .subbtitle {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.cover .info {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   DAFTAR ISI (TOC)
+   ========================================================= */
+.toc {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 30px;
+  margin: 40px 0;
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+  max-width: 700px;
+  margin-left: 32px; /* nempel kiri ke container */
+}
+
+.toc h2 {
+  text-align: left; /* judul TOC kiri */
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.toc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', serif;
+  font-size: 16px;
+}
+
+.toc table td {
+  padding: 4px 0;
+  color: #fff; /* isi tabel putih */
+}
+
+.toc table td:first-child {
+  position: relative;
+  padding-right: 10px;
+}
+
+.toc table td:first-child::after {
+  content: " .........................................................................................................................";
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.3); /* titik-titik agak transparan */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.toc table td:last-child {
+  text-align: right;
+  width: 40px;
+  color: #fff; /* nomor halaman */
+}
+
+.toc a {
+  text-decoration: none;
+  color: #fff; /* link */
+}
+
+.toc a:hover {
+  text-decoration: underline;
+  color: #b9dcff; /* efek hover biru muda */
+}
+
+
+/* ===== Override Layout Kiri 50% (Tambahan) ===== */
+.toc {
+  width: 80%;
+  max-width: none; /* override 700px */
+  margin-left: 32px;
+}
+
+/* ===== Responsive versi HP ===== */
+@media (max-width: 768px) {
+  .toc {
+    width: 90%;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+}
+
+
+
+
+/* =========================================================
+   BACKGROUND VIDEO
+   ========================================================= */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.0);
+  z-index: -1;
+}
+
+
+
+6
+/* =========================================================
+   CETAK (PRINT MODE)
+   ========================================================= */
+  
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .container {
+    background: white;
+    color: black;
+    box-shadow: none;
+  }
+}
+
+
+
+/* =========================================================
+   LOGO & FOTO
+   ========================================================= */
+.log {
+  filter: drop-shadow(0 0 15px rgba(0, 0, 90, 0.7));
+  animation: greenGlow 1s infinite ease-in-out;
+}
+
+@keyframes greenGlow {
+  0% { filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4)); }
+  50% { filter: drop-shadow(0 0 35px rgba(0, 0, 0, 1)); }
+  100% { filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4)); }
+}
+
+.pari {
+  width: 490px;
+  height: auto; /* men proporsinya tetap */
+  border-radius: 30px; /* opsional: buat sudut melengkung */
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7); /* efek bayangane */
+  transition: 0.3s; /* efek alus pas hover */
+}
+
+/*=========================== END ================================*/
+
+
+
+
+
+/* =========================================================
+   🎵 TOMBOL MUSIK (utama)
+   ========================================================= */
+.music-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff ;
+  background: rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hover efek glow */
+.music-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+/* Efek tombol saat musik sedang main */
+.music-btn.playing {
+  animation: pulseGlow 1.5s infinite;
+  color: #fff;
+}
+
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+  50%  { box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+  100% { box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+}
+
+/* =========================================================
+   🎧 MENU PILIHAN MUSIK
+   ========================================================= */
+.music-menu {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  width: 220px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(52, 61, 75, 0.4));
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 9998;
+  transition: all 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Saat ditampilkan */
+.music-menu.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Judul menu */
+.music-menu h4 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Daftar lagu */
+.music-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.music-menu li {
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover efek item */
+.music-menu li:hover {
+  background: rgba(185, 208, 203, 0.25);
+  color: #fff;
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   ✨ RESPONSIVE (opsional)
+   ========================================================= */
+@media (max-width: 600px) {
+  .music-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .music-menu {
+    width: 180px;
+    top: 60px;
+    right: 15px;
+  }
+}
+
+/* =========================================================
+               MEDSOS AING NIEH
+   ========================================================= */
+.social-wrapper {
+  position: fixed;
+  top: 20px ;
+  right: 300px ;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* TOMBOL UTAMA */
+.social-main-btn {
+  background: #AD2D20;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+.social-main-btn:hover {
+  background: #fff;
+}
+
+/* DROPDOWN BOX (iOS style) */
+.social-dropdown {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  opacity: 0;
+  transform: translateY(-8px) scale(0.96);
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* AKTIF DROPDOWN */
+.social-dropdown.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* BUTTON ITEM */
+.social-item {
+  padding: 8px 14px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.6);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s;
+}
+
+/* ICON SVG */
+.social-item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* HOVER ANIM */
+.social-item:hover {
+  transform: scale(1.05);
+}
+
+/* HOVER WARNA */
+.social-item[data-app="wa"]:hover {
+  background: #25D366;
+  color: #fff;
+}
+.social-item[data-app="ig"]:hover {
+  background: linear-gradient(to right,#feda75,#d62976,#962fbf,#4f5bd5);
+  color: #fff;
+}
+.social-item[data-app="tt"]:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+/* =========================================================
+               BUTTON TEMA
+   ========================================================= */
+ body {
+  margin: 0;
+  background: linear-gradient(135deg, #0b0e1a, #1b2238);
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* ====== MENU WRAPPER ====== */
+.menu-wrapper {
+  position: fixed;
+  top: 100px;
+  right: 25px;       
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  z-index: 100;
+}
+
+/* ====== TOGGLE BUTTON ====== */
+#menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 18px;
+  gap: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.03);
+}
+
+.menu-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Bars (ikon menu) */
+.bar {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* Animasi ke bentuk X */
+#menu-toggle:checked + .menu-btn .bar:nth-child(2) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+#menu-toggle:checked + .menu-btn .bar:nth-child(3) {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn .bar:nth-child(4) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* ====== MENU ITEMS ====== */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  transform: scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(184, 235, 255, 0.08); 
+  border: 1px solid rgba(184, 235, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Link menu: sejajar justify */
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: rgba(184, 235, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* =========================================================
+               TEKS JALAN
+   ========================================================= */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  will-change: transform;
+  animation: scrollText 10s linear infinite;
+}
+
+/* Arah kanan ke kiri */
+@keyframes scrollText {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

@@ -33,7 +33,7 @@ export default function App() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="max-w-4xl mx-auto mt-8 p-6 bg-white shadow-2xl rounded-2xl">
+      <main className="max-w-6xl mx-auto mt-8 p-6 bg-white shadow-2xl rounded-2xl">
         <div className="flex flex-col md:flex-row gap-4 mb-6">
           <ClassSelector
             value={kelas}

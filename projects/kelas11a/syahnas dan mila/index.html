@@ -1,511 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Makalah — Sejarah Komputer</title>
-    <style>
-      p,
-      h1,
-      h2,
-      h3,
-      li,
-      strong {
-        color: pink;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Makalah — Sejarah Komputer</title>
+    <link rel="stylesheet" href  ="Canasmila.css">
+ 
+</head>
+<body>
+  <audio controls>
+  <source src="musik.mp3" type="audio/mpeg">
+ Browser Anda tidak mendukung elemen audio.
+</audio>
+  
+  
+  <div class="container">
 
-      /* --- preset nganu --- */
-      * {
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        color: #111;
-        background: #7593b3;
-      }
-      .container {
-        max-width: 900px;
-        margin: 32px auto;
-        padding: 28px;
-        border: 1px solid #e6e6e6;
-        border-radius: 6px;
-        background: #7593b3;
-      }
-
-      /* --- judule --- */
-      header.title-page {
-        text-align: center;
-        padding: 36px 20px;
-      }
-      header.title-page h1 {
-        margin: 0 0 12px;
-        font-size: 28px;
-        letter-spacing: 1px;
-      }
-      header.title-page .meta {
-        margin-top: 18px;
-        font-size: 15px;
-        line-height: 1.6;
-      }
-
-      /* --- di gawe oleh --- */
-      .authors {
-        margin: 26px auto;
-        text-align: center;
-      }
-      .authors strong {
-        display: block;
-        font-size: 16px;
-      }
-      .authors p {
-        margin: 6px 0;
-        font-size: 15px;
-      }
-
-      /* --- Kata Pengantar, Daftar Isi, Bab --- */
-      nav.toc {
-        border-left: 4px solid #7593b3;
-        padding: 12px 18px;
-        margin-bottom: 18px;
-        background: #7593b3;
-      }
-      nav.toc ul {
-        margin: 0;
-        padding-left: 1.2rem;
-      }
-      section {
-        margin: 20px 0;
-        line-height: 1.75;
-      }
-      h2 {
-        margin-top: 0;
-        font-size: 20px;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 6px;
-      }
-      h3 {
-        margin: 10px 0 6px;
-        font-size: 16px;
-      }
-
-      /* --- Table to display daftar isi (optional) --- */
-      .daftar-isi {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 12px;
-      }
-      .daftar-isi td {
-        padding: 6px 8px;
-        vertical-align: top;
-      }
-
-      /* --- Print styles --- */
-      @media print {
-        body,
-        .container {
-          border: none;
-          margin: 0;
-          padding: 0;
-        }
-        nav.toc {
-          page-break-after: avoid;
-          border-left: none;
-        }
-        header.title-page {
-          page-break-after: always;
-        }
-        h2 {
-          page-break-after: avoid;
-        }
-        .page-break {
-          page-break-before: always;
-        }
-      }
-
-      /* --- Small helpers --- */
-      .small {
-        font-size: 13px;
-        color: #555;
-      }
-      footer {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 13px;
-        color: #666;
-      }
-      a.toc-link {
-        color: pink;
-        text-decoration: none;
-      }
-    </style>
-    <link rel="stylesheet" href="Canasmila.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Halaman Judul -->
-      <header class="title-page" id="judul">
-        <h1>MAKALAH</h1>
-        <h2 style="margin-top: 8px; font-size: 22px">SEJARAH KOMPUTER</h2>
-        <img src="canas.jpeg" width="200px" height="270px" />
-        <div class="meta small" style="color: pink">
-          <p style="color: pink">Disusun oleh:</p>
-          <div class="authors">
-            <strong style="color: pink">SYAHNAS MARISKA — 0085536184</strong>
-            <strong style="color: pink"
-              >KHAFIFA NAILATUL KAMILA — 0073901864</strong
-            >
-            <p style="color: pink">
-              YAYASAN PERSAUDARAAN HAJI ALMABRUR<br />SMK AL MABRUR PEJAWARAN —
-              BANJARNEGARA
-            </p>
-            <p style="color: pink"><em>Tahun 2025</em></p>
-          </div>
+    <!-- Halaman Judul -->
+    <header class="title-page" id="judul">
+      <h1>MAKALAH</h1>
+      <h2 style="margin-top:8px; font-size:22px;">SEJARAH KOMPUTER</h2>
+<img src="canas.jpeg" width="200px" height="270px">
+      <div class="meta small"style="color:pink;">
+        <p style="color:pink;">Disusun oleh:</p>
+        <div class="authors">
+          <strong style="color:pink;">SYAHNAS MARISKA — 0085536184</strong>
+          <strong style="color:pink;">KHAFIFA NAILATUL KAMILA — 0073901864</strong>
+          <p style="color:pink;">YAYASAN PERSAUDARAAN HAJI ALMABRUR<br>SMK AL MABRUR PEJAWARAN — BANJARNEGARA</p>
+          <p style="color:pink;"><em>Tahun 2025</em></p>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- Daftar Isi (link ke anchor) -->
-      <nav class="toc" aria-label="Daftar isi">
-        <strong>DAFTAR ISI</strong>
-        <ul>
-          <li><a class="toc-link" href="#kata-pengantar">Kata Pengantar</a></li>
-          <li>
-            <a class="toc-link" href="#bab1">BAB I — Pendahuluan</a>
-            <ul>
-              <li><a class="toc-link" href="#latar">Latar Belakang</a></li>
-              <li><a class="toc-link" href="#rumusan">Perumusan Masalah</a></li>
-              <li>
-                <a class="toc-link" href="#ruang">Ruang Lingkup Penulisan</a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="toc-link" href="#bab2">BAB II — Pembahasan</a></li>
-          <li><a class="toc-link" href="#bab3">BAB III — Penutup</a></li>
-          <li><a class="toc-link" href="#daftar-pustaka">Daftar Pustaka</a></li>
-        </ul>
-      </nav>
+    <!-- Daftar Isi (link ke anchor) -->
+    <nav class="toc" aria-label="Daftar isi">
+      <strong>DAFTAR ISI</strong>
+      <ul>
+        <li><a class="toc-link" href="#kata-pengantar">Kata Pengantar</a></li>
+        <li><a class="toc-link" href="#bab1">BAB I — Pendahuluan</a>
+          <ul>
+            <li><a class="toc-link" href="#latar">Latar Belakang</a></li>
+            <li><a class="toc-link" href="#rumusan">Perumusan Masalah</a></li>
+            <li><a class="toc-link" href="#ruang">Ruang Lingkup Penulisan</a></li>
+          </ul>
+        </li>
+        <li><a class="toc-link" href="#bab2">BAB II — Pembahasan</a></li>
+        <li><a class="toc-link" href="#bab3">BAB III — Penutup</a></li>
+        <li><a class="toc-link" href="#daftar-pustaka">Daftar Pustaka</a></li>
+      </ul>
+    </nav>
 
-      <!-- Kata Pengantar -->
-      <section id="kata-pengantar">
-        <h2 style="color: pink">Kata Pengantar</h2>
-        <p>
-          Puji syukur kehadirar Tuhan Yang Maha Esa karna atas rahmat dan
-          karunianya, penulis dapat menyelesaikan makalah yang berjudur “Sejarah
-          Komuputer” ini dengan baik dan tepat waktu. Makalah ini di susun
-          sebagai salah satu bentuk tugas dalam mata pelajaran Informatika.
-        </p>
-        <p>
-          Dalam makalah ini, penulis membahas perjalanan ditemukannya komputer,
-          mulai dari generasi pertama hingga komputer modern saat ini. Tujuannya
-          adalah untuk memberikan gambaran menyeluruh mengenai evolusi teknologi
-          serta dampaknya terhadap kehidupan manusia.
-        </p>
-        <p>
-          Penulis menyadari bahwa dalam penyusunan makalah ini masih terdapat
-          kekurangan, baik dari segi isi maupun penampilannya. Oleh karena itu,
-          penulis sangat mengharapkan kritik dan saran yang membangun demi
-          perbaikan di masa yang akan datang.
-        </p>
-        <p>
-          Ucapan terima kasih penulis sampaikan kepada semua pihak yang telah
-          membantu, khususnya kepada Bapak Khusain selaku pembimbing yang telah
-          memberikan arahan dan dukungan selama proses penyusunan makalah ini.
-        </p>
-        <p>
-          Akhir kata, semoga makalah ini dapat memberikan manfaat dan menambah
-          wawasan bagi para pembaca.
-        </p>
-        <p class="small" style="color: pink">
-          Banjarnegara, 25 Agustus 2025<br /><strong
-            >Syahnaz &amp; Kamila</strong
-          >
-        </p>
-      </section>
 
-      <!-- BAB I Pendahuluan -->
-      <section id="bab1">
-        <h2>BAB I — Pendahuluan</h2>
 
-        <h3 id="latar">Latar Belakang</h3>
-        <p>
-          Seiring dengan perkembangan zaman yang sangat pesat khususnya di
-          negara-negara maju seperti Amerika, Eropa, Jepang, dll., teknologi
-          mempunyai peran penting dalam kehidupan manusia. Dengan adanya
-          teknologi manusia bisa saling berhubungan dengan mudah. Kini teknologi
-          semakin canggih, dan salah satunya adalah komputer; karena dengan
-          komputer banyak informasi berharga yang dapat diambil dengan mudah.
-          Komputer merupakan salah satu alat yang mempercepat komunikasi dan
-          proses kerja manusia.
-        </p>
+    <!-- Kata Pengantar -->
+    <section id="kata-pengantar">
+      <h2 style="color:pink;">Kata Pengantar</h2>
+      <p > 
+        Puji syukur kehadirar Tuhan Yang Maha Esa karna atas rahmat dan karunianya, penulis dapat menyelesaikan makalah yang berjudur “Sejarah Komuputer” ini dengan baik dan tepat waktu. Makalah ini di susun sebagai salah satu bentuk tugas dalam mata pelajaran Informatika.
+      </p>
+      <p>
+        Dalam makalah ini, penulis membahas perjalanan ditemukannya komputer, mulai dari generasi pertama hingga komputer modern saat ini. Tujuannya adalah untuk memberikan gambaran menyeluruh mengenai evolusi teknologi serta dampaknya terhadap kehidupan manusia.
+      </p>
+      <p>
+        Penulis menyadari bahwa dalam penyusunan makalah ini masih terdapat kekurangan, baik dari segi isi maupun penampilannya. Oleh karena itu, penulis sangat mengharapkan kritik dan saran yang membangun demi perbaikan di masa yang akan datang.
+      </p>
+      <p>
+        Ucapan terima kasih penulis sampaikan kepada semua pihak yang telah membantu, khususnya kepada Bapak Khusain selaku pembimbing yang telah memberikan arahan dan dukungan selama proses penyusunan makalah ini.
+      </p>
+      <p>
+        Akhir kata, semoga makalah ini dapat memberikan manfaat dan menambah wawasan bagi para pembaca. 
+      </p>
+      <p class="small"style="color:pink;">Banjarnegara, 25 Agustus 2025<br><strong>Syahnaz &amp; Kamila</strong></p>
+    </section>
 
-        <h3 id="rumusan">Perumusan Masalah</h3>
-        <ol>
-          <li>Apa yang dimaksud dengan komputer?</li>
-          <li>Ada berapa generasi perkembangan komputer?</li>
-        </ol>
+    <!-- BAB I Pendahuluan -->
+    <section id="bab1">
+      <h2>BAB I — Pendahuluan</h2>
 
-        <h3 id="ruang">Ruang Lingkup Penulisan</h3>
-        <p>
-          Ruang lingkup penulisan mencakup: BAB I (Pendahuluan: latar belakang,
-          perumusan masalah, ruang lingkup), BAB II (Pembahasan: komputer
-          generasi I-V), dan BAB III (Penutup: kesimpulan dan saran).
-        </p>
-      </section>
+      <h3 id="latar">Latar Belakang</h3>
+      <p>
+        Seiring dengan perkembangan zaman yang sangat pesat khususnya di negara-negara maju seperti Amerika, Eropa, Jepang, dll., teknologi mempunyai peran penting dalam kehidupan manusia. Dengan adanya teknologi manusia bisa saling berhubungan dengan mudah. Kini teknologi semakin canggih, dan salah satunya adalah komputer; karena dengan komputer banyak informasi berharga yang dapat diambil dengan mudah. Komputer merupakan salah satu alat yang mempercepat komunikasi dan proses kerja manusia.
+      </p>
 
-      <!-- BAB II Pembahasan -->
-      <section id="bab2" class="page-break">
-        <h2>BAB II — Pembahasan</h2>
+      <h3 id="rumusan">Perumusan Masalah</h3>
+      <ol>
+        <li>Apa yang dimaksud dengan komputer?</li>
+        <li>Ada berapa generasi perkembangan komputer?</li>
+      </ol>
 
-        <h3>Komputer Generasi Pertama</h3>
-        <p>
-          Komputer merupakan perangkat yang terdiri dari Hardware,Software dan
-          Brinware. Dan merupakan suatu system dimana satu sama lain saling
-          berhubungan. Dengan terjadinya perang dunia kedua,negara-negara yang
-          telibat dalam perang tersebut berusaha mengembangkan komputer untuk
-          mengeksfoliasi potensi strategis yang dimiliki komputer. Hal ini
-          meningkatkan perdanaan pengembangan komputer serta mempercepat
-          kemajuan Teknik komputer. Pada tahun 1941,Konrad Zuse, seorang
-          insinyur jerman membangun sebuah komputer Z3, untuk mendisain pesawat
-          terbang dan peluru kendali.
-        </p>
-        <p>
-          Pihak sekutu juga membuat kemajuan lain dengan mengembangkan kekuatan
-          komputer. Tahun 1943,pihak inggris menyelesaikan komputer pemecah kode
-          rahasia yang dinamakan colossus untuk memecahkan kode rahasia yang di
-          gunakan jerman. Dampak pembuatan colossus tidak terlalu mempengaruhi
-          perkembangan industry komputer di karenakan 2 alasan. Pertama,colossus
-          bukan merupakan komputer serbaguna ( general-purpose computer ) ia
-          hanya didisain untuk memecahkan kode rahasia. Kedua,keberadaan mesin
-          ini di jaga kerahasiaannya hingga satu decade setelah perang berakhir.
-        </p>
-        <p>
-          Usaha yang di lakukan oleh pihak amerika pada saat itu menghasilkan
-          suatu kemajuan lain. Howard H.aiken (1900-1973),seoarang insnyur
-          Harvard yang berkerja dengan HBM,berhasil memproduksi kalkulator
-          elektronik untuk US NAVY. Kalkulator tersebut berukuran Panjang
-          setengah lapangan bola kaki dan memiliki rentang kabel sepanjang
-          500mil. The Harvid-IBM autonomic sequence controlled calculator,atau
-          mark 1,merupakan komputer relai elektronik. Ia menggunakan sinyal
-          elektronik untuk menggerakkan komputer mekanik. Mesin tersebut
-          beroprasi dengan lambat (ia membutuhkan 3-5 detik untuk setiap
-          perhitungan) dan tidak fleksibel (urutan kalkulasi tidak dapat di
-          ubah). Kalkulator tersebut dapat melakukan perhitungan aritmatik dasar
-          dan persamaan yang lebih kompleks.
-        </p>
-        <p>
-          Perkembangan komputer lain pada masa ini adalah elektronik integrektor
-          nurmerical and computer (ENIAC), yang di buat oleh kerjasama antara
-          pemerintah amerika serikat dan university of Pennsylvania. Terdiri
-          dari 18000 tabung vakum, 70000 resistror, dan 5juta titik solder,
-          komputer tersebut merupakan mesin yang sangat besar yang mengkonsumsi
-          daya sebesar 160kw. Komputer ini di rancang oleh John Presper Eckert
-          (1919-1995) dan Johan W.Mauchly (1907-1980), eniac merupakan komputer
-          serbaguna (general purpos computer) yang berkerja 1000 kali lebih
-          cepat di bandingkan mark 1 pada pertengahan 1940an John Von Neumann
-          (1903-1957) bergabung dengan tim university of Pennsylvania dalam
-          usaha membangun konsep desin komputer yang hingga 40 tahun mendatang
-          masih dipakai dalam teknik komputer.
-        </p>
-        <p>
-          Von Neumann mendisain electronic discrete variable automatic computer
-          (EDVAC) pada tahun 1945 dengan sebuah memori untuk menampung baik
-          program atau pun data. Teknik ini memungkinkan komputer untuk berhenti
-          pada suatu saat dan kemudian melanjutkan perkerjaannya kembali. Kunci
-          utama arsitektur Von Neumann adalah unit pemrosesan sentral (CPU),
-          yang memungkinkan seluruh fungsi komputer untuk dikoordinasikan
-          melalui satu sumber tunggal. Tahun1951, UNIVAC 1 (Universal Automatic
-          Computer 1) yang dibuat oleh Remington Rand, menjadi komputer
-          kompersial pertama yang memanfaatkan model arsitektur Von Neumann
-          tersebut. Baik badan sensus amerika serikat dan general electric
-          memiliki UNIVAC. Salah satu hasil mengesankan yang dicapai oleh UNIVAC
-          dalah keberhasilanya dalam memprediksi kemenangan Dwilight D.
-          Eisenhower dalam pemilihan persiden tahun 1952.
-        </p>
+      <h3 id="ruang">Ruang Lingkup Penulisan</h3>
+      <p>
+        Ruang lingkup penulisan mencakup: BAB I (Pendahuluan: latar belakang, perumusan masalah, ruang lingkup), BAB II (Pembahasan: komputer generasi I-V), dan BAB III (Penutup: kesimpulan dan saran).
+      </p>
+    </section>
 
-        <h3>Komputer Generasi Kedua</h3>
-        <p>
-          Pada tahun 1948, penemuan transistor sangat mempengaruhi perkembangan
-          komputer. Transistor menggntikan tube vakum di televisi, radio, dan
-          komputer. Akibatnya, ukuran mesin mesin elektrik berkurang derastris.
-          Transistor mulai digunakan didalam komputer mulai pada tahun 1956.
-          Penemuan lain yang berupa perkembangan memori inti magnetic membantu
-          perkembangan komputer genreasi ke dua yang lebih kecil, lebih cepat,
-          lebih dapat di andalkan, dan lebih hemat energi di bandingkan
-          pendahulunya. Mesin pertama yang memanfaatkan teknologi baru ini
-          adalah super komputer. IBM membuat super komputer bernama Stretch. Dan
-          Sprery-Rand membuat komputer bernama Larc. Komputer-komputer ini, yang
-          di kembangkan untuk laboratorium energi atom, dan dapat menangani
-          sejumlah besar data, sebuah kemampuan yang di butuhkan oleh peneliti
-          atom, dapat menangani sejumlah besar data, sebuah kemampuan yang di
-          butuhkan oleh peneliti atom. Mesin tersebut sangat mahal dan cenderung
-          terlalu kompleks untuk kebutuhan komputasi bisnis, sehingga membatasi
-          kepopulerannya. Hanya ada dua LARC yang terpasang dan di gunakan: 1.
-          Lawrence Radiaton Labs di livemore, calivornia, dan lainnya di US Navy
-          Research and Development Canter di weshington D.C komputer generasi
-          kedua menggantikan bahasa mesin dengan bahasa assembly. Bahasa
-          assembly adalah bahasa yang menggunakan singkatan singkatan untuk
-          menggantikan kode biner.
-        </p>
-        <p>
-          Pada awal 1960an, mulai bermunculan komputer generasi kedua yang
-          sukses di bidang bisnis, di universitas, dan di pemerintahan.
-          Komoputer komputer generasi kedua ini merupakan komputer yang
-          sepenuhnya mnggunakan transistor. Mereka juga memiliki komponen
-          komponen yang dapat di asosiasikan dengan komputer pada saat ini:
-          Printer, Penyimpanan data disket, Memori, Sistem oprasi, dan Program.
-          Salah satu contoh penting komputer pada masa ini adalah IBM 1401 yang
-          di terima secara luas di kalangan industry. Pada tahun 1965, hampir
-          seluruh bisnis bisnis besar menggunakan komputer generasi kedua untuk
-          memproses informasi keuangan.
-        </p>
+    <!-- BAB II Pembahasan -->
+    <section id="bab2" class="page-break">
+      <h2>BAB II — Pembahasan</h2>
 
-        <h3>Komputer Generasi Ketiga</h3>
-        <p>
-          Walaupun transistor dalam banyak hal menggulungi tube vakum, namun
-          transistor menghasilkan panas yang cukup besar, yang dapat berpotensi
-          merusak bagian bagian internal komputer. Batu kuarsa (quartz rock)
-          menghilangkan masalah ini. Jack Kilby, seorang insinyur di tekas
-          instrument, mengembangkan sirkuit terintegrirasi ( IC: Integrated
-          Circuit ) di tahun 1958. IC mengkombinasikan 3 komponen elektronik
-          dalam sebuah piringan silicon kecil yang terbuat dari pasir kuarsa.
-          Para ilmuan kemudian berhasil memasukkan lebih banyak komponen
-          komponen kedalam suatu chip tunggal yang di sebut semikonduktor.
-          Hasilnya, komputer menjadi semakin kecil karna komponen komponen dapat
-          di padatkan dalam chip. Kemajuan komputer generasi ketiga lainnya
-          adalah penggunaan system oprasi ( operating system ) yang memungkinkan
-          mesin untuk menjalankan berbagai program yang berbeda secara rentak
-          dengan sebuah program utama yang memonitor dan mengkordinasi memory
-          komputer.
-        </p>
+      <h3>Komputer Generasi Pertama</h3>
+      <p>
+        Komputer merupakan perangkat yang terdiri dari Hardware,Software dan Brinware. Dan merupakan suatu system dimana satu sama lain saling berhubungan. Dengan terjadinya perang dunia kedua,negara-negara yang telibat dalam perang tersebut berusaha mengembangkan komputer untuk mengeksfoliasi potensi strategis yang dimiliki komputer. Hal ini meningkatkan perdanaan pengembangan komputer serta mempercepat kemajuan Teknik komputer. Pada tahun 1941,Konrad Zuse, seorang insinyur jerman membangun sebuah komputer Z3, untuk mendisain pesawat terbang dan peluru kendali.
 
-        <h3>Komputer Generasi Keempat</h3>
-        <p>
-          Setelah IC, tuujan perkembangan menjadi lebih jelas yaitu mengecilkan
-          ukuran sirkuit dalam komputer komputer elektronik. Large Scale
-          Intergariton ( LSI ) dapat memuat ratusan komponen dalam sebuah chip.
-          Pada tahun 1980an, VERY LAGRE SCALE INTERGARITON ( VLSI ) memuat
-          ribuan komponen dalam sebuah cip tunggal.
-        </p>
-        <p>
-          Ultra Large Scale Intergariton ( ULSI ) meningkatkan jumlah tersebut
-          menjadi jutaan. Kemampuan untuk memasang sedemikian banyak komponen
-          dalam satu keping yang berukuran setengah keping uang logam mendorong
-          turunnya harga dan ukuran komputer.
-        </p>
-        <p>
-          Hal tersebut juga meningkatkan daya kerja, evisiensi dan kehandalan
-          komputer. Chip Intel 4004 yang di buat pada tahun 1971 membawa
-          kemajuan pada IC dengan meletakkan seluruh komponen dari sebuah
-          komputer ( Central Prosesing Unit, Memori, dan Kendali Input atau
-          Output ) dalam sebuah klip yang sangat kecil. Sebelumnya, IC di buat
-          untuk mengerjakan suatu tugas tertentu yang spesifik. Sekarang, sebuah
-          mikropprosesor dapat di produksi dan kemudian di program untuk
-          memenuhi seluruh kebutuhan yang di inginkan. Tidak lama kemudian,
-          setiap perangkat rumah tangga seperti Mikrowave Oven, Televisi dan
-          Mobil dengan electronic fule injection di lengkapi dengan
-          mikropprosesor. Perkembangan yang demikian memungkinkan orang orang
-          bisa menggunakan komputer biasa. Komputer tidak lagi menjadi dominasi
-          perusahaan besar atau Lembaga Pemerintah. Pada pertengahan tahun
-          1970an perakit komputer menawarkan produk komputer mereka ke
-          masyarakat umum. Komputer komputer ini, yang di sebut mini komputer,
-          di jual dengan paket piranti lunak yang mudah di gunakan oleh kalangan
-          awam. Piranti lunak yang paling popular pada saat itu adalah program
-          word prosesing dan spreadsheat. Pada awalnya 1980an, video game
-          seperti atari 2600 menarik perhatian konsumen pada komputer rumahan
-          yang lebih canggih dan dapat di program. Pada tahun 1981, IBM
-          memperkenalkan penggunaan personal komputer ( PC ) untuk penggunaan di
-          rumah, kantor, dan sekolah. Jumlah PC yang di gunakan melonjak dari
-          2juta unit di tahun 1981 menjadi 5,5juta unit di tahun 1982. 10 tahun
-          kemudian, 65juta PC di gunakan. Komputer melanjutkan evolusinya menuju
-          ukuran yang lebih kecil, dari komputer yang ada di atas meja ( Desktop
-          Computer ) menjadi komputer yang dapat di masukkan ke dalam tas (
-          Labtop ), atau bahkan komputer yang dapat di genggam ( Plamtop )
-        </p>
+      </p>
+      <p>
+        Pihak sekutu juga membuat kemajuan lain dengan mengembangkan kekuatan komputer. Tahun 1943,pihak inggris menyelesaikan komputer pemecah kode rahasia yang dinamakan colossus untuk memecahkan kode rahasia yang di gunakan jerman. Dampak pembuatan colossus tidak terlalu mempengaruhi perkembangan industry komputer di karenakan 2 alasan. Pertama,colossus bukan merupakan komputer serbaguna ( general-purpose computer ) ia hanya didisain untuk memecahkan kode rahasia. Kedua,keberadaan mesin ini di jaga kerahasiaannya hingga satu decade setelah perang berakhir.
 
-        <h3>Komputer Generasi Kelima</h3>
-        <p>
-          Mendefinasikan komputer generasi kelima menjadi cukup sulit karna
-          tahap ini masih sangat muda. Contoh imajinatif komputer generasi
-          kelima adalah komputer fiksi HAL9000 dari novel karya Arthur C. Clarke
-          berjudul 2001: Space Odyssey. HAL menampilkan seluruh fungsi yang
-          diinginkan dari sebuah komputer generasi kelima. Dengan kecerdasan
-          buatan ( artificial interigence), HAL dapat cukup memiliki nalar untuk
-          melakukan percakapan dengan manusia, menggunakan masukan visual, dan
-          belajar dari pengalamanya sendiri.
-        </p>
-        <p>
-          Walaupun mungkin realisasi HAL9000 masih jauh dari kenyataan, banyak
-          fungsi fungsi yang dimilikinya sudah terwujud. Beberapa komputer dapat
-          menerima instruksi secara lisan dan mampu meniru nalar manusia.
-          Kemampuan untuk menerjemahkan bahasa asing juga menjadi kemungkinan
-          fasilitas ini tampak sederhana. Namun fasilitas tersebut menjadi lebih
-          rumit dari yang di duga ketika progremer menyadari bahwa pengertian
-          manusia sangat bergantung pada konteks dan pengertian daripada sekedar
-          menerjemahkan kata kata secara langsung.
-        </p>
-        <p>
-          Banyak kemajuan di bidang disain komputer dan teknologi semakin
-          memungkinkan pembuatan komputer generasi kelima. Dan kemajuan rekayasa
-          yang terutama adalah pemrosesan pararel, yang akan memnggantikan model
-          Von Neormann. Model Von Neormann akan digantikan dengan system yang
-          mampu mengkordinasikan banyak CPU untuk bekerja secara serempak.
-          Kemajuan lain adalah teknologi superkonduktor yang memungkinkan aliran
-          elektrik tanpa ada hambatan apapun, yang nantinya dapat mempercepat
-          kecepatan informasi.
-        </p>
-      </section>
+      </p>
+      <p>
+        Usaha yang di lakukan oleh pihak amerika pada saat itu menghasilkan suatu kemajuan lain. Howard H.aiken (1900-1973),seoarang insnyur Harvard yang berkerja dengan HBM,berhasil memproduksi kalkulator elektronik untuk US NAVY. Kalkulator tersebut berukuran Panjang setengah lapangan bola kaki dan memiliki rentang kabel sepanjang 500mil. The Harvid-IBM autonomic sequence controlled calculator,atau mark 1,merupakan komputer relai elektronik. Ia menggunakan sinyal elektronik untuk menggerakkan komputer mekanik. Mesin tersebut beroprasi dengan lambat (ia membutuhkan 3-5 detik untuk setiap perhitungan) dan tidak fleksibel (urutan kalkulasi tidak dapat di ubah). Kalkulator tersebut dapat melakukan perhitungan aritmatik dasar dan persamaan yang lebih kompleks.
+      </p>
+      <p>
+        Perkembangan komputer lain pada masa ini adalah elektronik integrektor nurmerical and computer (ENIAC), yang di buat oleh kerjasama antara pemerintah amerika serikat dan university of Pennsylvania. Terdiri dari 18000 tabung vakum, 70000 resistror, dan 5juta titik solder, komputer tersebut merupakan mesin yang sangat besar yang mengkonsumsi daya sebesar 160kw. Komputer ini di rancang oleh John Presper Eckert (1919-1995) dan Johan W.Mauchly (1907-1980), eniac merupakan komputer serbaguna (general purpos computer) yang berkerja 1000 kali lebih cepat di bandingkan mark 1 pada pertengahan 1940an John Von Neumann (1903-1957) bergabung dengan tim university of Pennsylvania dalam usaha membangun konsep desin komputer yang hingga 40 tahun mendatang masih dipakai dalam teknik komputer.
+      </p>
+      <p>
+        Von Neumann mendisain electronic discrete variable automatic computer (EDVAC) pada tahun 1945 dengan sebuah memori untuk menampung baik program atau pun data. Teknik ini memungkinkan komputer untuk berhenti pada suatu saat dan kemudian melanjutkan perkerjaannya kembali. Kunci utama arsitektur Von Neumann adalah unit pemrosesan sentral (CPU), yang memungkinkan seluruh fungsi komputer untuk dikoordinasikan melalui satu sumber tunggal. Tahun1951, UNIVAC 1 (Universal Automatic Computer 1) yang dibuat oleh Remington Rand, menjadi komputer kompersial pertama yang memanfaatkan model arsitektur Von Neumann tersebut. Baik badan sensus amerika serikat dan general electric memiliki UNIVAC. Salah satu hasil mengesankan yang dicapai oleh UNIVAC dalah keberhasilanya dalam memprediksi kemenangan Dwilight D. Eisenhower dalam  pemilihan persiden tahun 1952.
 
-      <!-- BAB III Penutup -->
-      <section id="bab3">
-        <h2>BAB III — Penutup</h2>
+      </p>
 
-        <h3>Kesimpulan</h3>
-        <p>
-          Dari uraian di atas dapat penulis simpulkan bahwa komputer menunjukkan
-          perangkat yang terdiri dari perangkat keras yang dapat di sentuh oleh
-          fisik ( hardware ), perangkat lunak, suatu perangkat yang tidak dapat
-          di sentuh secara fisik ( software ), dan branware yakni suatu pengguna
-          komputer atau user. Dalam hal ini sejarah komputer terdapat beberapa
-          generasi yakni sebagai berikut:
-        </p>
-        <p>
-          A. Komputer Generasi Pertama: Electronic Nurmerical Intergrator and
-          Computer ( ENIAC ), yang di buat oleh kerjasama antara pemerintah
-          Amerika Serikat dan Universiti Of Pennslyvania.
-        </p>
-        <p>
-          B. Komputer Generasi Kedua: Penemuan transistor sangat memengaruhi
-          perkembangan komputer. Transistor menggantikan tube vakum di telefisi,
-          radio, dan komputer. Akibatnya, ukuran mesin mesin elektronik
-          berkurang drastis. Transistor mulai di gunakan di dalam komputer mulai
-          pada tahun 1956. Penemuan lain yang berupa pengembangan inti-magnetik
-          membantu pengembangan komputer generasi kedua yang lebih kecil, lebih
-          cepat, lebih dapat di andalkan, dan lebih hemat energi dibanding para
-          pendahulunya. Mesin pertama yang memanfaatkan teknologi baru ini
-          adalah super komputer. IBM membuat super komputer bernama Strech, dan
-          sprery-rand membuat komputer bernama LARCY. Komputer komputer ini,
-          yang di kembangkan untuk laboratorium energi atom. Dapat menangani
-          sejumlah besar data, sebuah kemampuan yang sangat di butuhkan oleh
-          peneliti atom. Mesin tersebut sangat mahal dan cenderung terlalu
-          kompleks untuk kebutuhan kamputansi bisnis, sehingga membatasi
-          kepopulerannnya. Hanya ada 2 LARC yang pernah di pasang dan digunakan:
-          1. Di Lawrence Radiation Labs di Livermore, Calivornia, dan yang
-          lainnya di US Navy Research and Development Center di Washington D.C
-          komputer generasi kedua menggantikan bahasa mesin dengan bahasa
-          assembly. Bahasa assembly adalah bahasa yang menggunakan singkatan
-          singkatan untuk menggantikan kode biner.
-        </p>
-        <p>
-          C. Komputer Generasi Ketiga: Komputer menjadi semakin kecil karna
-          komponen komponen dapat dipadatkan dalam chip. Kemajuan komputer
-          generasi ketiga lainnya adalah penggunaan system oprasi ( operating
-          system ) yang memungkinkan mesin untuk menjalankan berbagai program
-          yang berbeda secara serentak dengan sebuah program utama yang
-          memonitor dan mengkordinasi
-        </p>
-      </section>
-    </div>
-  </body>
+      <h3>Komputer Generasi Kedua</h3>
+      <p>
+        Pada tahun 1948, penemuan transistor sangat mempengaruhi perkembangan komputer. Transistor menggntikan tube vakum di televisi, radio, dan komputer. Akibatnya, ukuran mesin mesin elektrik berkurang derastris. Transistor mulai digunakan didalam komputer mulai pada tahun 1956. Penemuan lain yang berupa perkembangan memori inti magnetic membantu perkembangan komputer genreasi ke dua yang lebih kecil, lebih cepat, lebih dapat di andalkan, dan lebih hemat energi di bandingkan pendahulunya. Mesin pertama yang memanfaatkan teknologi baru ini adalah super komputer. IBM membuat super komputer bernama Stretch. Dan Sprery-Rand membuat komputer bernama Larc. Komputer-komputer ini, yang di kembangkan untuk laboratorium energi atom, dan dapat menangani sejumlah besar data, sebuah kemampuan yang di butuhkan oleh peneliti atom, dapat menangani sejumlah besar data, sebuah kemampuan yang di butuhkan oleh peneliti atom. Mesin tersebut sangat mahal dan cenderung terlalu kompleks untuk kebutuhan komputasi bisnis, sehingga membatasi kepopulerannya. Hanya ada dua LARC yang terpasang dan di gunakan: 1. Lawrence Radiaton Labs di livemore, calivornia, dan lainnya di US Navy Research and Development Canter di weshington D.C komputer generasi kedua menggantikan bahasa mesin dengan bahasa assembly. Bahasa assembly adalah bahasa yang menggunakan singkatan singkatan untuk menggantikan kode biner.
+      </p>
+      <p>
+        Pada awal 1960an, mulai bermunculan komputer generasi kedua yang sukses di bidang bisnis, di universitas, dan di pemerintahan. Komoputer komputer generasi kedua ini merupakan komputer yang sepenuhnya mnggunakan transistor. Mereka juga memiliki komponen komponen yang dapat di asosiasikan dengan komputer pada saat ini: Printer, Penyimpanan data disket, Memori, Sistem oprasi, dan Program. Salah satu contoh penting komputer pada masa ini adalah IBM 1401 yang di terima secara luas di kalangan industry. Pada tahun 1965, hampir seluruh bisnis bisnis besar menggunakan komputer generasi kedua untuk memproses informasi keuangan.
+      </p>
+
+      <h3>Komputer Generasi Ketiga</h3>
+      <p>
+        Walaupun transistor dalam banyak hal menggulungi tube vakum, namun transistor menghasilkan panas yang cukup besar, yang dapat berpotensi merusak bagian bagian internal komputer. Batu kuarsa (quartz rock) menghilangkan masalah ini. Jack Kilby, seorang insinyur di tekas instrument, mengembangkan sirkuit terintegrirasi ( IC: Integrated Circuit ) di tahun 1958. IC mengkombinasikan 3 komponen elektronik dalam sebuah piringan silicon kecil yang terbuat dari pasir kuarsa. Para ilmuan kemudian berhasil memasukkan lebih banyak komponen komponen kedalam suatu chip tunggal yang di sebut semikonduktor. Hasilnya, komputer menjadi semakin kecil karna komponen komponen dapat di padatkan dalam chip. Kemajuan komputer generasi ketiga lainnya adalah penggunaan system oprasi ( operating system ) yang memungkinkan mesin untuk menjalankan berbagai program yang berbeda secara rentak dengan sebuah program utama yang memonitor dan mengkordinasi memory komputer.
+
+      </p>
+
+      <h3>Komputer Generasi Keempat</h3>
+      <p>
+        Setelah IC, tuujan perkembangan menjadi lebih jelas yaitu mengecilkan ukuran sirkuit dalam komputer komputer elektronik. Large Scale Intergariton ( LSI ) dapat memuat ratusan komponen dalam sebuah chip. Pada tahun 1980an, VERY LAGRE SCALE INTERGARITON ( VLSI ) memuat ribuan komponen dalam sebuah cip tunggal.
+      </p>
+      <p>
+        Ultra Large Scale Intergariton ( ULSI ) meningkatkan jumlah tersebut menjadi jutaan. Kemampuan untuk memasang sedemikian banyak komponen dalam satu keping yang berukuran setengah keping uang logam mendorong turunnya harga dan ukuran komputer.
+      </p>
+      <p>
+        Hal tersebut juga meningkatkan daya kerja, evisiensi dan kehandalan komputer. Chip Intel 4004 yang di buat pada tahun 1971 membawa kemajuan pada IC dengan meletakkan seluruh komponen dari sebuah komputer ( Central Prosesing Unit, Memori, dan Kendali Input atau Output ) dalam sebuah klip yang sangat kecil. Sebelumnya, IC di buat untuk mengerjakan suatu tugas tertentu yang spesifik. Sekarang, sebuah mikropprosesor dapat di produksi dan kemudian di program untuk memenuhi seluruh kebutuhan yang di inginkan. Tidak lama kemudian, setiap perangkat rumah tangga seperti Mikrowave Oven, Televisi dan Mobil dengan electronic fule injection di lengkapi dengan mikropprosesor. Perkembangan yang demikian memungkinkan orang orang bisa menggunakan komputer biasa. Komputer tidak lagi menjadi dominasi perusahaan besar atau Lembaga Pemerintah. Pada pertengahan tahun 1970an perakit komputer menawarkan produk komputer mereka ke masyarakat umum. Komputer komputer ini, yang di sebut mini komputer, di jual dengan paket piranti lunak yang mudah di gunakan oleh kalangan awam. Piranti lunak yang paling popular pada saat itu adalah program word prosesing dan spreadsheat. Pada awalnya 1980an, video game seperti atari 2600 menarik perhatian konsumen pada komputer rumahan yang lebih canggih dan dapat di program. Pada tahun 1981, IBM memperkenalkan penggunaan personal komputer ( PC ) untuk penggunaan di rumah, kantor, dan sekolah. Jumlah PC yang di gunakan melonjak dari 2juta unit di tahun 1981 menjadi 5,5juta unit di tahun 1982. 10 tahun kemudian, 65juta PC di gunakan. Komputer melanjutkan evolusinya menuju ukuran yang lebih kecil, dari komputer yang ada di atas meja ( Desktop Computer ) menjadi komputer yang dapat di masukkan ke dalam tas ( Labtop ), atau bahkan komputer yang dapat di genggam ( Plamtop )
+
+      </p>
+
+      <h3>Komputer Generasi Kelima</h3>
+      <p>
+        Mendefinasikan komputer generasi kelima menjadi cukup sulit karna tahap ini masih sangat muda. Contoh imajinatif komputer generasi kelima adalah komputer fiksi HAL9000 dari novel karya Arthur C. Clarke berjudul 2001: Space Odyssey. HAL menampilkan seluruh fungsi yang diinginkan dari sebuah komputer generasi kelima. Dengan kecerdasan buatan ( artificial interigence), HAL dapat cukup memiliki nalar untuk melakukan percakapan dengan manusia, menggunakan masukan visual, dan belajar dari pengalamanya sendiri.
+      </p>
+      <p>
+        Walaupun mungkin realisasi HAL9000 masih jauh dari kenyataan, banyak fungsi fungsi yang dimilikinya sudah terwujud. Beberapa komputer dapat menerima instruksi secara lisan dan mampu meniru nalar manusia. Kemampuan untuk menerjemahkan bahasa asing juga menjadi kemungkinan fasilitas ini tampak sederhana. Namun fasilitas tersebut menjadi lebih rumit dari yang di duga ketika progremer menyadari bahwa pengertian manusia sangat bergantung pada konteks dan pengertian daripada sekedar menerjemahkan kata kata secara langsung. 
+      </p>
+      <p>
+      Banyak kemajuan di bidang disain komputer dan teknologi semakin memungkinkan pembuatan komputer generasi kelima. Dan kemajuan rekayasa yang terutama adalah pemrosesan pararel, yang akan memnggantikan model Von Neormann. Model Von Neormann akan digantikan dengan system yang mampu mengkordinasikan banyak CPU untuk bekerja secara serempak. Kemajuan lain adalah teknologi superkonduktor yang memungkinkan aliran elektrik tanpa ada hambatan apapun, yang nantinya dapat mempercepat kecepatan informasi.  
+      </p>
+    </section>
+
+    <!-- BAB III Penutup -->
+    <section id="bab3">
+      <h2>BAB III — Penutup</h2>
+
+      <h3>Kesimpulan</h3>
+      <p>
+        Dari uraian di atas dapat penulis simpulkan bahwa komputer menunjukkan perangkat yang terdiri dari perangkat keras yang dapat di sentuh oleh fisik ( hardware ), perangkat lunak, suatu perangkat yang tidak dapat di sentuh secara fisik ( software ), dan branware yakni suatu pengguna komputer atau user. Dalam hal ini sejarah komputer terdapat beberapa generasi yakni sebagai berikut:
+      </p>
+      <p>
+       A. Komputer Generasi Pertama:
+ Electronic Nurmerical Intergrator and Computer ( ENIAC ), yang di buat oleh kerjasama antara pemerintah Amerika Serikat dan Universiti Of Pennslyvania.
+      </p>
+      <p>
+     B. Komputer Generasi Kedua:
+ Penemuan transistor sangat memengaruhi perkembangan komputer. Transistor menggantikan tube vakum di telefisi, radio, dan komputer. Akibatnya, ukuran mesin mesin elektronik berkurang drastis. Transistor mulai di gunakan di dalam komputer mulai pada tahun 1956. Penemuan lain yang berupa pengembangan inti-magnetik membantu pengembangan komputer generasi kedua yang lebih kecil, lebih cepat, lebih dapat di andalkan, dan lebih hemat energi dibanding para pendahulunya. Mesin pertama yang memanfaatkan teknologi baru ini adalah super komputer. IBM membuat super komputer bernama Strech, dan sprery-rand membuat komputer bernama LARCY. Komputer komputer ini, yang di kembangkan untuk laboratorium energi atom. Dapat menangani sejumlah besar data, sebuah kemampuan yang sangat di butuhkan oleh peneliti atom. Mesin tersebut sangat mahal dan cenderung terlalu kompleks untuk kebutuhan kamputansi bisnis, sehingga membatasi kepopulerannnya. Hanya ada 2 LARC yang pernah di pasang dan digunakan: 1. Di Lawrence Radiation Labs di Livermore, Calivornia, dan yang lainnya di US Navy Research and Development Center di Washington D.C komputer generasi kedua menggantikan bahasa mesin dengan bahasa assembly. Bahasa assembly adalah bahasa yang menggunakan singkatan singkatan untuk menggantikan kode biner.
+      </p>
+      <p>
+      C. Komputer Generasi Ketiga:
+ Komputer menjadi semakin kecil karna komponen komponen dapat dipadatkan dalam chip. Kemajuan komputer generasi ketiga lainnya adalah penggunaan system oprasi ( operating system ) yang memungkinkan mesin untuk menjalankan berbagai program yang berbeda secara serentak dengan sebuah program utama yang memonitor dan mengkordinasi
+ </body>
 </html>

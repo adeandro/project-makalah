@@ -6,6 +6,7 @@ export default function ClassSelector({ value, onChange }) {
       onChange={(e) => onChange(e.target.value)}
     >
       <option value="">Pilih Kelas</option>
+      <option value="master">master</option>
       <option value="kelas11a">Kelas 11A</option>
       <option value="kelas11b">Kelas 11B</option>
       <option value="kelas11c">Kelas 11C</option>

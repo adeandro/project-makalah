@@ -1,198 +1,226 @@
 /* Font: pakai Times New Roman / serif untuk gaya makalah resmi */
-:root{
+:root {
   --page-width: 800px;
-  --paper-bg-alpha: 0.28
+  --paper-bg-alpha: 0.28;
 }
 
-
-html,body{
-  height:100%;
-  margin:0;
-  padding:0;
-  background: url("../bhn/bg.jpg") center center / cover no-repeat fixed;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("bhn/bg.jpg") center center / cover no-repeat fixed;
   font-family: "Times New Roman", Times, serif;
-  color: #ffffff; 
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
   background: transparan;
-  pointer-events:none;
-  z-index:0;
+  pointer-events: none;
+  z-index: 0;
 }
 
-
-.logo-wrap{
-  position:relative;
-  top:24px;
-  left:20%;
-  z-index:5;
+.logo-wrap {
+  position: relative;
+  top: 24px;
+  left: 20%;
+  z-index: 5;
 }
-.logo{
-  width:300px;
-  height:auto;
-  display:block;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
-  border-radius:6px;
-  background: rgba(255,255,255,0.02);
-  padding:4px;
+.logo {
+  width: 300px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 4px;
 }
 
-
-.audio-btn{
-  position:fixed;
-  top:24px;
-  right:24px;
-  z-index:6;
-  background: rgba(255,255,255,0.06);
-  color:white;
-  border:1px solid rgba(255,255,255,0.12);
-  padding:8px 12px;
+.audio-btn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 6;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 8px 12px;
   font-family: "Arial", sans-serif;
-  cursor:pointer;
-  border-radius:6px;
+  cursor: pointer;
+  border-radius: 6px;
   backdrop-filter: blur(4px);
 }
 
-
-.book{
+.book {
   max-width: var(--page-width);
   margin: 48px auto;
   padding: 56px 40px;
-  z-index:2;
-  position:relative;
+  z-index: 2;
+  position: relative;
 }
 
-
-.page{
-  background: rgba(0,0,0,var(--paper-bg-alpha));
+.page {
+  background: rgba(0, 0, 0, var(--paper-bg-alpha));
   margin: 28px 0;
   padding: 48px 64px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   border-radius: 6px;
   position: relative;
   page-break-after: always;
 }
 
-
 .cover {
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 520px;
   padding-top: 80px;
   padding-bottom: 80px;
-  text-align:center;
+  text-align: center;
 }
-.cover-inner{ max-width:640px; }
+.cover-inner {
+  max-width: 640px;
+}
 
-
-.cover-title{
-  font-size:56px;
-  letter-spacing:6px;
+.cover-title {
+  font-size: 56px;
+  letter-spacing: 6px;
   margin: 0;
-  font-weight:700;
-  text-transform:uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-
-.cover-sub{
+.cover-sub {
   margin-top: 18px;
-  font-size:20px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-
-.author-block{
-  margin-top:46px;
-  line-height:1.8;
-  font-size:18px;
+.author-block {
+  margin-top: 46px;
+  line-height: 1.8;
+  font-size: 18px;
 }
-.disusun{ font-style:normal; margin-bottom:6px; }
-.penulis{ font-weight:600; }
-
-
-.instansi{ margin-top:40px; font-size:18px; letter-spacing:1px; }
-.tahun{ margin-top:10px; font-weight:700; }
-
-
-.page h2{
-  margin:0 0 22px 0;
-  font-size:28px;
-  text-align:center;
-  text-transform:uppercase;
-  letter-spacing:1px;
+.disusun {
+  font-style: normal;
+  margin-bottom: 6px;
+}
+.penulis {
+  font-weight: 600;
 }
 
-
-.content-block h3{
-  font-size:20px;
-  margin-top:18px;
-  margin-bottom:10px;
-  text-transform:capitalize;
-  font-weight:700;
+.instansi {
+  margin-top: 40px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.tahun {
+  margin-top: 10px;
+  font-weight: 700;
 }
 
+.page h2 {
+  margin: 0 0 22px 0;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content-block h3 {
+  font-size: 20px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
 
 .content-block p,
 .content-block ol,
-.content-block ul{
-  font-size:16px;
-  line-height:1.78;
-  margin:6px 0 12px 0;
+.content-block ul {
+  font-size: 16px;
+  line-height: 1.78;
+  margin: 6px 0 12px 0;
   text-align: justify;
   text-justify: inter-word;
 }
 
-
-.content-block ol{ margin-left:24px; }
-
-
-.toc{ max-width:680px; margin: 12px auto 24px; font-size:16px; }
-.toc-row{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin:8px 0;
+.content-block ol {
+  margin-left: 24px;
 }
-.toc-left{ flex:1; }
-.toc-right{ width:40px; text-align:right; }
 
+.toc {
+  max-width: 680px;
+  margin: 12px auto 24px;
+  font-size: 16px;
+}
+.toc-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+.toc-left {
+  flex: 1;
+}
+.toc-right {
+  width: 40px;
+  text-align: right;
+}
 
-.toc-row .dots{
-  flex:0 1 160px;
-  border-bottom: 1px dotted rgba(255,255,255,0.15);
-  height:1px;
+.toc-row .dots {
+  flex: 0 1 160px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.15);
+  height: 1px;
   align-self: center;
 }
 
-
-.page-footer{
-  position:absolute;
-  right:48px;
-  bottom:16px;
-  font-size:14px;
-  opacity:0.9;
+.page-footer {
+  position: absolute;
+  right: 48px;
+  bottom: 16px;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
-
-@media (max-width:900px){
-  :root{ --page-width: 92%; }
-  .book{ padding: 28px 16px; }
-  .page{ padding:28px; margin:18px 0; }
-  .cover-title{ font-size:42px; }
+@media (max-width: 900px) {
+  :root {
+    --page-width: 92%;
+  }
+  .book {
+    padding: 28px 16px;
+  }
+  .page {
+    padding: 28px;
+    margin: 18px 0;
+  }
+  .cover-title {
+    font-size: 42px;
+  }
 }
-
 
 @media print {
-  body::before{ display:none; }
-  .logo-wrap, .audio-btn{ display:none; }
-  .page{ background:white !important; color:black !important; box-shadow:none; page-break-after:always; }
-  .book{ margin:0; padding:0; }
+  body::before {
+    display: none;
+  }
+  .logo-wrap,
+  .audio-btn {
+    display: none;
+  }
+  .page {
+    background: white !important;
+    color: black !important;
+    box-shadow: none;
+    page-break-after: always;
+  }
+  .book {
+    margin: 0;
+    padding: 0;
+  }
 }

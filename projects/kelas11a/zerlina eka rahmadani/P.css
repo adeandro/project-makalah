@@ -3,12 +3,12 @@ body{
   text-align: 30px;
   background-image: url(Ka.jpg);
   background-size: contain;
-h1,h4{
-  text-align: center;
-  color: grey;
+h1,h4, h2, h3{
+  text-align: ;
+  color: ivory;
 }
-p{
-  color: black;
+p, ol,tr, td{
+  color: white;
 }
 /* Tombol Media Sosial yang Animatif */
 .social-buttons{

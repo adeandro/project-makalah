@@ -1,0 +1,238 @@
+  body {
+  background: rgba(255, 255, 255, 0.9);
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 30px;
+  margin: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+  max-width: 1050px;
+
+   
+   background: linear-gradient(80deg, #000, #fff, #000);
+   background-size: 500% 500%;
+   animation: gradientMove 3s infinite ease-in-out;
+ }
+ @keyframes gradientMove{
+   0% { background-position: 0% 50%;}
+   50% { background-position: 100% 50%;}
+   100% { background-position: 0% 50%;}
+}
+
+ h1, h2, h3 {
+            text-align: center;
+        }
+.text{
+  font-size: 30px;
+}
+.logo{
+  width: 200px;
+  margin-left: 38%
+  
+  
+}
+.opel{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-left: -30px;
+}
+.box{
+  border: 1px solid;
+  padding: 20px;
+  margin:320px;
+  margin-block: -5px;
+}
+p{
+  text-align: center;
+  font-size: 10px;
+  text-align: justify;
+  text-indent: 30px;
+}
+.lop{
+  margin-left:20px;
+  margin-block: -7px;
+}
+.pol{
+  border: 1px solid;
+  text-align: center;
+  margin-block: -10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 4px;
+  width: 15%;
+  right: 15%;
+  margin-left: 43%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.m{
+  margin: 50px;
+  
+}
+
+.F{
+  margin-block: -17px;
+}
+.k{
+  text-indent: 20px;
+  margin-block: -25px;
+  margin-bottom: 5px;
+}
+.kol{
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  padding: 20px 24px;
+  border-radius: 30px;
+  margin: 40px 0;
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+  max-width: 300px;
+  margin-left: 30%; 
+  
+  /* nempel kiri ke container */
+}
+.toc {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+  padding: 20px 24px;
+  border-radius: 30px;
+  margin: 40px 0;
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 5;
+  max-width: 700px;
+  margin-left: 32px; 
+  text-align:;/* nempel kiri ke container */
+}
+.l{
+  width: 300px;
+  margin-left: 32%;
+
+}
+button{
+  width: 10%;
+  right: 10%;
+  margin-left: 45%;
+  background-color: #7f80f7;
+  color: #fff;
+  
+}
+#bg-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  
+}
+
+
+.music-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.08);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+/* Hover efek glow */
+.music-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+/* Efek tombol saat musik sedang main */
+.music-btn.playing {
+  animation: pulseGlow 1.5s infinite;
+  color: #fff;
+}
+
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+  50%  { box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+  100% { box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+}
+
+
+.music-menu {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  width: 220px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(52, 61, 75, 0.4));
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 9998;
+  transition: all 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Saat ditampilkan */
+.music-menu.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Judul menu */
+.music-menu h4 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Daftar lagu */
+.music-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.music-menu li {
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover efek item */
+.music-menu li:hover {
+  background: rgba(185, 208, 203, 0.9);
+  color: #fff;
+  transform: translateX(4px);
+}

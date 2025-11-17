@@ -1,165 +1,278 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MAKALAH - Pengetahuan Dasar Komputer</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MAKALAH - Pengetahuan Dasar Komputer</title>
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="musik" src="bhn/bs.mp3" loop preload="auto"></audio>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <button
+      id="btn-audio"
+      class="audio-btn"
+      aria-pressed="false"
+      title="Play / Pause musik"
+    >
+      ▶︎ Musik
+    </button>
 
+    <main class="book">
+      <article class="page cover" data-page="Cover">
+        <div class="cover-inner">
+          <h1 class="cover-title">MAKALAH</h1>
+          <h2 class="cover-sub">PENGETAHUAN DASAR KOMPUTER</h2>
 
-  <audio id="musik" src="../bhn/bs.mp3" loop preload="auto"></audio>
+          <div class="logo-wrap" aria-hidden="true">
+            <img src="bhn/foto.jpg" alt="Logo" class="logo" />
+          </div>
 
+          <div class="author-block">
+            <p class="disusun">Disusun oleh :</p>
+            <p class="penulis">SILFIA RAHMA &nbsp;&nbsp; 0082010155</p>
+          </div>
 
-  <button id="btn-audio" class="audio-btn" aria-pressed="false" title="Play / Pause musik">
-    ▶︎ Musik
-  </button>
-
-
-  <main class="book">
-
-
-    <article class="page cover" data-page="Cover">
-      <div class="cover-inner">
-        <h1 class="cover-title">MAKALAH</h1>
-        <h2 class="cover-sub">PENGETAHUAN DASAR KOMPUTER</h2>
-        
-        
-
-  <div class="logo-wrap" aria-hidden="true">
-    <img src="../bhn/foto.jpg" alt="Logo" class="logo">
-  </div>
-  
-  
-        <div class="author-block">
-          <p class="disusun">Disusun oleh :</p>
-          <p class="penulis">SILFIA RAHMA &nbsp;&nbsp; 0082010155</p>
+          <div class="instansi">
+            <p>YAYASAN PERSAUDARAAN HAJI AL-MABRUR ( YPHA )</p>
+            <p>SMK AL-MABRUR PEJAWARAN</p>
+            <p>BANJARNEGARA</p>
+            <p class="tahun">2025</p>
+          </div>
         </div>
+        <footer class="page-footer"></footer>
+      </article>
 
-        <div class="instansi">
-          <p>YAYASAN PERSAUDARAAN HAJI AL-MABRUR ( YPHA )</p>
-          <p>SMK AL-MABRUR PEJAWARAN</p>
-          <p>BANJARNEGARA</p>
-          <p class="tahun">2025</p>
-        </div>
-      </div>
-      <footer class="page-footer"></footer>
-    </article>
+      <article class="page" id="kata-pengantar">
+        <header><h2>KATA PENGANTAR</h2></header>
+        <section class="content-block">
+          <p>
+            Puji syukur penulis panjatkan kehadirat Allah SWT karena berkat
+            rahmat dan hidayah-Nya penulis telah mampu menyelesaikan makalah
+            berjudul “Pengetahuan Dasar Komputer”. Makalah ini disusun untuk
+            memenuhi satu tugas sekolah.
+          </p>
 
+          <p>
+            Komputer adalah alat yang digunakan untuk membantu pekerjaan
+            manusia, misalnya mulai dari mengerjakan pekerjaan kampus, sekolah,
+            kantor dan bahkan hiburan. Dengan demikian, jelas bahwa untuk
+            bekerja, komputer memerlukan instruksi dari pengguna yang kemudian
+            disebut sebagai brainware. Manusia melakukan interaksi dengan
+            computer dengan menggunakan setiap vitur yang ada untuk menghasilkan
+            suatu pekerjaan.
+          </p>
 
-    <article class="page" id="kata-pengantar">
-      <header><h2>KATA PENGANTAR</h2></header>
-      <section class="content-block">
-        <p>Puji syukur penulis panjatkan kehadirat Allah SWT karena berkat rahmat dan hidayah-Nya penulis telah mampu menyelesaikan makalah berjudul “Pengetahuan Dasar Komputer”. Makalah ini disusun untuk memenuhi satu tugas sekolah.</p>
+          <p>
+            Makalah ini bukanlah karya yang sempurna karena masih memiliki
+            banyak kekurangan, baik dalam hal isi maupun system matika dan
+            Teknik penulisannya. Oleh sebab itu, penulis sangat mengharapkan
+            saran dan kritik yang membangun demi kesempurnaan makalah ini.
+            Semoga makalah ini bisa memberikan manfaat bagi kita.
+          </p>
+        </section>
+        <footer class="page-footer">i</footer>
+      </article>
 
-        <p>Komputer adalah alat yang digunakan untuk membantu pekerjaan manusia, misalnya mulai dari mengerjakan pekerjaan kampus, sekolah, kantor dan bahkan hiburan. Dengan demikian, jelas bahwa untuk bekerja, komputer memerlukan instruksi dari pengguna yang kemudian disebut sebagai brainware. Manusia melakukan interaksi dengan computer dengan menggunakan setiap vitur yang ada untuk menghasilkan suatu pekerjaan.</p>
+      <article class="page" id="daftar-isi">
+        <header><h2>DAFTAR ISI</h2></header>
 
-        <p>Makalah ini bukanlah karya yang sempurna karena masih memiliki banyak kekurangan, baik dalam hal isi maupun system matika dan Teknik penulisannya. Oleh sebab itu, penulis sangat mengharapkan saran dan kritik yang membangun demi kesempurnaan makalah ini. Semoga makalah ini bisa memberikan manfaat bagi kita.</p>
-      </section>
-      <footer class="page-footer">i</footer>
-    </article>
+        <section class="toc">
+          <div class="toc-row">
+            <span class="toc-left">KATA PENGANTAR</span
+            ><span class="dots"></span><span class="toc-right">i</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">DAFTAR ISI</span><span class="dots"></span
+            ><span class="toc-right">ii</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">BAB I PENDAHULUAN</span
+            ><span class="dots"></span><span class="toc-right">1</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">A. Latar Belakang</span
+            ><span class="dots"></span><span class="toc-right">1</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">B. Rumusan Masalah</span
+            ><span class="dots"></span><span class="toc-right">2</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">C. Tujuan</span><span class="dots"></span
+            ><span class="toc-right">2</span>
+          </div>
 
+          <div class="toc-row">
+            <span class="toc-left">BAB II PEMBAHASAN</span
+            ><span class="dots"></span><span class="toc-right">3</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left"
+              >A. Devinisi Komputer Dan Sistem Komputer</span
+            ><span class="dots"></span><span class="toc-right">3</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">B. Pengolahan Sistem Komputer</span
+            ><span class="dots"></span><span class="toc-right">4</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">C. Struktur Komputer</span
+            ><span class="dots"></span><span class="toc-right">7</span>
+          </div>
 
-    <article class="page" id="daftar-isi">
-      <header><h2>DAFTAR ISI</h2></header>
+          <div class="toc-row">
+            <span class="toc-left">BAB III PENUTUP</span
+            ><span class="dots"></span><span class="toc-right">8</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">A. Kesimpulan</span><span class="dots"></span
+            ><span class="toc-right">8</span>
+          </div>
+          <div class="toc-row">
+            <span class="toc-left">B. Saran</span><span class="dots"></span
+            ><span class="toc-right">8</span>
+          </div>
+        </section>
 
-      <section class="toc">
-        <div class="toc-row"><span class="toc-left">KATA PENGANTAR</span><span class="dots"></span><span class="toc-right">i</span></div>
-        <div class="toc-row"><span class="toc-left">DAFTAR ISI</span><span class="dots"></span><span class="toc-right">ii</span></div>
-        <div class="toc-row"><span class="toc-left">BAB I PENDAHULUAN</span><span class="dots"></span><span class="toc-right">1</span></div>
-        <div class="toc-row"><span class="toc-left">A. Latar Belakang</span><span class="dots"></span><span class="toc-right">1</span></div>
-        <div class="toc-row"><span class="toc-left">B. Rumusan Masalah</span><span class="dots"></span><span class="toc-right">2</span></div>
-        <div class="toc-row"><span class="toc-left">C. Tujuan</span><span class="dots"></span><span class="toc-right">2</span></div>
+        <footer class="page-footer">ii</footer>
+      </article>
 
-        <div class="toc-row"><span class="toc-left">BAB II PEMBAHASAN</span><span class="dots"></span><span class="toc-right">3</span></div>
-        <div class="toc-row"><span class="toc-left">A. Devinisi Komputer Dan Sistem Komputer</span><span class="dots"></span><span class="toc-right">3</span></div>
-        <div class="toc-row"><span class="toc-left">B. Pengolahan Sistem Komputer</span><span class="dots"></span><span class="toc-right">4</span></div>
-        <div class="toc-row"><span class="toc-left">C. Struktur Komputer</span><span class="dots"></span><span class="toc-right">7</span></div>
+      <article class="page" id="bab-i">
+        <header><h2>BAB I PENDAHULUAN</h2></header>
 
-        <div class="toc-row"><span class="toc-left">BAB III PENUTUP</span><span class="dots"></span><span class="toc-right">8</span></div>
-        <div class="toc-row"><span class="toc-left">A. Kesimpulan</span><span class="dots"></span><span class="toc-right">8</span></div>
-        <div class="toc-row"><span class="toc-left">B. Saran</span><span class="dots"></span><span class="toc-right">8</span></div>
-      </section>
+        <section class="content-block">
+          <h3>A. Latar Belakang</h3>
+          <p>
+            Kehidupan manusia tidak lepas dari dunia teknologi. Karena pada
+            dasarnya teknologi merupakan alat yang paling dibutuhkan untuk
+            memudahkan pekerjaan manusia. Seiring perkembangan zaman, teknologi
+            semakin maju dan canggih. Salah satunya dengan adanya komputer.
+            Sejalan dengan zaman, berbagai perkembangan telah terjadi pada
+            komputer, mulai dari packaging yang sekarang sudah portable hingga
+            kinerjanya yang semakin hari semakin cepat. Kita sebagai manusia mau
+            tidak mau harus mengikuti perkembangan kemajuan teknologi khususnya
+            bidang komputerisasi agar kita tidak termakan oleh alat yang kita
+            buat sendiri.
+          </p>
 
-      <footer class="page-footer">ii</footer>
-    </article>
+          <h3>B. Rumusan Masalah</h3>
+          <p>
+            Berdasarkan latar belakang diatas Adapun rumusan masalah yang akan
+            dibahas pada makalah ini adalah :
+          </p>
+          <ol>
+            <li>Apa itu Definisi Komputer dan Sistem Komputer?</li>
+            <li>Apa saja yang termasuk dalam Sistem Komputer?</li>
+            <li>Apa saja yang termasuk dalam klarifikasi Komputer?</li>
+            <li>Apa saja yang ada dalam program aplikasi Komputer?</li>
+          </ol>
 
+          <h3>C. Tujuan</h3>
+          <p>
+            Sejalan dengan rumusan masalah diatas, makalah ini disusun dengan
+            tujuan untuk mengetahui dan mendeskripsikan :
+          </p>
+          <ol>
+            <li>Definisi Komputer Dan Sistem Komputer</li>
+            <li>Pengolahan Sistem Komputer</li>
+            <li>Komponen Sistem Komputer</li>
+            <li>Struktur Komputer</li>
+          </ol>
+        </section>
 
-    <article class="page" id="bab-i">
-      <header><h2>BAB I PENDAHULUAN</h2></header>
+        <footer class="page-footer">1</footer>
+      </article>
 
-      <section class="content-block">
-        <h3>A. Latar Belakang</h3>
-        <p>Kehidupan manusia tidak lepas dari dunia teknologi. Karena pada dasarnya teknologi merupakan alat yang paling dibutuhkan untuk memudahkan pekerjaan manusia. Seiring perkembangan zaman, teknologi semakin maju dan canggih. Salah satunya dengan adanya komputer. Sejalan dengan zaman, berbagai perkembangan telah terjadi pada komputer, mulai dari packaging yang sekarang sudah portable hingga kinerjanya yang semakin hari semakin cepat. Kita sebagai manusia mau tidak mau harus mengikuti perkembangan kemajuan teknologi khususnya bidang komputerisasi agar kita tidak termakan oleh alat yang kita buat sendiri.</p>
+      <article class="page" id="bab-ii">
+        <header><h2>BAB II PEMBAHASAN</h2></header>
 
-        <h3>B. Rumusan Masalah</h3>
-        <p>Berdasarkan latar belakang diatas Adapun rumusan masalah yang akan dibahas pada makalah ini adalah :</p>
-        <ol>
-          <li>Apa itu Definisi Komputer dan Sistem Komputer?</li>
-          <li>Apa saja yang termasuk dalam Sistem Komputer?</li>
-          <li>Apa saja yang termasuk dalam klarifikasi Komputer?</li>
-          <li>Apa saja yang ada dalam program aplikasi Komputer?</li>
-        </ol>
+        <section class="content-block">
+          <h3>A. Definisi Komputer dan Sistem Komputer</h3>
+          <p>
+            Istilah komputer (computer) diambil dari bahasa latin yaitu
+            computare yang berarti menghitung. Kemudian diadaptasi pengucapannya
+            menjadi computer atau dalam istilah indonesianya komputer. Komputer
+            adalah suatu peralatan elektronik yang dapat menerima input,
+            memberikan informasi, menggunakan suatu program yang tersimpan
+            dimemori komputer, dapat menyimpan program dan hasil pengolahan,
+            serta bekerja secara otomatis.
+          </p>
 
-        <h3>C. Tujuan</h3>
-        <p>Sejalan dengan rumusan masalah diatas, makalah ini disusun dengan tujuan untuk mengetahui dan mendeskripsikan :</p>
-        <ol>
-          <li>Definisi Komputer Dan Sistem Komputer</li>
-          <li>Pengolahan Sistem Komputer</li>
-          <li>Komponen Sistem Komputer</li>
-          <li>Struktur Komputer</li>
-        </ol>
-      </section>
+          <p>Sedangkan definisi komputer menurut ahli adalah :</p>
+          <ol>
+            <li>
+              Blissmer (1985), Komputer adalah suatu alat elektronik yang mampu
+              melakukan beberapa tugas, yaitu menerima input, memproses input
+              sesuai dengan intruksi yang diberikan, serta menyediakan output
+              dalam bentuk informasi.
+            </li>
+            <li>
+              Sanders (1985), Komputer adalah sistem elektronik untuk
+              memanipulasi data yang cepat dan tepat serta dirancang dan
+              diorganisasikan supaya secara otomatis menerima dan menyimpan data
+              inpuy, memprosesnya dan menghasilkan output berdasarkan
+              inttuksi-intruksi yang telah tersimpan didalam memori.
+            </li>
+            <li>
+              Hamacher, Komputer adalah mesin penghitung elektronik yang cepat
+              dan dapat menerima informasi input digital, kemudian memprosesnya
+              sesuai dengan program yang tersimpan dimemori nya, dan
+              menghasilkan output berupa informasi.
+            </li>
+          </ol>
 
-      <footer class="page-footer">1</footer>
-    </article>
+          <h3>B. Pengolahan Sistem Komputer</h3>
+          <p>
+            Untuk mewujudkan konsep komputer berbagai pengolahan data guna
+            menghasilkan suatu informasi, maka diperlukan sistem komputer yang
+            elemennya terdiri dari hardware, software dan brainware. Ketiga
+            elemen sistem komputer tersebut harus saling berhubungan dan
+            membentuk kesatuan.
+          </p>
 
+          <h3>C. Struktur Komputer</h3>
+          <p>
+            Komputer terdiri atas banyak bagian yang masing-masing mempunyai
+            fungsinya sendiri. Kebanyakan orang memisahkan komponen komputer
+            menjadi 2 bagian: komponen dalam itu sendiri (pemroses) dan
+            perangkat tambahan (peripheral).
+          </p>
+        </section>
 
-    <article class="page" id="bab-ii">
-      <header><h2>BAB II PEMBAHASAN</h2></header>
+        <footer class="page-footer">3</footer>
+      </article>
 
-      <section class="content-block">
-        <h3>A. Definisi Komputer dan Sistem Komputer</h3>
-        <p>Istilah komputer (computer) diambil dari bahasa latin yaitu computare yang berarti menghitung. Kemudian diadaptasi pengucapannya menjadi computer atau dalam istilah indonesianya komputer. Komputer adalah suatu peralatan elektronik yang dapat menerima input, memberikan informasi, menggunakan suatu program yang tersimpan dimemori komputer, dapat menyimpan program dan hasil pengolahan, serta bekerja secara otomatis.</p>
+      <article class="page" id="bab-iii">
+        <header><h2>BAB III PENUTUP</h2></header>
 
-        <p>Sedangkan definisi komputer menurut ahli adalah :</p>
-        <ol>
-          <li>Blissmer (1985), Komputer adalah suatu alat elektronik yang mampu melakukan beberapa tugas, yaitu menerima input, memproses input sesuai dengan intruksi yang diberikan, serta menyediakan output dalam bentuk informasi.</li>
-          <li>Sanders (1985), Komputer adalah sistem elektronik untuk memanipulasi data yang cepat dan tepat serta dirancang dan diorganisasikan supaya secara otomatis menerima dan menyimpan data inpuy, memprosesnya dan menghasilkan output berdasarkan inttuksi-intruksi yang telah tersimpan didalam memori.</li>
-          <li>Hamacher, Komputer adalah mesin penghitung elektronik yang cepat dan dapat menerima informasi input digital, kemudian memprosesnya sesuai dengan program yang tersimpan dimemori nya, dan menghasilkan output berupa informasi.</li>
-        </ol>
+        <section class="content-block">
+          <h3>A. Kesimpulan</h3>
+          <p>
+            Sistem komputer adalah elemen-elemen yang terkait untuk menjalankan
+            suatu aktifitas dengan menggunakan komputer. Elemen dari sistem
+            komputer terdiri dari manusianya (brainware). Komponen-komponen
+            dalam sistem komputer terbagi 3, yang tidak bisa terpisahkan yaitu
+            hardware, software, dan brainware.
+          </p>
 
-        <h3>B. Pengolahan Sistem Komputer</h3>
-        <p>Untuk mewujudkan konsep komputer berbagai pengolahan data guna menghasilkan suatu informasi, maka diperlukan sistem komputer yang elemennya terdiri dari hardware, software dan brainware. Ketiga elemen sistem komputer tersebut harus saling berhubungan dan membentuk kesatuan.</p>
+          <h3>B. Saran</h3>
+          <p>
+            Pada dasarnya komputer adalah alat teknologi yang sangat canggih.
+            Bisa digunakan untuk memudahkan pekerjaan manusia. Tetapi, disamping
+            itu terdapat banyak sisi positif dan negatifnya. Misalnya penggunaan
+            internet secara bebas tanpa selektif. Saran saya adalah kita harus
+            memanfaatkan teknologi computer dengan sebaik-baiknya secara
+            selektif sehingga dapat membantu dan menambah ilmu pengetahuan bagi
+            kita semua.
+          </p>
+        </section>
 
-        <h3>C. Struktur Komputer</h3>
-        <p>Komputer terdiri atas banyak bagian yang masing-masing mempunyai fungsinya sendiri. Kebanyakan orang memisahkan komponen komputer menjadi 2 bagian: komponen dalam itu sendiri (pemroses) dan perangkat tambahan (peripheral).</p>
-      </section>
+        <footer class="page-footer">8</footer>
+      </article>
+    </main>
 
-      <footer class="page-footer">3</footer>
-    </article>
-
-
-    <article class="page" id="bab-iii">
-      <header><h2>BAB III PENUTUP</h2></header>
-
-      <section class="content-block">
-        <h3>A. Kesimpulan</h3>
-        <p>Sistem komputer adalah elemen-elemen yang terkait untuk menjalankan suatu aktifitas dengan menggunakan komputer. Elemen dari sistem komputer terdiri dari manusianya (brainware). Komponen-komponen dalam sistem komputer terbagi 3, yang tidak bisa terpisahkan yaitu hardware, software, dan brainware.</p>
-
-        <h3>B. Saran</h3>
-        <p>Pada dasarnya komputer adalah alat teknologi yang sangat canggih. Bisa digunakan untuk memudahkan pekerjaan manusia. Tetapi, disamping itu terdapat banyak sisi positif dan negatifnya. Misalnya penggunaan internet secara bebas tanpa selektif. Saran saya adalah kita harus memanfaatkan teknologi computer dengan sebaik-baiknya secara selektif sehingga dapat membantu dan menambah ilmu pengetahuan bagi kita semua.</p>
-      </section>
-
-      <footer class="page-footer">8</footer>
-    </article>
-
-  </main>
-
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

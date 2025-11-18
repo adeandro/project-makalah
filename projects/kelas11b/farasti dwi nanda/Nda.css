@@ -1,0 +1,23 @@
+body{
+  text-align: justify;
+  text-align: 30px;
+  background-image: url(Ka.jpg);
+  background-size: contain;
+h1,h4, h2, h3{
+  text-align: ;
+  color:white;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+}
+ #audio-player {
+   margin-top: 20px;
+   width: 100%;
+ }

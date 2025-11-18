@@ -1,0 +1,11 @@
+body{ background-image: url("monokrom.jpg");
+  }
+.halaman{
+ position: relative;
+ z-index: 1;
+ color: white;
+ text-align: center;
+ padding-top: 50px;
+ .p{text-align:left;}
+}
+

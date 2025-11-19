@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makalah Dinamis | Handphone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="1.css">
+  
+    <link rel="preload" href="cover.mp4" as="video"> 
+    <link rel="preload" href="bab1.mp4" as="video"> 
+    <link rel="preload" href="bab2.mp4" as="video">
+    <link rel="preload" href="bab3.mp4" as="video">
+    <link rel="preload" href="bab4.mp4" as="video">
+    <link rel="preload" href="bab5.mp4" as="video">
+    <link rel="preload" href="zzm.jpg" as="image"> 
+    </head>
+<body class="center-content"> <video id="background-video" autoplay loop muted></video>
+
+    <header class="header">
+        <div class="logo">MAKALAH</div>
+        <nav class="nav">
+            <a href="#" class="nav-item" data-chapter="cover">Cover</a>
+            <a href="#" class="nav-item" data-chapter="pengantar">Kata Pengantar</a>
+            <a href="#" class="nav-item" data-chapter="daftarisi">Daftar Isi</a>
+            
+            <a href="#" class="nav-item" data-chapter="bab1">BAB I</a>
+            <a href="#" class="nav-item" data-chapter="bab2">BAB II</a>
+            <a href="#" class="nav-item" data-chapter="bab3">BAB III</a>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        
+        <div class="main-content">
+            <h1 id="chapter-title"></h1>
+            <p id="chapter-description"></p>
+            
+            <div id="scrollable-content">
+                <div id="content-body"></div>
+            </div>
+        </div>
+
+        <div class="visual-wrapper">
+            
+            <audio id="main-audio" loop></audio> 
+
+            <div id="music-controls">
+                <button class="music-btn active" data-src="judas.mp3">🫸</button>
+                <button class="music-btn" data-src="rybody.mp3">🔵</button>
+                <button class="music-btn" data-src="bloodym.mp3">️🔴</button>
+                <button class="music-btn" data-src="dhomme.mp3">🫷</button>
+            </div>
+
+            <div id="main-visual-container">
+                </div>
+        </div>
+        </div>
+
+    <div class="chapter-selector">
+        <button class="chapter-btn" data-index="0">
+            <img src="cover.jpg" alt="Cover" width="60" height="60">
+        </button>
+        <button class="chapter-btn" data-index="1">
+            <img src="bab1.jpg" alt="Kata Pengantar" width="60" height="60">
+        </button>
+        <button class="chapter-btn" data-index="2">
+            <img src="bab2.jpg" alt="Daftar Isi" width="60" height="60">
+        </button>
+        <button class="chapter-btn" data-index="3">
+            <img src="bab3.jpg" alt="Bab I" width="60" height="60">
+        </button>
+        <button class="chapter-btn" data-index="4">
+            <img src="bab4.jpg" alt="Bab II" width="60" height="60">
+        </button>
+        <button class="chapter-btn" data-index="5">
+            <img src="bab5.jpg" alt="Bab III" width="60" height="60">
+        </button>
+    </div>
+
+    <script src="1.js"></script>
+
+</body>
+</html>

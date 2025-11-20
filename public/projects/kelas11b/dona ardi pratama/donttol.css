@@ -1,0 +1,315 @@
+body {
+  font-family: "Times New Roman", serif;
+  line-height: 1.6;
+  margin: 50px;
+  color: #fff;
+  }
+  h1, h2, h3 {
+  text-align: center;
+ }
+ .identitas {
+ text-align: center;
+ margin-bottom: 40px;
+ }
+  p {
+ text-align: justify;
+  }
+  .daftar-pustaka {
+    margin-top: 40px;
+   }
+  hr {
+  border: 1px solid #aaa;
+}
+        /* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Optional overlay gelap */
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35); /* atur tingkat kegelapan */
+  z-index: -1;
+}
+
+/* Konten */
+.content {
+  position: relative;
+  z-index: 5;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  padding: 20px;
+}
+/* CSS */
+.neon{
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff; /* isi teks */
+  position: relative;
+  display: inline-block;
+  /* tip: -webkit-text-stroke untuk garis tepi (Chrome, Safari, Edge) */
+  -webkit-text-stroke: 1px #7c33d9;
+  /* beberapa lapis text-shadow untuk efek glow */
+  text-shadow:
+    0 0 2px #d6b3ff,
+    0 0 6px #b08bff,
+    0 0 12px #9f5cff,
+    0 0 22px rgba(124,51,217,0.6);
+  /* animasi pulsa */
+  animation: neonPulse 2.5s ease-in-out infinite;
+  padding: 6px 0;
+}
+
+/* Variasi stroke/blur tambahan menggunakan pseudo-elemen (memberi 'halo' yang lebih lembut) */
+.neon::before{
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  -webkit-text-stroke: 2px #b58cff;
+  filter: blur(6px);
+  opacity: 0.7;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* animasi mengubah intensitas glow */
+@keyframes neonPulse{
+  0%{
+    text-shadow:
+      0 0 2px #d6b3ff,
+      0 0 6px #b08bff,
+      0 0 12px #9f5cff,
+      0 0 22px rgba(124,51,217,0.45);
+    transform: translateZ(0);
+  }
+  50%{
+    text-shadow:
+      0 0 3px #ffd7ff,
+      0 0 10px #cfa1ff,
+      0 0 20px #b46bff,
+      0 0 36px rgba(124,51,217,0.9);
+  }
+  100%{
+    text-shadow:
+      0 0 2px #d6b3ff,
+      0 0 6px #b08bff,
+      0 0 12px #9f5cff,
+      0 0 22px rgba(124,51,217,0.45);
+  }
+}
+.neon-text {
+    color: #fff;
+    font-weight: 600;
+    -webkit-text-stroke: 0.8px #a85cff;
+
+    text-shadow:
+        0 0 3px #d6b3ff,
+        0 0 6px #b08bff,
+        0 0 12px #9f5cff,
+        0 0 20px rgba(155, 92, 255, 0.9);
+
+    animation: neonPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+    0% {
+        text-shadow:
+            0 0 3px #d6b3ff,
+            0 0 6px #b08bff,
+            0 0 12px #9f5cff,
+            0 0 20px rgba(155, 92, 255, 0.6);
+    }
+    50% {
+        text-shadow:
+            0 0 5px #f1d8ff,
+            0 0 10px #cfa1ff,
+            0 0 20px #a867ff,
+            0 0 32px rgba(155, 92, 255, 1);
+    }
+    100% {
+        text-shadow:
+            0 0 3px #d6b3ff,
+            0 0 6px #b08bff,
+            0 0 12px #9f5cff,
+            0 0 20px rgba(155, 92, 255, 0.6);
+    }
+}
+.fire-photo {
+  width: 220px;
+  display: block;
+  margin: 25px auto 40px auto;
+
+  /* Glow api */
+  filter: drop-shadow(0 0 15px orange)
+          drop-shadow(0 0 35px red)
+          drop-shadow(0 0 60px yellow);
+  
+  animation: fireFlicker 0.15s infinite alternate;
+}
+
+@keyframes fireFlicker {
+  from {
+    filter: drop-shadow(0 0 10px orange)
+            drop-shadow(0 0 25px red)
+            drop-shadow(0 0 40px yellow);
+    transform: scale(1.01);
+  }
+  to {
+    filter: drop-shadow(0 0 20px orange)
+            drop-shadow(0 0 45px red)
+            drop-shadow(0 0 70px yellow);
+    transform: scale(1);
+  }
+}
+.animasi-keren {
+  width: 220px;
+  display: block;
+  margin: 25px auto 40px auto;
+
+  /* Glow neon ungu */
+  filter: drop-shadow(0 0 12px #b100ff)
+          drop-shadow(0 0 25px #d000ff)
+          drop-shadow(0 0 45px #ff00ff);
+
+  /* Animasi */
+  animation: floatAni 4s ease-in-out infinite,
+             glowPulse 1.8s infinite alternate;
+}
+
+/* Animasi melayang + putar lembut */
+@keyframes floatAni {
+  0%   { transform: translateY(0) rotate(0deg) scale(1); }
+  25%  { transform: translateY(-10px) rotate(1deg) scale(1.02); }
+  50%  { transform: translateY(0) rotate(0deg) scale(1); }
+  75%  { transform: translateY(-6px) rotate(-1deg) scale(1.01); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
+
+/* Animasi cahaya neon berdetak */
+@keyframes glowPulse {
+  from {
+    filter: drop-shadow(0 0 8px #a000ff)
+            drop-shadow(0 0 18px #c800ff)
+            drop-shadow(0 0 35px #ff00ff);
+  }
+  to {
+    filter: drop-shadow(0 0 14px #c000ff)
+            drop-shadow(0 0 30px #e400ff)
+            drop-shadow(0 0 60px #ff33ff);
+  }
+}
+.wrap-orbit {
+  position: relative;
+  width: 220px;
+  margin: 25px auto 40px auto;
+}
+
+.foto-orbit {
+  width: 220px;
+  display: block;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 15px #c000ff)
+          drop-shadow(0 0 35px #ff00ff);
+}
+
+/* Cincin neon yang mengelilingi foto */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid transparent;
+  border-top-color: #ff00ff;
+  border-right-color: #b300ff;
+
+  filter: drop-shadow(0 0 15px #ff00ff)
+          drop-shadow(0 0 30px #b700ff);
+
+  animation: putarOrbit 2.8s linear infinite;
+  pointer-events: none;
+}
+
+/* Animasi putar */
+@keyframes putarOrbit {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+.area-foto {
+  position: relative;
+  z-index: 5;       /* naikkan level */
+  pointer-events: auto;
+}
+
+<style>
+.sosmed-box {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 999;
+}
+
+/* JUDUL NEON UNGU */
+.sosmed-title {
+  font-size: 22px;
+  color: #d18cff;
+  font-weight: bold;
+  margin: 0;
+  text-shadow:
+    0 0 8px #c46cff,
+    0 0 14px #c46cff,
+    0 0 25px #d78aff;
+}
+
+/* IKON */
+.floating-sosmed {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.floating-sosmed a {
+  font-size: 28px;
+  color: #d18cff;
+  text-decoration: none;
+  transition: 0.25s;
+  padding: 12px;
+  border-radius: 50%;
+  background: rgba(40, 0, 60, 0.55);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px #b75cff;
+}
+
+.floating-sosmed a:hover {
+  transform: scale(1.25) translateX(6px);
+  color: #ffffff;
+  box-shadow:
+    0 0 12px #c46cff,
+    0 0 25px #c46cff,
+    0 0 35px #d78aff;
+  background: rgba(70, 0, 110, 0.7);
+}
+</style>

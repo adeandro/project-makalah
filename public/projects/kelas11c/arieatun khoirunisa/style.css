@@ -1,0 +1,33 @@
+body {
+  text-align: justify;
+  text-indent: 30px;
+  background-image: url('khoirun.webp');
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+h1,h2,h3 {
+  text-align: center;
+  color: #fff2bf;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+p {
+  text-align: center;
+  color: #fbffb2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+.page-block {
+  background: rgba(255,255,255,0.8);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.y {
+  width: 500px;
+  padding: 78px;
+  padding-block: -50px;
+  margin-left: 5%;
+}

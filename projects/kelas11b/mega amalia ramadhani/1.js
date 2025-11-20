@@ -11,7 +11,7 @@ const chapterData = [
               <img src="zzm.jpg" alt="Logo Sekolah" style="width: 250px; height: auto; display: block; margin: 0 auto;">
           </div>
           <h2 style="text-align: center;">DISUSUN OLEH:</h2>
-          <p style="text-align: center;">MEGA AMLIA RAMADHANI: 0089671124</p>
+          <p style="text-align: center;">MEGA AMALIA RAMADHANI: 0089671124</p>
           <p style="text-align: center;">KELAS: 11B</p>
           <p style="margin-top: 30px; text-align: center;">YAYASAN PERSAUDARAAN HAJI AL MABRUR</p>
           <p style="text-align: center;">SMK AL MABRUR PEJAWARAN</p>

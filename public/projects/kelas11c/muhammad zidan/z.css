@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+:root {
+    --main-color: #C93737;
+    --text-color: #000000;
+    --background-color: #f0f0f0;
+    --makalah-card-bg: #ffffff;
+    --list-item-bg: #e0e0e0;
+    --text-secondary: #333333;
+    --button-secondary-bg: #cccccc;
+    --border-color: rgba(0, 0, 0, 0.5);
+    --shadow-color: rgba(255, 255, 255, 1);
+    --switch-bg: #999;           
+    --switch-handle: #000000;       
+    --switch-icon-moon: #ffffff;    
+    --switch-icon-sun: #000000;     
+}
+
+body.dark-mode {
+    --main-color: #5CC7E0;
+    --text-color: #ffffff;
+    --background-color: #000000;
+    --makalah-card-bg: #1a1a1a;
+    --list-item-bg: #333;
+    --text-secondary: #cccccc;
+    --button-secondary-bg: #555;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --shadow-color: rgba(0, 0, 0, 1);
+    --switch-bg: #333;              
+    --switch-handle: #f5f5f5;       
+    --switch-icon-moon: #000000;    
+    --switch-icon-sun: #000000;     
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    overflow: hidden; 
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: color 0.5s;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--text-color);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: var(--main-color); 
+}
+
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; 
+    height: 34px; 
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--switch-bg);
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "\263E"; 
+    height: 26px; 
+    width: 26px; 
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--switch-handle); 
+    transition: 0.4s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: var(--switch-icon-moon); 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.theme-switch-input:checked + .slider {
+    background-color: var(--switch-bg); 
+}
+.theme-switch-input:checked + .slider:before {
+    transform: translateX(26px); 
+    content: "\2600"; 
+    background-color: var(--switch-handle); 
+    color: var(--switch-icon-sun); 
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    z-index: -1; 
+}
+body.dark-mode .overlay {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+.content-section {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+#background-video {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -3; 
+    transform: translate(-50%, -50%);
+    object-fit: cover; 
+    transition: opacity 0.5s;
+}
+
+.hero-text {
+    width: 45%;
+    max-width: 600px;
+    margin-right: auto; 
+    margin-top: 25vh; 
+    z-index: 5;
+}
+.hero-text h1 {
+    font-size: 4em; 
+    font-weight: 800;
+    line-height: 0.9;
+    margin-bottom: 10px; 
+    text-shadow: 2px 2px 5px var(--shadow-color); 
+}
+.hero-text h2 { 
+    color: var(--text-color);
+    font-size: 2.5em; 
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 1px 1px 3px var(--shadow-color); 
+}
+.hero-text h1 span {
+    color: var(--main-color); 
+    display: block;
+}
+.logo-carousel-container {
+    display: block; 
+    width: 250px; 
+    max-height: 250px; 
+    margin-bottom: 20px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.logo-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.school-logo-item {
+    display: block; 
+    margin-bottom: 15px; 
+    width: 220px; 
+    height: 220px; 
+    object-fit: contain; 
+    border-radius: 5px; 
+    filter: drop-shadow(0 0 5px var(--border-color)); 
+}
+.watch-button {
+    background: var(--main-color);
+    color: white; 
+    border: none;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.watch-button:hover {
+    background: var(--text-secondary); 
+    color: var(--text-color);
+}
+body.dark-mode .watch-button {
+    color: var(--background-color); 
+}
+
+.character-gallery {
+    position: fixed; 
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 5;
+    width: auto;
+}
+.gallery-item {
+    width: 250px;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s, background-image 0.5s ease; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-decoration: none; 
+    color: var(--text-color);
+}
+.gallery-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--main-color);
+}
+
+#makalah-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5); 
+    color: var(--text-color);
+    z-index: 300; 
+    display: none; 
+    padding: 20px;
+    padding-top: 80px; 
+    overflow-y: hidden; 
+}
+body.dark-mode #makalah-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+.makalah-content-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--makalah-card-bg); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--shadow-color); 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    height: calc(100vh - 120px); 
+    overflow-y: auto; 
+    display: none; 
+    text-align: center;
+}
+
+.makalah-content-page::-webkit-scrollbar {
+    width: 6px;
+}
+.makalah-content-page::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+    border-radius: 3px;
+}
+.makalah-content-page::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+
+.makalah-content-page.active {
+    display: block;
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.makalah-content-page h2.section-heading {
+    color: var(--text-color); 
+    background: var(--makalah-card-bg); 
+    padding: 10px 20px;
+    margin: 0 auto 30px auto; 
+    text-align: center;
+    display: block;
+    font-size: 1.8em;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+.makalah-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    text-align: center; 
+}
+.makalah-list li {
+    background: var(--list-item-bg); 
+    padding: 15px;
+    margin: 15px auto; 
+    max-width: 900px; 
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+    color: var(--text-color); 
+    border-radius: 5px;
+}
+.makalah-list li:hover {
+    background: var(--main-color); 
+    color: white; 
+}
+.makalah-content-page h3 {
+    color: var(--text-secondary);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+.makalah-content-page p {
+    color: var(--text-color);
+    line-height: 1.7;
+    text-align: justify; 
+}
+.kembali-button {
+    background: var(--button-secondary-bg);
+    color: var(--text-secondary); 
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    float: left; 
+}
+.kembali-button:hover {
+    background: var(--main-color);
+    color: white;
+}
+body.dark-mode .kembali-button:hover {
+    color: var(--background-color);
+}
+
+#music-player-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#music-popover-toggle-btn {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 8px 15px; 
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px; 
+    box-shadow: 0 2px 8px var(--shadow-color);
+    transition: all 0.3s;
+    font-size: 0.9em;
+}
+
+body.dark-mode #music-popover-toggle-btn {
+    background: var(--switch-handle);
+    color: var(--background-color);
+}
+
+#music-popover-toggle-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+#music-popover {
+    position: absolute; 
+    top: 100%; 
+    margin-top: 10px; 
+    right: 0;
+    width: 250px; 
+    background: var(--makalah-card-bg); 
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 12px; 
+    box-shadow: 0 5px 20px var(--shadow-color);
+    transform-origin: top right;
+    transform: scale(0.8) translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+#music-popover.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+}
+
+#current-song-info {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+#play-pause-btn {
+    background: var(--button-secondary-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px; 
+    transition: background 0.3s;
+    font-size: 0.9em;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#play-pause-btn:hover {
+    background: var(--main-color); 
+    color: white;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    max-height: 120px; 
+    overflow-y: auto;
+    margin-bottom: 10px; 
+}
+
+.playlist-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 0.85em;
+    border-radius: 6px; 
+    transition: background 0.2s;
+    color: var(--text-color);
+    position: relative;
+    z-index: 10;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-item:hover {
+    background: var(--list-item-bg);
+}
+
+.playlist-item.active-song {
+    background: var(--list-item-bg);
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+#album-art-preview {
+    position: absolute;
+    top: 50%;
+    left: -220px; 
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px var(--shadow-color);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none; 
+    z-index: 5;
+}
+
+.spotify-link-btn {
+    display: block; 
+    text-align: center;
+    margin-top: 10px; 
+    padding: 8px 15px;
+    background: #1DB954; 
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.spotify-link-btn:hover {
+    background: #1ed760;
+    transform: translateY(-1px);
+}
+
+#gate-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+     z-index: 9999; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    transition: opacity 1s ease-out, visibility 1s;
+    color: #ffffff;
+}
+
+#gate-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+}
+
+#gate-text {
+    font-size: 4em;
+    font-weight: 800;
+    color: var(--text-color); 
+    margin-bottom: 10px; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    color: #ffffff;
+}
+
+#gate-subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ccc; 
+    letter-spacing: 2px;
+    animation: pulse 1.5s infinite alternate;
+    color: #ffffff;
+}
+
+@keyframes pulse {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makalah Jepang</title>
+    <link rel="stylesheet" href="z.css"> 
+    </head>
+<body>
+  
+    <div id="gate-overlay">
+        <p id="gate-text">HI WELCOME!</p> 
+        <small id="gate-subtitle">KLIK DI MANA SAJA UNTUK MELANJUTKAN</small>
+    </div>
+    
+    <audio id="background-music" loop></audio>
+
+    <header class="navbar">
+        <div class="logo">ZIDAN</div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#" onclick="showMakalahIndex()">PROJECTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        
+        <div class="navbar-controls">
+            <label for="theme-switch" class="switch">
+                <input type="checkbox" id="theme-switch" class="theme-switch-input">
+                <span class="slider round"></span>
+            </label>
+
+            <div id="music-player-container" class="aesthetic-player">
+                
+                <button id="music-popover-toggle-btn" class="nav-button">
+                    <span id="current-song-status">🎵 Music Player</span>
+                </button>
+                
+                <div id="music-popover" class="hidden-popover">
+                    <h3 id="current-song-info">Silent Mode</h3>
+                    <button id="play-pause-btn">Play</button>
+                    <ul id="playlist">
+                        </ul>
+                        
+                    <a href="https://open.spotify.com/playlist/76UdArwCWB0wisnSMOPlPs?si=Pl5eaWVCTNOJfRiYWRdIhQ&pi=Zb9sx3QeRFmhO" target="_blank" class="spotify-link-btn">
+                        Lainnya
+                    </a>
+                    <div id="album-art-preview"></div>
+                </div>
+            </div>
+            </div>
+        </header>
+
+    <main class="content-section" id="main-content">
+        <video autoplay muted loop id="background-video">
+            <source src="fri00.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <section class="hero-text">
+            <h1>MAKALAH <span id="main-name">JEPANG</span></h1>
+            <h2>NEGARA DENGAN TRADISI, EKONOMI MAJU, DAN INOVASI TEKNOLOGI.</h2> 
+            
+            <div class="logo-carousel-container">
+                <img src="zzm.jpg" alt="Logo Sekolah Utama" class="school-logo-item">
+                <img src="zidan.jpg" alt="Logo Tambahan 1" class="school-logo-item">
+            </div>
+            
+            <button class="watch-button" onclick="showMakalahIndex()">DAFTAR ISI</button> 
+        </section>
+        
+        <section class="character-gallery" id="chapter-navigation">
+            <a href="#" class="gallery-item" data-character="thorfinn" onclick="showMakalahContent('bab1')">
+                <p>Bab I</p>
+                <h3>Pendahuluan</h3>
+            </a>
+            <a href="#" class="gallery-item" data-character="musashi" onclick="showMakalahContent('bab2')">
+                <p>Bab II</p>
+                <h3>Pembahasan</h3>
+            </a>
+            <a href="#" class="gallery-item" data-character="guts" onclick="showMakalahContent('bab3')">
+                <p>Bab III</p>
+                <h3>Penutup</h3>
+            </a>
+        </section>
+
+    </main>
+
+    <section id="makalah-overlay" class="makalah-page-wrapper">
+        <div id="makalah-index" class="makalah-content-page active">
+            <button class="kembali-button" onclick="hideMakalahOverlay()">KEMBALI</button>
+            <h2 class="section-heading">DAFTAR ISI</h2>
+            
+            <ul class="makalah-list">
+                <li onclick="showMakalahContent('kata-pengantar')">KATA PENGANTAR</li>
+                <li onclick="showMakalahContent('bab1')">BAB I - PENDAHULUAN</li>
+                <li onclick="showMakalahContent('bab2')">BAB II - PEMBAHASAN</li>
+                <li onclick="showMakalahContent('bab3')">BAB III - PENUTUP</li>
+            </ul>
+        </div>
+        
+        <div id="kata-pengantar" class="makalah-content-page">
+            <button class="kembali-button" onclick="hideMakalahOverlay()">KEMBALI</button>
+            <h2 class="section-heading">KATA PENGANTAR</h2>
+            <p>
+                [span_0](start_span)Puji dan syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa karena atas rahmat dan karunia-Nya, penulis dapat menyelesaikan makalah yang berjudul "Negara Jepang" ini dengan baik dan tepat waktu.[span_0](end_span) [span_1](start_span)Makalah ini disusun sebagai salah satu tugas mata pelajaran Informatika di SMK Islam Al Mabrur, yang bertujuan untuk menambah wawasan serta pemahaman penulis mengenai Negara Jepang, baik dari segi sejarah, budaya, sistem pemerintahan, ekonomi, maupun kehidupan masyarakatnya.[span_1](end_span)
+            </p>
+            <p style="text-align: right; margin-top: 30px;">
+                [span_2](start_span)September 2025[span_2](end_span)<br>
+                [span_3](start_span)penyusun[span_3](end_span)
+            </p>
+        </div>
+        <div id="bab1" class="makalah-content-page">
+            <button class="kembali-button" onclick="hideMakalahOverlay()">KEMBALI</button>
+            <h2 class="section-heading">BAB I - PENDAHULUAN</h2>
+            
+            <h3>A. Latar Belakang Masalah</h3>
+            [span_4](start_span)<p>Jepang dikenal sebagai salah satu negara maju di Asia Timur yang memiliki pengaruh besar di dunia.[span_4](end_span) [span_5](start_span)Negara yang dijuluki Negeri Sakura ini menempati posisi penting, baik dalam bidang teknologi, ekonomi, maupun kebudayaan.[span_5](end_span) [span_6](start_span)Berdasarkan catatan sejarah, Jepang berhasil bangkit dari masa feodal menuju era modern melalui Restorasi Meiji pada abad ke-19.[span_6](end_span) [span_7](start_span)Setelah itu, Jepang berkembang pesat dan kini menempati jajaran negara dengan teknologi paling inovatif.[span_7](end_span) [span_8](start_span)Tidak hanya sektor industri, Jepang juga menjadi sorotan melalui budaya yang mendunia.[span_8](end_span) [span_9](start_span)Anime, makanan khas seperti sushi dan ramen, serta nilai disiplin dan kerja keras masyarakatnya membuat Jepang menjadi contoh bagi banyak negara lain.[span_9](end_span) [span_10](start_span)Fenomena tersebut menunjukkan bagaimana Jepang mampu memadukan tradisi dengan kemajuan modern.[span_10](end_span) [span_11](start_span)Melalui makalah ini, penulis menyajikan informasi mengenai letak geografis, sejarah, kebudayaan, pendidikan, serta perekonomian Jepang untuk memberikan gambaran menyeluruh tentang negara tersebut.[span_11](end_span)</p>
+            
+            <h3>B. Tujuan Penulisan</h3>
+            <p>Tujuan penulisan makalah ini adalah untuk menganalisis:</p>
+            <ul>
+                [span_12](start_span)<li>Bagaimana letak geografis negara Jepang?[span_12](end_span)</li>
+                [span_13](start_span)<li>Bagaimana perkembangan sejarah Jepang?[span_13](end_span)</li>
+                [span_14](start_span)<li>Apa saja kebudayaan khas Jepang?[span_14](end_span)</li>
+                [span_15](start_span)<li>Bagaimana sistem pendidikan di Jepang?[span_15](end_span)</li>
+                [span_16](start_span)<li>Bagaimana perekonomian Jepang hingga menjadi negara maju?[span_16](end_span)</li>
+            </ul>
+        </div>
+        <div id="bab2" class="makalah-content-page">
+            <button class="kembali-button" onclick="hideMakalahOverlay()">KEMBALI</button>
+            <h2 class="section-heading">BAB II - PEMBAHASAN</h2>
+            
+            <h3>A. Letak Geografis Jepang</h3>
+            [span_17](start_span)<p>Jepang adalah negara kepulauan di Asia Timur yang terdiri dari empat pulau utama, yaitu Hokkaido, Honshu, Shikoku, dan Kyushu, serta sekitar 3.000 pulau kecil termasuk Okinawa.[span_17](end_span) [span_18](start_span)Luas wilayahnya mencapai 377 ribu km², dengan 73% berupa pegunungan.[span_18](end_span) [span_19](start_span)Secara geografis, Jepang berada di timur laut Cina dan Taiwan, di timur Korea, serta di selatan Rusia.[span_19](end_span) [span_20](start_span)Negara ini tidak memiliki perbatasan darat, namun garis pantainya sangat panjang, hampir 30 ribu km.[span_20](end_span) [span_21](start_span)Iklim di Jepang bervariasi, dari subtropis di selatan hingga sedang di bagian utara.[span_21](end_span) [span_22](start_span)Sumber daya alamnya terbatas, seperti batu bara, minyak bumi, dan perikanan.[span_22](end_span) [span_23](start_span)Sebagian besar lahannya berupa hutan (67%), sedangkan tanah pertanian hanya sekitar 11%.[span_23](end_span) Jepang juga memiliki titik terluar wilayah: Paling utara: Bentenjima di Hokkaido. Paling selatan: Okinotorishima di Laut Filipina. Paling timur: Minami Torishima. [span_24](start_span)Paling barat: Tanjung Irizaki di Okinawa.[span_24](end_span)</p>
+
+            <h3>B. Sejarah Jepang</h3>
+            <h4>1. Zaman Paleolitik</h4>
+            [span_25](start_span)<p>Zaman Paleolitik di Jepang berlangsung sekitar 100.000 hingga 30.000 SM.[span_25](end_span) Pada masa ini, manusia sudah menggunakan perkakas batu. [span_26](start_span)Kepulauan Jepang mulai dihuni sekitar 35.000 SM, dan setelah zaman es berakhir sekitar 11.000 SM, Jepang terpisah dari daratan Asia.[span_26](end_span)</p>
+            <h4>2. Zaman Jōmon</h4>
+            [span_27](start_span)<p>Zaman Jōmon berlangsung dari sekitar 14.000 SM hingga 300 SM.[span_27](end_span) [span_28](start_span)Pada masa ini, masyarakat hidup dengan budaya pemburu-pengumpul dan mulai mengenal pertanian sederhana.[span_28](end_span) [span_29](start_span)Mereka membuat bejana tanah liat berhias pola unik, serta boneka tanah liat yang disebut <i>dogū</i>.[span_29](end_span) [span_30](start_span)Analisis DNA menunjukkan bahwa suku Ainu di Hokkaido merupakan keturunan dari orang Jōmon.[span_30](end_span)</p>
+            <h4>3. Zaman Yayoi</h4>
+            [span_31](start_span)<p>Zaman Yayoi berlangsung dari sekitar 400 SM hingga 250 M. Masyarakat mulai mengenal teknik menenun, bercocok tanam padi, serta membuat perkakas dari besi dan perunggu yang dipengaruhi oleh Korea dan Tiongkok.[span_31](end_span) [span_32](start_span)Catatan Tiongkok pertama kali menyebut Jepang pada tahun 57 M, menggambarkan adanya lebih dari 100 suku.[span_32](end_span) [span_33](start_span)Tokoh penting pada masa ini adalah Himiko, seorang dukun wanita yang memimpin Yamataikoku.[span_33](end_span) [span_34](start_span)Situs Yoshinogari menjadi salah satu bukti penting peninggalan zaman Yayoi.[span_34](end_span)</p>
+
+            <h3>C. Kebudayaan Jepang</h3>
+            <h4>1. Geisha: Seniman Tradisional Jepang</h4>
+            [span_35](start_span)<p>Geisha adalah seniman penghibur tradisional yang terampil dalam seni menari, menyanyi, musik, dan upacara minum teh.[span_35](end_span) [span_36](start_span)Kata geisha berarti “orang seni”.[span_36](end_span) [span_37](start_span)Awalnya, Geisha diperankan oleh pria, tetapi kemudian digantikan oleh wanita.[span_37](end_span) Geisha sudah ada sejak abad ke-18 dan masih bertahan hingga kini, meski jumlahnya berkurang. [span_38](start_span)Geisha pemula disebut Maiko (khususnya di Kyoto), sedangkan Geiko adalah sebutan lain untuk Geisha.[span_38](end_span) [span_39](start_span)Mereka biasanya berlatih sejak muda di rumah Geisha yang disebut Okiya.[span_39](end_span) [span_40](start_span)Saat ini, Geisha lebih bersifat sukarela dan masih menjadi daya tarik budaya Jepang, terutama bagi wisatawan di Kyoto.[span_40](end_span)</p>
+            <h4>2. Matsuri: Festival Tradisional</h4>
+            [span_41](start_span)<p>Matsuri adalah festival budaya Jepang yang biasanya diadakan saat musim panas.[span_41](end_span) Kata matsuri berarti menyembah atau memuja dalam ajaran Shinto. Festival ini bertujuan untuk berdoa, mensyukuri panen, mendoakan kesembuhan, atau memperingati arwah. [span_42](start_span)Matsuri diselenggarakan di berbagai daerah, terutama di kuil, dengan doa, persembahan, dan pesta rakyat.[span_42](end_span) [span_43](start_span)Seiring perkembangan zaman, Matsuri juga menjadi ajang hiburan, tetapi nilai tradisinya tetap dipertahankan.[span_43](end_span)</p>
+            <h4>3. Sadou: Upacara Minum Teh</h4>
+            [span_44](start_span)<p>Sadou adalah tradisi minum teh Jepang yang memiliki tata cara khusus.[span_44](end_span) [span_45](start_span)Ada dua jenis utama: Ochakai: lebih santai, biasanya bersama teman atau kerabat.[span_45](end_span) [span_46](start_span)Chaji: formal dan sakral, bisa berlangsung lebih dari 4 jam.[span_46](end_span) [span_47](start_span)Upacara ini berakar dari pengaruh Zen Buddha dan mulai berkembang sejak abad ke-16.[span_47](end_span) Teh yang digunakan adalah matcha (teh bubuk hijau). [span_48](start_span)Upacara ini mengajarkan sikap saling menghargai dan menghormati antara tuan rumah dan tamu.[span_48](end_span)</p>
+            
+            <h3>D. Sistem Pendidikan di Jepang</h3>
+            <h4>1. Jenjang Pendidikan</h4>
+            [span_49](start_span)<p>Sistem Pendidikan Jepang terdiri dari enam tahun Pendidikan dasar (Primary Education) dan enam tahun Pendidikan menengah (Secondary Education).[span_49](end_span) [span_50](start_span)Pendidikan menengah di Jepang dibagi menjadi tiga tahun Pendidikan menengah bawah dan tiga tahun Pendidikan atas.[span_50](end_span) [span_51](start_span)Karena negara Jepang memiliki program wajib belajar Sembilan tahun, maka Pendidikan wajib di Jepang adalah enam tahun Pendidikan dasar dan tiga tahun Pendidikan menengah bawah.[span_51](end_span) [span_52](start_span)Setelah mengenyam Pendidikan Menengah bawah, siswa di Jepang memiliki pilihan untuk melanjutkan ke Pendidikan menengah atas (high school) selama tiga tahun atau belajar di Sekolah tinggi kejuruan atau diploma.[span_52](end_span) [span_53](start_span)Siswa yang lulus high school dapat melanjutkan ke perguruan tinggi.[span_53](end_span) [span_54](start_span)Untuk siswa yang memiliki kebutuhan khusus, Jepang memiliki Special Needs Education.[span_54](end_span)</p>
+            <h4>2. Kegiatan Ekstrakurikuler/ Students Clubs</h4>
+            [span_55](start_span)<p>Kegiatan ekstra kurikuler di sekolah Jepang menawarkan berbagai kegiatan yang sesuai dengan minat dan bakat siswa.[span_55](end_span) Ada kegiatan olahraga umum, olahraga tradisional, dan lain sebagainya. [span_56](start_span)Kegiatan students club biasanya dilakukan setelah pembelajaran usai.[span_56](end_span) [span_57](start_span)Keuntungan mengikuti students club bagi siswa Jepang adalah memiliki kesempatan untuk mengikuti pertukaran pelajar.[span_57](end_span)</p>
+            <h4>3. Fasilitas Sekolah</h4>
+            [span_58](start_span)<p>Sekolah negeri atau sekolah pemerintah yang ada di Jepang pada umumnya memiliki fasilitas, sarana, dan prasarana dengan standar yang sama.[span_58](end_span) Begitu pula dengan kurikulum yang diterapkan. [span_59](start_span)Ini adalah alasan tidak ada kesenjangan antara sekolah negeri di Jepang.[span_59](end_span) Sekolah swasta tentu berbeda dengan sekolah negeri. [span_60](start_span)Sekolah swasta dijalankan berdasarkan prinsip atau keunggulannya sendiri sehingga fasilitas yang dimiliki juga mengikuti sistem mereka.[span_60](end_span) [span_61](start_span)Misalnya selain fasilitas dasar seperti kolam, toilet, perpustakaaan, sekolah swasta ada yang memiliki laboratorium, kebun, istal kuda, dan lain sebagainya.[span_61](end_span)</p>
+            
+            <h3>E. Perekonomian Jepang</h3>
+            [span_62](start_span)<p>DB Jepang tumbuh 0,5% dari kuartal sebelumnya pada kuartal kedua 2025, lebih tinggi dari perkiraan awal 0,3% dan dengan laju yang meningkat tajam dari 0,1% yang merupakan revisi ke atas pada kuartal pertama.[span_62](end_span) [span_63](start_span)Ini merupakan pertumbuhan dalam lima kuartal terakhir, terutama didukung oleh perbaikan dalam konsumsi privat (0,4% vs 0,2% menurut data awal dan menyusul stagnasi pada kuartal pertama).[span_63](end_span) [span_64](start_span)Sementara itu, belanja pemerintah mendatar setelah sebelunya mengalami penurunan sebesar 0,5%.[span_64](end_span) [span_65](start_span)Perdagangan berkontribusi sebesar 0,3ppts, didukung oleh ekspor yang pulih (2,0% vs -0,3% pada kuartal satu) di tengah impor yang jauh melandai (0,6% vs 2,9%).[span_65](end_span) [span_66](start_span)Eksportir bergegas mengirimkan pesanan menjelang berlakunya tarif Amerika Serikat sementara pebisnis otomotif melakukan pemotongan harga di tengah kenaikan tarif demi mempertahankan tingkat produksi.[span_66](end_span) [span_67](start_span)Investasi bsinis tumbuh 0,6%, lebih rendah dari data awal yang mencapai 1,3% dan di Bawah perkiraan 1,2%.[span_67](end_span) [span_68](start_span)Hal ini mencerminkan dampak dari kenaikan suku bunga dan menyusul kenaikan 0,7% pada kuartal satu.[span_68](end_span) [span_69](start_span)Sementara itu, pengunduran diri tiba-tiba Perdana Menteri Shigeru Ishiba mengakibatkan ketidakpastian politik dan memicu kekhawatiran terkait dukungan fiskal pemerintah maupun kebijakan seputar reformasi ekonomi.[span_69](end_span) [span_70](start_span)Hal tersebut akan mengganggu tingkat keyakinan pebisnis dan rumah tangga dalam beberapa bulan ke depan.[span_70](end_span)</p>
+        </div>
+        <div id="bab3" class="makalah-content-page">
+            <button class="kembali-button" onclick="hideMakalahOverlay()">KEMBALI</button>
+            <h2 class="section-heading">BAB III - PENUTUP</h2>
+            
+            <h3>A. Kesimpulan</h3>
+            [span_71](start_span)<p>Jepang adalah negara kepulauan di Asia Timur yang terdiri dari empat pulau utama dengan wilayah bergunung dan rawan gempa, serta memiliki iklim empat musim.[span_71](end_span) [span_72](start_span)Sejarahnya meliputi masa pra-sejarah, zaman samurai, hingga modernisasi pesat di era Meiji dan transformasi menjadi negara maju kini.[span_72](end_span) [span_73](start_span)Kebudayaannya unik dengan perpaduan tradisi seperti upacara minum teh dan seni kaligrafi serta budaya pop seperti anime.[span_73](end_span) [span_74](start_span)Sistem pendidikan Jepang terstruktur, disiplin, dan menekankan pengembangan karakter serta akademik, dimulai dari taman kanak-kanak hingga universitas dengan kurikulum berstandar nasional.[span_74](end_span) [span_75](start_span)Ekonominya merupakan yang terbesar ketiga di dunia, fokus pada industri teknologi, otomotif, elektronik, dan jasa, didukung inovasi serta kualitas sumber daya manusia yang tinggi.[span_75](end_span) [span_76](start_span)Jepang merupakan negara maju dengan standar hidup tinggi dan inovasi berkelanjutan.[span_76](end_span) [span_77](start_span)Dari letak geografisnya yang menantang hingga sejarahnya yang penuh gejolak, Jepang telah membentuk identitas yang unik di panggung global.[span_77](end_span) [span_78](start_span)Makalah ini telah menunjukkan bagaimana geografi, sejarah, dan budaya Jepang secara fundamental telah memengaruhi sistem pendidikan dan kekuatannya sebagai kekuatan ekonomi.[span_78](end_span) [span_79](start_span)Namun, dengan tantangan populasi yang menua, Jepang akan kembali diuji.[span_79](end_span) [span_80](start_span)Dengan perpaduan antara inovasi teknologi dan nilai-nilai tradisional yang kuat, Jepang memiliki semua yang diperlukan untuk beradaptasi dan terus berkembang, tetap menjadi inspirasi bagi dunia.[span_80](end_span)</p>
+            
+            <h3>B. Saran</h3>
+            <p>Makalah ini menyajikan gambaran singkat tentang bagaimana Jepang menjadi salah satu kekuatan global. [span_81](start_span)Namun, perjalanan ini tidak tanpa tantangan.[span_81](end_span) [span_82](start_span)Kami mengundang pembaca untuk terus mengikuti perkembangan Jepang, khususnya dalam menghadapi isu-isu seperti populasi yang menua dan perubahan lanskap geopolitik. Dengan terus belajar, kita dapat memahami bagaimana negara ini terus beradaptasi dan memberikan pelajaran berharga bagi dunia.</p>
+                    </div>
+        </section> 
+    
+    <script src="z.js"></script>
+</body>
+</html>

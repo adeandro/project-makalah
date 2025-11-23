@@ -1,0 +1,51 @@
+.video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .konten {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    
+.teks-kustom {
+      font-family: 'Times New Roman', serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+    
+    body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.6;
+  padding:         20px;
+}

@@ -1,33 +1,33 @@
-body{
-background-image:url(gambarku.jpg);
+body {
+  background-image: url("gambarku.jpg");
 }
 
 .cover {
- text-align: center ;
- color : black ;
- font-size: 18px;
- margin:27px ;
- background-color: rgba(255,255,255,0.1);
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  margin: 27px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .halaman {
- color : black ;
- font-size: 16px ;
- margin: 27px ;
- background-color: rgba(255,255,255,0.1);
+  color: black;
+  font-size: 16px;
+  margin: 27px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .gambar {
   text-align: center;
 }
 
-.apapun{
-  text-align: center ;
+.apapun {
+  text-align: center;
 }
 
-.sekarepe{
-background-color: rgba(255,255,255,0.1);
-color:black;
+.sekarepe {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
 }
 
 #bg-video {
@@ -39,4 +39,3 @@ color:black;
   object-fit: cover;
   z-index: -2;
 }
-  

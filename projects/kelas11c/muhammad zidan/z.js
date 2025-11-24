@@ -114,7 +114,7 @@ function playSong(index) {
     const song = playlistData[index];
     backgroundMusic.src = song.src;
     backgroundMusic.load();
-    backgroundMusic.volume = 1.5; 
+    backgroundMusic.volume = 0.5; 
     backgroundMusic.play().then(() => {
         isPlaying = true;
         updatePlayerUI();

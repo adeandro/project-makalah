@@ -7,7 +7,7 @@ body {
 }
 
 /* Judul */
-h1, h2 {
+h1, h2, summary {
   text-align: center;
   color: brown;
 }
@@ -51,16 +51,16 @@ p, ol, li, h3, h4, h5, td, tr{
       border: 2px solid var(--acent-color);
 }
  #audio-player {
-  margin-top: 20px;
+  margin-top: 25px;
   width: 100%;
 }
 .halaman {
-    background-color: rgba(255, 255, 255, 0.5); /* Putih dengan 80% opasitas (20% transparan) */
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4); /* Putih dengan 80% opasitas (20% transparan) */
+    padding: 25px;
     margin: 25px auto;
-    max-width: 800px;
+    max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 255.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 255.3);
 }
 
 

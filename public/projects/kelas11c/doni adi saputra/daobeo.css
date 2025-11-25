@@ -1,0 +1,253 @@
+    *, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  color: #000;
+  background: #000;
+  -webkit-text-stroke: 0.5px black; /* <- ini cara bener */
+  margin: 0;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+    .paper {
+      margin: 20px auto;
+      max-width: 820px;
+      padding: 30mm 25mm
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    
+    h1, h2, h3 { text-align: center; font-weight: bold; margin: 0 0 12px 0; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; }
+    h3 { font-size: 12pt; margin-top: 8px; }
+
+    .cover { text-align:center; line-height:1.8; margin-top: 40px; }
+    .biodata { margin-top: 30px; }
+    .biodata p { margin: 4px 0; }
+
+    .section { margin-top: 40px; }
+    p { text-align: justify; text-indent: 1cm; margin-bottom: 10px; overflow-wrap: break-word; word-break: break-word; }
+    ul, ol { margin-left: 1.5cm; }
+
+    hr { border: none; border-top: 1px solid #000; margin: 30px 0; }
+
+    .right { text-align: right; margin-top: 30px; }
+    .daftarisi { font-family: "arial", serif; line-height: 1.8; white-space: pre-wrap; } 
+
+    footer { text-align: center; margin-top: 40px; font-size: 12pt; }
+
+    img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+    @media (max-width: 480px) {
+      .paper {
+        padding: 18px;    
+        margin: 6px;
+      }
+      body { padding: 6px; }
+      h1 { font-size: 16pt; }
+      h2 { font-size: 14pt; }
+      h3 { font-size: 13pt; }
+      p { font-size: 15px; text-indent: 0.9cm; }
+    }
+
+    @media (min-width: 481px) and (max-width: 800px) {
+      .paper { padding: 20px; }
+      p { font-size: 14px; }
+    }
+
+    @page { size: A4; margin: 25mm; }
+    @media print {
+      body { background: white; padding: 0; }
+      .paper { box-shadow: none; margin: 0; max-width: none; padding: 25mm; }
+    }
+    
+    #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+    
+    
+    .section.bab1 {
+  background-image: url('elem.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+    .section.bab2 {
+  background-image: url('god.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+    .section.mantap {
+  background-image: url('war1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.section.kata {
+  background-image: url('war2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.section.bab3 {
+  background-image: url('war2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+
+.audio-container {
+               background: linear-gradient(135deg, #917eea 0%, #C0C0C0 100%);
+               font-family: Arenq, sans-serif;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 5vh;
+               margin: 0;
+           }
+
+.audio-container {
+               width: 100%;
+               max-width: 400px;
+               border-radius: 10px;
+               outline: none;
+           }
+
+.audio-container::-webkit-media-controls-panel {
+               background: #333;
+               border-radius: 10px;
+           }
+
+.section {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 20px; 
+  padding: 20px;
+  margin: 20px;
+}
+
+
+.audio-container:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.9),
+                0 0 60px rgba(0, 255, 255, 0.7);
+  }
+
+  h2 {
+    color: #FF00FF; /* Warna teks putih */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Efek cahaya pada teks */
+  }
+
+
+
+/* Wadah untuk semua ikon */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Gaya Dasar Ikon */
+.icon {
+    position: relative;
+    padding: 45px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    /* Efek bayangan ganda untuk tampilan 3D */
+    box-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.1),
+        0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Penting untuk menyembunyikan label saat awal */
+    text-decoration: none;
+    cursor: pointer;
+    /* Transisi untuk semua properti */
+    transition: all 0.5s ease;
+}
+
+/* Gaya Icon Font Awesome */
+.icon i {
+    font-size: 24px;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+/* Gaya Label (Teks Media Sosial) */
+.label {
+    margin-left: 0px;
+    color: #fff;
+    font-weight: 700;
+    /* Awalnya disembunyikan dan diposisikan ke kanan */
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: all 0.5s ease;
+}
+
+/* === Efek HOVER Umum === */
+
+/* Saat hover, ikon akan sedikit mengecil dan melebar */
+.icon:hover {
+    transform: scale(0.9);
+    width: 120px; /* Melebarkan wadah untuk menampilkan label */
+}
+
+/* Saat hover, ikon Font Awesome berubah menjadi putih */
+.icon:hover i {
+    color: #fff;
+}
+
+/* Saat hover, label akan muncul dan bergeser ke posisi awal */
+.icon:hover .label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* === Warna Spesifik Media Sosial (Hover) === */
+
+/* Facebook Hover */
+.facebook:hover {
+    background-color: #1877f2;
+    box-shadow: 0 0 15px #1877f2, 0 0 30px #1877f2;
+}
+
+/* Instagram Hover */
+.instagram:hover {
+    background-color: #e4405f;
+    box-shadow: 0 0 15px #e4405f, 0 0 30px #e4405f;
+}
+
+/* Twitter Hover (Menggunakan X-Twitter Color) */
+.twitter:hover {
+    background-color: #1da1f2;
+    box-shadow: 0 0 15px #1da1f2, 0 0 30px #1da1f2;
+}
+
+/* Youtube Hover */
+.youtube:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+}
+
+
+

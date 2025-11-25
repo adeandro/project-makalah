@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jupir Autoplay Tanpa Tombol</title>
+    <style>
+        /* CSS untuk menyembunyikan elemen audio secara visual */
+        .hidden-audio {
+            /* Pastikan elemen audio tidak terlihat */
+            display: none; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Musik Latar Belakang (Jupir.mp3)</h1>
+    <p>Musik sedang mencoba diputar secara otomatis. Jika tidak ada suara, browser mungkin memblokir fitur autoplay.</p>
+
+    <audio id="musikJupir" class="hidden-audio" autoplay loop>
+        <source src="jupir.mp3" type="audio/mpeg">
+        Maaf, browser Anda tidak mendukung pemutaran audio.
+    </audio>
+
+    <script>
+        var audio = document.getElementById("musikJupir");
+
+        // Coba putar audio. Jika gagal, tidak ada yang dilakukan, dan tidak ada tombol yang muncul.
+        audio.play().catch(function(error) {
+            console.log("Autoplay diblokir oleh browser. Tidak ada tombol disediakan.");
+        });
+    </script>
+
+</body>
+</html>

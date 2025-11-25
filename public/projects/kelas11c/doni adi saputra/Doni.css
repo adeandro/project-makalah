@@ -1,0 +1,102 @@
+/* Styling Umum Body */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/* Wadah untuk semua ikon */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Gaya Dasar Ikon */
+.icon {
+    position: relative;
+    padding: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    /* Efek bayangan ganda untuk tampilan 3D */
+    box-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.1),
+        0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Penting untuk menyembunyikan label saat awal */
+    text-decoration: none;
+    cursor: pointer;
+    /* Transisi untuk semua properti */
+    transition: all 0.5s ease;
+}
+
+/* Gaya Icon Font Awesome */
+.icon i {
+    font-size: 24px;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+/* Gaya Label (Teks Media Sosial) */
+.label {
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 700;
+    /* Awalnya disembunyikan dan diposisikan ke kanan */
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: all 0.5s ease;
+}
+
+/* === Efek HOVER Umum === */
+
+/* Saat hover, ikon akan sedikit mengecil dan melebar */
+.icon:hover {
+    transform: scale(0.9);
+    width: 120px; /* Melebarkan wadah untuk menampilkan label */
+}
+
+/* Saat hover, ikon Font Awesome berubah menjadi putih */
+.icon:hover i {
+    color: #fff;
+}
+
+/* Saat hover, label akan muncul dan bergeser ke posisi awal */
+.icon:hover .label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* === Warna Spesifik Media Sosial (Hover) === */
+
+/* Facebook Hover */
+.facebook:hover {
+    background-color: #1877f2;
+    box-shadow: 0 0 15px #1877f2, 0 0 30px #1877f2;
+}
+
+/* Instagram Hover */
+.instagram:hover {
+    background-color: #e4405f;
+    box-shadow: 0 0 15px #e4405f, 0 0 30px #e4405f;
+}
+
+/* Twitter Hover (Menggunakan X-Twitter Color) */
+.twitter:hover {
+    background-color: #1da1f2;
+    box-shadow: 0 0 15px #1da1f2, 0 0 30px #1da1f2;
+}
+
+/* Youtube Hover */
+.youtube:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+}

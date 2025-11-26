@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makalah Dasar Dasar Komputer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="atas-header">
+        <div class="dalam-header">
+            <div class="brand">
+                <img src="assets/pp1.jpg" alt="logo-kecil" class="logo-kecil">
+                <span class="nama-brand">ADE NUR ALFIAN</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#cover" class="active">Cover</a>
+                <a href="#daftarisi">Daftar Isi</a>
+                <div class="sosmed-container">
+                    <a href="#" id="btnSosmed" class="sosmed-btn">Sosial Media</a>
+                    <div id="sosmedDropdown" class="sosmed-dropdown">
+                        <a href="https://wa.me/6285311794929" class="item wa"><img src="assets/wa.png" class="icon"> WhatsApp</a>
+                        <a href="https://Instagram.com/adde_nnurr" class="item ig"><img src="assets/ig.png" class="icon"> Instagram</a>
+                        <a href="https://www.tiktok.com/@adde_nur" class="item tt"><img src="assets/tt.png" class="icon"> TikTok</a>
+                    </div>
+                </div>
+                              <div class="tema-dropdown">
+                <button class="tema-btn">Tema</button>
+              
+                <div class="tema-menu">
+                  <div class="tema-item" data-theme="default">Default</div>
+                  <div class="tema-item" data-theme="gambar1">Naruto</div>
+                  <div class="tema-item" data-theme="gambar2">Stone Island</div>
+                  <div class="tema-item" data-theme="gambar3">One Piece</div>
+                  <div class="tema-item" data-theme="video1">BMW</div>
+                  <div class="tema-item" data-theme="video2">Freiren</div>
+                  <div class="tema-item" data-theme="video3">JJK</div>
+                </div>
+                  </div>
+                <!--saklar-->
+            <div class="theme-toggle">
+                <span class="mode-label">Light</span>
+                <input type="checkbox" id="darkSwitch">
+                <label for="darkSwitch" class="switch"></label>
+                <span class="mode-label">Dark</span>
+            </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="wadah">
+        <div id="cover" class="cover-div border">
+            <div class="cover-conten">
+                <div class="cover-text">
+                    <h1>MAKALAH</h1>
+                    <h2>DASAR DASAR KOMPUTER</h2>
+                    <p class="by">Created by:</p>
+                    <p class="pembuat"><strong>ADE NUR ALFIAN</strong></p>
+                    <p><strong>YAYASAN PERSAUDARAAN HAJI AL MABRUR</strong></p>
+                    <p><strong>SMK ALMABRUR PEJAWARAN</strong></p>
+                    <p class="footer"><strong>BANJARNEGARA 2025</strong></p>
+                </div>
+                <div class="cover-logo">
+                    <img src="assets/logo.png" alt="logo sekolah" class="">
+                </div>
+            </div>
+        </div>
+
+        <div id="katapengantar" class="border">
+            <h3>KATA PENGANTAR</h3>
+            <p>Puji syukur ke hadirat Allah SWT yang telah memberikan rahmat dan
+            karunianya sehingga makalah ini dapat tersusun. Makalah ini di susun guna memenuhi
+            salah satu tugas mata pelajaran informatika. Semoga makalah ini dapat memberikan
+            pemahaman dasar mengenai komputer serta menambah wawasan pembaca. Dalam
+            penyusunan makalah ini, kami menyadari bahwa masih terdapat banyak kekurangan
+            baik dari segi isi maupun penyajianya. Oleh karena itu kritik dan saran dari pembaca
+            akan sangat berarti untuk perbaikan kedepanya. Demikian kata pengantar ini kami
+            sampaikan semoga makalah ini dapat memberikan manfaat bagi kita semua.</p>
+            <p><strong>September 2025</strong></p>
+            <p><strong>penyusun</strong></p>
+        </div>
+
+        <div id="daftarisi" class="border daftarisi">
+            <h3 style="text-align: center;">DAFTAR ISI</h3>
+                <h3><a href="#katapengantar">KATA PENGANTAR</a></h3>
+                <h3><a href="#daftarisi">DAFTAR ISI</a></h3>
+                <h3><a href="#bab1">BAB I PENDAHULUAN</a></h3>
+                <ul>
+                    <li>1.1 Latar Belakang</li>
+                    <li>1.2 Rumusan Masalah</li>
+                    <li>1.3 Tujuan Penulisan</li>
+                </ul>
+                <h3><a href="#bab2">BAB II PEMBAHASAN</a></h3>
+                <ul>
+                    <li>2.1 Pengertian Komputer Menurut Para Ahli</li>
+                    <li>2.2 Sejarah Perkembangan Generasi Komputer</li>
+                    <li>2.3 Komponen-komponen komputer dan fungsi</li>
+                </ul>
+                <h3><a href="#bab3">BAB III PENUTUP</a></h3>
+            <ul>
+                <li>3.1 Kesimpulan</li>
+                <li>3.2 Saran</li>
+            </ul>
+        </div>
+        <div class="halaman">
+            <div id="bab1">
+                <div class="border">
+                    <h3>BAB I </h3>
+                    <h3>PENDAHULUAN</h3>
+                    <div>
+                        <h4>1.1 Latar Belakang</h4>
+                        <div>
+                            <p>Komputer dan sistemnya sudah mengalami banyak sekali
+                            perkembangan yang cepat. Demi memberi kemudahan kepada user untuk
+                            mengakses berbagai banyak macam data, yang mempunyai tingkat kesulitan yang
+                            bertahap sekaligus kerumitannya. Komputer merupakan alat modern yang tidak
+                            bisa dilepaskan dari kehidupan sehari-hari. Mulai dari mengerjakan pekerjaan
+                            kantor,multimedia, bahkan hiburan. Dewasa ini perkembangan komputer semakin
+                            berkembang dan masih akan terus berkembang tanpa batas. Kita sebagai manusia
+                            mau tidak mau harus mengikuti perkembangan kemajuan teknologi khususnya
+                            bidang komputerisasi agar kita tidak termakan oleh alat yang kita buat sendiri. Atas
+                            dasar itu kami mencoba membahasnya dalam bentuk makalah dengan harapan
+                            dapat berguna bagi orang lain khususnya bagi kami.</p>
+                            <p>Banyak sekali pembahasan tentang komputer, tapi kami coba menulis
+                            makalah dengan judul Dasar-Dasar Komputer yang di jelaskan secara umum atau
+                            garis besarnya saja, jika kami membahas secara keseluruhan itu membutuhkan
+                            waktu yang tidak sedikit dan referensi yang banyak.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border">
+                    <h4>1.2 Rumusan Masalah</h4>
+                    <div>
+                        <p>a. Pengertian Komputer Menurut Para Ahli.</p>
+                        <p>b. Sejarah Perkembangan Generasi Komputer dari Awal Sampai Sekarang.</p>
+                        <p>c. Komponen – Komponen komputer dan Fungsi – Fungsinya masing – masing.</p>
+                    </div>
+                </div>
+                <div class="border">
+                    <h4>1.3 Tujuan Penulisan</h4>
+                    <div><p>Adapun tujuan dari makalah ini adalah untuk mengetahui dasar – dasar
+                    komputer agar seluruh program, peralatan atau peripheral lainnya dapat di
+                    manfaatkan oleh setiap orang yang ada pada pengembangan peralatan dapat
+                    dilakukan dengan mudah dan menghemat biaya. Setiap pembelian komponen
+                    seperti printer, maka tidak perlu membeli printer sejumlah yang ada tetapi cukup
+                    satu buah karena printer itu dapat digunakan secara bersama – sama. Komputer juga
+                    memudahkan pemakai dalam merawat harddisk lainnya. Misalnya untuk
+                    memberikan perlindungan terhadap serangan virus maka pemakai cukup
+                    memusatkan perhatian pada harddisk yang ada pada komputer</p></div>
+                </div>
+            </div>
+
+            <div id="bab2">
+                <div class="border">
+                <h3>BAB II</h3>
+                <h3>PEMBAHASAN</h3>
+               
+                    <h4>2.1 Pengertian Komputer Menurut Para Ahli.</h4>
+                    <div>
+                        <p>Menurut Kamus Besar Bahasa Indonesia (KBBI), komputer adalah alat
+                        elektronik otomatis yang dapat menghitung atau mengolah data secara cermat
+                        menurut yang diinstruksikan, dan memberikan hasil pengolahan, serta dapat
+                        menjalankan sistem multimedia (film, musik,televisi, faksimile, dan sebagainya),
+                        biasanya terdiri atas unit pemasukan, unit pengeluaran, unit penyimpanan, serta
+                        unit pengontrolan.</p>
+                        <p><strong><em>American Standart Institute</em></strong><br><strong><em>Oxford English Dictionary (OED2)</em></strong></p>
+                        <p>Menurut <em>Oxford English Dictionary (OED2)</em>, komputer adalah suatu
+                        perangkat yang digunakan untuk menghitung atau mengendalikan operasi-operasi
+                        yang dinyatakan dalam bentuk numerik atau logika.</p>
+                        <p><strong>Dinus</strong></p>
+                        <p>Menurut Dinus, Komputer adalah serangkaian ataupun sekelompok
+                        mesin elektronik yang terdiri dari ribuan bahkan jutaan komponen yang dapat
+                        saling bekerja sama, serta membentuk sebuah sistem kerja yang rapi dan teliti.
+                        Sistem ini kemudian dapat digunakan untuk melaksanakan serangkaian pekerjaan
+                        secara otomatis, berdasar urutan instruksi ataupun program yang diberikan
+                        kepadanya.</p>
+                        <p><strong>Robert H. Blissmer</strong></p>
+                        <p>Menurut Robert H. Blissmer, komputer adalah perangkat elektronik yang
+                        mempunyai kemampuan untuk melaksanakan tugas atau menyelesaikan keperluan penggunaya, meliputi melakukan input data, memproses dan menyimpan data,
+                        hingga menghasilkan output dalam bentuk informasi.</p>
+                        <p><strong>Donald H. Sanders</strong></p>
+                        <p>Menurut Donal H. Sanderes, komputer merupakan sistem elektronik
+                        yang dapat memanipulasi data dengan sangat cepat dan tepat, sengaja dirancang
+                        dan diorganisasikan berjalan secara otomatis dalam menerima dan menyimpan
+                        data input, yang kemudia memprosesnya, serta menghasilkan output di bawah
+                        pengawasan dari berbagai langkah perintah program (dalam hal ini adalah sistem
+                        operasi) yang tersimpan pada memori penyimpanan komputer.</p>
+                        <p><strong>Larry Long dan Nancy Long</strong></p>
+                        <p>Menurut Larry Long dan Nancy Long, komputer mempunyai arti sebuah
+                        perangkat alat hitung elektronik yang memiliki kemampuan dalam
+                        menginterpresentasikan dan mengerjakan berbagai perintah program seperti input,
+                        output, perhitungan, dan operasi-operasi logika lainnya.</p>
+                        <p><strong>Hamacher et al</strong></p>
+                        <p>Menurut V.C. Hamacher et al, komputer adalah sebuah mesin penghitung
+                        elektronik yang dapat melakukan perhitungan dengan cepat dan bisa menerima
+                        informasi input dalam bentuk digital, kemudian memprosesnya berdasarkan
+                        program yang tersimpan pada menghasilkan output dalam bentuk informasi.</p>
+                        <p><strong>Elias M. Awad</strong></p>
+                        <p>Menurut Elias M. Awad, komputer adalah sebuah alat hitung yang
+                        memproses data dan kemudian menyajikannya dalam bentuk data analog dan
+                        digital.</p>
+                        <p><strong>William M. Fouri</strong></p>
+                        <p>Menurut William M. Fouri, komputer adalah suatu pemroses data (data
+                        processor) yang dapat melakukan perhitungan dalam ruang lingkup besar dan
+                        cepat, termasuk perhitungan aritmatika dan operasi logika, tanpa campur tangan
+                        manusia yang mengoperasikan selama proses perhitungan berlangsung.</p>
+                        <p><strong>Jhon J. Longkutoy</strong></p>
+                        <p>Menurut Jhon J. Longkutoy, komputer adalah suatu alat atau mesin
+                        pemecah persoalan, dan atau sebuah mesin dan alat pengolah data yang dapat
+                        menghasilkan suatu informasi yang diperlukan bagi penggunanya.</p>
+                        <p><strong>C. Hamacher, Z. G. Vranesic, dan Z. G. Zaky</strong></p>
+                        <p>Menurut C. Hamacher, Z. G. Vranesic, dan Z. G. Zaky, komputer adalah
+                        sebuah mesin penghitung elektronik yang dapat menerima informasi input digital,
+                        memprosesnya sesuai dengan program yang tersimpan pada memori, dan
+                        kemudian menghasilkan output dalam bentuk informasi.</p>
+                        <p><strong>Wiiliam Sawyer</strong></p>
+                        <p>Menurut William Sawyer, komputer adalah sebuah mesin multiguna yang
+                        dapat dilakukan untuk pemrograman dan diprogram, di mana mesin-mesin
+                        tersebut dapat menerima data berupa fakta dan gambar kasar, lalu kemudian
+                        memproses dan memanipulasinya menjadi sebuah informasi yang bisa digunakan
+                        oleh penggunanya.</p>
+                        <p><strong>Wimatra dkk (2008)</strong></p>
+                        <p>Menurut Wimatra dkk, komputer adalah suatu sistem perangkat
+                        elektronik yang memiliki tujuan untuk melakukan proses pengolahan data, yang
+                        kemudian dapat menghasilkan suatu informasi yang berguna.</p>
+                        <p><strong>Arif Susanto (2009)</strong></p>
+                        <p>Menurut Arif Susanto, komputer adalah sekelompok alat elektronik yang
+                        terdiri atas alat input, alat yang mengolah input (proccess), dan alat output yang
+                        memberikan informasi serta bekerja secara otomatis.</p>
+                    </div>
+                </div>
+
+                <div class="border">
+                    <h4>2.2 Sejarah Perkembangan Generasi Komputer dari Awal Sampai Sekarang.</h4>
+                    <div>
+                        <p><strong>Sejarah Komputer Generasi Pertama Menggunakan Tabung Vakum (1946–
+                        1959)</strong></p>
+                        <p>Tahun 1946 merupakan tahun diciptakan komputer generasi pertama
+                        dengan menggunakan tabung vakum sebagai komponen dasar pembuatan. Tabung
+                        yang digunakan sebagai komponen dasar ini memang dikenal tidak efisien di
+                        beberapa aspek karena cepat sekali panas ketika dipakai.Selain itu, komponen ini
+                        membutuhkan daya listrik sangat besar dalam pengoperasiannya. Electronic
+                        Numerical Integrator and Computer (ENIAC) merupakan salah satu contoh
+                        komputer generasi yang pertama. Komputer generasi pertama diciptakan oleh
+                        J.Presper Eckert dan John Mauchly di University of Pennsylvania. Mereka berdua
+                        membangun ENIAC dengan menggunakan 18.000 tabung vakum dengan ukuran
+                        1800 kaki dan mempunyai berat yang mencapai sekitar 30 ton.</p>
+                    </div>
+                    <div>
+                        <p><strong>Sejarah Komputer Generasi Kedua Menggunakan Transistor (1959 – 1965)</strong></p>
+                        <p>Tahun 1959, komponen dasar untuk merancang komputer adalah
+                        teknologi transistor. Komponen ini dinilai jauh lebih efisien jika dibandingkan
+                        tabung vakum. Transistor mempunyai ukuran lebih kecil dibandingkan tabung
+                        6
+                        vakum serta daya listrik yang diperlukan juga lebih kecil untuk pengoperasiannya.
+                        Biaya pembuatan juga jauh lebih terjangkau. Bahasa pemrogaman telah diganti
+                        menggunakan bahasa Assembly dan bahasa simbolik. Dengan menggunakan
+                        bahasa pemrogaman tersebut, programmer dapat memberikan instruksi dengan
+                        kata-kata. Mesin yang pertama kali menggunakan teknologi ini ialah super
+                        komputer. IBM juga telah membuat super komputer dengan nama Sprery-rand dan
+                        Stretch serta menjadikan komputer dengan nama LARC. Komputer ini
+                        dikembangkan di laboratorium menggunakan energi atom. Pada tahun 1965,
+                        hampir berbagai bisnis besar menggunakan komputer generasi kedua untuk
+                        memproses informasi dengan keuangan bisnis.</p>
+                    </div>
+                    <div>
+                        <p><strong>Sejarah Komputer Generasi Ketiga Integrated Circuit (1965 – 1971)</strong></p>
+                        <p>Generasi Komputer ketiga dimulai pada tahun 1965 yang mana komputer
+                        dibuat menggunakan Integrated Circuit (ICs). Teknologi ini menggeser fungsi
+                        transistor sebagai komponen dasar komputer. Transistor masih tetap digunakan
+                        tapi ukurannya diperkecil. Beberapa transistor yang berukuran kecil tersebut
+                        dimasukkan di IC, bersamaan dengan resistor dan kapasitor. Komputer generasi
+                        ketiga menjadi komputer pertama yang membuat operator dapat berinteraksi
+                        menggunakan keyboard dan monitor dengan tampilan sistem operasi. Selain itu,
+                        komputer ini membutuhkan biaya lebih murah sehingga dapat dijangkau
+                        masyarakat umum.</p>
+                    </div>
+                    <div>
+                        <p><strong>Komputer Generasi Keempat Microprosesor (1971 – Sekarang)</strong></p>
+                        <p>Komputer yang kita pakai sekarang merupakan komputer generasi
+                        keempat, yang mana dibuat dengan menggunakan komponen dasar bernama
+                        Microprosesor. Chip microprosesor memiliki ribuan transistor dan beberapa
+                        macam elemen sirkuit yang mana saling terhubung menjadi satu.</p>
+                        <p>Intel menjadi sebuah perusahaan yang paling berpengaruh terhadap
+                        perkembangan chip microprosesor karena mereka berhasil menciptakan intel 4004
+                        yang merupakan cikal bakal perkembangan komputer. Perusahaan dari Intel
+                        berhasil menggantikan perangkat komputer yang memiliki ukuran yang besar
+                        menjadi sangat kecil sehingga menjadikannya lebih efisien.</p>
+                        <p>Banyak sekali kemajuan pesat yang terjadi pada generasi ini, seperti
+                        diciptakannya mouse, GUI (Graphical User Interface) hingga komputer jinjing
+                        yang disebut dengan laptop. Bahkan prosesor atau CPU pun mengalami
+                        perkembangan dari waktu ke waktu hingga sekarang.</p>
+                    </div>
+                    <div>
+                        <p><strong>Komputer Generasi Kelima Artificial Intelligence (Sekarang – Masa Depan)</strong></p>
+                        <p>Generasi kelima ini sebenarnya masih tahap pembangunan, yang mana
+                        generasi ini akan mempunyai teknologi yang dibuat berdasarkan kecerdasan
+                        buatan (artificial intelligence).</p>
+                        <p>Dalam sejarah perkembangan komputer, pengembangan komputer
+                        generasi kelima ini bertujuan agar dapat menghasilkan perangkat komputer yang
+                        dapat merespon, menggunakan bahasa yang digunakan manusia, diharapkan dapat
+                        mempelajari lingkungan di sekitarnya, serta dapat menyesuaikan dirinya sendiri.</p>
+                    </div>
+                </div>
+    
+                <div class="border">
+                    <h4>2.3 Komponen – Komponen Komputer dan Fungsi – Fungsinya Masing Masing.</h4>
+                    <div>
+                        <p><strong>Input Device (Unit Masukan)</strong></p>
+                        <p><strong>Keyboard</strong></p>
+                        <p>Keyboard merupakan papan ketik komputer yang terdiri dari tombol
+                        tombol seperti huruf alphabet, angka dan beberapa perintah lain khusus untuk
+                        komputer. Melalui keyboard inilah perintah yang diberikan oleh user dimasukkan
+                        ke dalam komputer. Kombinasi tombol keyboard juga bisa menghasilkan perintah
+                        tertentu. Biasanya terdiri atas rangkaian huruf, angka, dan tombol fungsi lainya.</p>
+                        <p><strong>Mouse</strong></p>
+                        <p>Mouse adalah perangkat penunjuk yang berfungsi memasukkan data dan
+                        perintah ke dalam komputer selain menggunakan keyboard. Nama mouse
+                        diberikan karena kabel yang menjulur berbentuk seperti ekor tikus. Meskipun
+                        mouse masuk kedalam perangkat peripheral yang berada diluat perangkat utama
+                        komputer, namun mouse juga menjadi bagian penting perangkat keras komputer
+                        pada sebagian besar sistem.</p>
+                        <p><strong>Microphone dan Headphone</strong></p>
+                        <p>Microphone dan headphone berfungsi untuk merekam dan memasukkan
+                        suara agar dapat tersimpan di memori komputer. Selain itu, perangkat ini juga
+                        termasuk dalam perangkat output komputer dimana kita dapat mendengarkan
+                        suara. Nantinya suara yang dihasilkan akan tersimpan dalam memori komputer.</p>
+                        <p><strong>Touchpad</strong></p>
+                        <p>Touchpad ini mempunyai fungsi yang sama dengan mouse. Biasanya
+                        touchpad digunakan pada laptop dan notebook. Penggunaan touchpad sangatlah
+                        mudah, yakni hanya dengan jari tangan untuk memindahkan kursor/ pointer.
+                        Selain touchpad ada juga model lain yang masih sejenis yakni pointing stick dan
+                        trackball.</p>
+                        <p><strong>Joy Stick</strong></p>
+                        <p>Joy stick merupakan perangkat keras komputer yang berbentuk
+                        menyerupai tuas dan dapat bergerak ke semua arah. Joy stick ini berfungsi untuk
+                        mengirim signal arah sebesar 2 atau 3 dimensi ke komputer. Pada umumnya joy
+                        stick digunakan sebagai pelengkap untuk memainkan game atau video yang
+                        dilengkapi dengan lebih dari satu tombol.</p>
+                        <p><strong>Light Pen</strong></p>
+                        <p>Light pen merupakan pointer elektronik yang biasa digunakan untuk
+                        memodifikasi/ mendesain gambar dengan monitor secara langsung. Cara kerja alat
+                        ini adalah dengan berfungsi mengirim sensor cahaya ke komputer kemudian
+                        direkam dan ditampilkan di layar yang telah disediakan.</p>
+                    </div>
+                    <div>
+                        <p><strong>Output Device (Unit Keluaran)</strong></p>
+                        <p><strong>Monitor</strong></p>
+                        <p>Monitor Yakni perangkat yang digunakan untuk mengetahui aktifitas
+                        yang dilakukan dalam komputer serta menampilkan informasi yang telah diolah.
+                        Monitor ini menjadi salah satu perangkat berfungsi yang paling penting dan harus
+                        ada, karena tanpa monitor komputer tak akan bisa melihat aktifitas apapun.</p>
+                        <p><strong>Printer</strong></p>
+                        <p>Printer adalah perangkat keras keluaran yang berfungsi untuk mengambil
+                        data elektronik yang tersimpan dalam komputer kemudian dibuatlah salinannya
+                        dalam bentuk nyata. Seperti saat kamu telah selesai membuat dokumen di
+                        komputer kemudian mencetak salinan dokumen tersebut dan dijadikan arsip. Pada
+                        umumnya printer dibedakan menjadi beberapa bagian yakni penggetil yang
+                        berfungsi sebagaai perangkat yang mengambil kertas dari baki, dan tinta/ toner
+                        sebagai pencetak pada kertas tersebut.</p>
+                        <p><strong>Speaker</strong></p>
+                        <p>Speaker adalah transduser yang berfungsi mengubag signal elektrik ke
+                        frekuensi audio dengan cara menggetarkan komponennya yang berbentuk
+                        membrane berfungsi menggetarkan udara sehinggga timbullah gelombang suara
+                        menuju kendang telinga dan dapat didengar.</p>
+                        <p><strong>Scanner</strong></p>
+                        <p>Scanner atau disebut juga alat pemindah yakni perangkat keras komputer
+                        yang berfungsi untuk memindai suatu bentuk seperti dokumen, foto, gelomgang,
+                        suhu dll, yang mana hasil pemindaian tersebut akan ditransformasikan kedalam
+                        komputer sebagai data digital.</p>
+                    </div>
+                    <div>
+                        <p><strong>Process Device (Unit Pemrosesan)</strong></p>
+                        <p><strong>Power Supply</strong></p>
+                        <p>Power suplay adalah sebuat perangkat elektronika yang berfungsi
+                        sebagai sumber daya untuk perangkat lain khususnya listrik. Pada dasarnya power
+                        suplay bukanlah sebuah perangkat yang menghasilkan energy listrik saja
+                        melainkan juga beberapa daya yang menghasilkan energy mekanik dan energy
+                        lain.</p>
+                        <p><strong>RAM</strong></p>
+                        <p>Random Acces Memory/ RAM secara bahasa indonesia berarti memory
+                        akses acak. RAM adalah tempat penyimpanan pada komputer yang isinya dapat
+                        diakses sewaktu-waktu dan tidak memperdulikan letak data tersebut dalam
+                        memory.</p>
+                        <p><strong>CPU atau Processor</strong></p>
+                        <p>Central Prosessing Unit atau CPU dan Processor merupakan perangkat
+                        yang merujuk pada perangkat keras komputer untuk memahami dan melaksanakan
+                        perinyah dari perangkat lunak. Selain itu yang dimaksud dengan mikroprocessor
+                        adalah CPU yang diproduksi dalam sirkuit terpadu. CPU merupakan bagian utama
+                        dari komputer yang berfunhsi mengatur semua aktifitas yang terdapat pada
+                        komputer.</p>
+                        <p><strong>Motherboard</strong></p>
+                        <p>Papan induk atau yang lebih akrab disebut motherboard merupakan
+                        perangkat utama dalam komputer. Motherboard mempunyai peran sangat penting
+                        sebagai tempat berbagai perangkat keras komputer. Sehingga dengan motherboard
+                        ini semua perangkat dapat terhubung.Motherboard memilik fungsi utama sebagai
+                        pusat penghubung antar perangkat yang terpasang pada sebuah PC.</p>
+                    </div>
+                    <div>
+                        <p><strong>Storage Device (Unit Penyimpanan)</strong></p>
+                        <p><strong>Harddisk</strong></p>
+                        <p>Komponen komputer yang satu ini mempunyai fungsi sebagai salah satu
+                        perangkat keras yang mampu menyimpan sebuah data sekunder. Salah satu unit
+                        penyimpanan yang cukup popular adalah Harddisk. Harddisk mempunyai
+                        kapasitas cukup besar yang berbeda tergantung pada kebutuhan penggunanya.</p>
+                    </div>
+                    <div>
+                        <p><strong>Periferal (Unit Tambahan)</strong></p>
+                        <p><strong>Modem</strong></p>
+                        <p>Modem adalah satu perangkat yang mempunyai ukuran kecil dan
+                        berfungsi untuk menghubungkan komputer/ PC dengan jaringan internet. Selain
+                        itu modem juga mempunyai model juga dapat digunakan untuk menyimpan data
+                        dengan memasukkan microSD kedalamnya.</p>
+                        <p><strong>Flashdisk</strong></p>
+                        <p>Flashdisk atau USB drive adalah sebuah media penyimpanan dalam
+                        komputer yang sangat fleksibel dan bersifat non volatile. Dimana data tersebut
+                        tidak akan hilang meskipun terdapat aliran listrik didalamnya. selama datanya
+                        tidak dihapus, maka data tersebut akan tetap ada dalam kondisi apapun.</p>
+                    </div>
+                    <div>
+                        <p><strong>Komponen perangkat lunak (Software)</strong></p>
+                        <p>Software dapat diartikan sebagai beberapa program yang dibutuhkan
+                        oleh user untuk mendapatkan informasi atau aplikasi yang dibutuhkan.</p>
+                        <p><strong>Perangkat Lunak Sistem (Sistem Operasi Komputer)</strong></p>
+                        <p>Perangkat lunak sistem adalah perangkat lunak utama yang musti ada
+                        dalam sebuah komputer. Operating sistem ini merupakan penghubung yang
+                        berfungsi sebagai pengendali, penghubung antara perangkat keras dengan
+                        perangkat lunak lain, pengontrol dan bertanggung jawab sebagai manager aplikasi
+                        komputer.</p>
+                        <p><strong>Microsoft Office (Perangkat Lunak Perkantoran)</strong></p>
+                        <p>Microsoft office adalah salah satu perangkat lunak yang sengaja dibuat
+                        untuk kebutuhan perkantoran. Itu sebabnya dinamakan dengan Offive, sedangkan
+                        Microsoft adalah perusahaan vendor yang membuat aplikasi tersebut.</p>
+                        <p>Microsoft Office mempunyai banyak software aplikasi perkantoran
+                        yang mempunyai beberapa fungsi spesifik seperti Microsoft Office Word sebagai
+                        perangkat lunak pengolah kata, Microsot Excel sebagai perangkat lunak pengolah
+                        angka dan perhitungan dan Microsoft Power Point digunakan untuk kebutuhan
+                        presentasi serta masih ada beberapa perangkat lainnya.</p>
+                        <p><strong>Web Browser ( Perangkat Lunak Browser Internet)</strong></p>
+                        <p>Software satu ini pasti sudah banyak orang yang mengenal dan bahkan
+                        orang yang belum pernah menggunakannya pasti sudah mengetahuinya
+                        bagaimana hakitat penggunaanya yang sebenarnya. Berfungsi sebagai perangkat
+                        lunak komputer yang berfungsi memperlancar aktifitas kita dalam dunia maya/
+                        internet.</p>
+                        <p><strong>Perangkat Lunak Pengolah Gambar</strong></p>
+                        <p>Yang tak kalah penting dengan software lainnya adalah program aplikasi
+                        pengolah gambar. Fungsi perangkat lunak ini adalah sebagai perangkat lunak yang
+                        lebih spesisifik yakni untuk edit gambar dan picture. Berikut ini dalah beberapa
+                        program aplikasi pengolah gambar yang sudah cukup popular dan dapat kamu
+                        gunakan.</p>
+                        <p><strong>Paint</strong></p>
+                        <p>Software yang pertama untuk mengolah gambar adalah paint. Paint
+                        merupakan perangkat lunak komputer yang disediakan oleh sistem operasi
+                        windows sebagai pelengkay untuk mengedit image atau picture. Program ini
+                        sangat sederhana dan pemakaiannya juga simple sehingga terkesan jarang sekali
+                        orang yang menggunakannya.</p>
+                        <p><strong>Adobe Photoshop</strong></p>
+                        <p>Selanjutnya adalah Adobe Photoshop, yang mana software pengolah
+                        gambar/ foto professional yang banyak digunakan. Ini merupakan apilkasi yang
+                        banyak menelurkan perangkat lunak cukupp handal dan berkualitas. Dengan
+                        beragam fiturnya yang luar biasa, perangkat lunak ini mampu melakukan berbagai
+                        macam modivikasi dan efek-efek visual pada foto/ gambar. Namun kamu harus
+                        memperlajarinya terlebih dahulu ya.</p>
+                        <p><strong>Corel Draw</strong></p>
+                        <p>Perangkat lunak pengolah gambar yang satu ini juga mempunyai fitur
+                        dan fungsi cukup detail seperti phoroshope. Dengan menggunakan software ini
+                        kamu dapat membuat logo, edit gambar, dan menggambar dengan cara yang unik.Resikonya tentu saja kamu harus mempelajari lebih mendalam dulu sebelum
+                        menggunakannya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bab3">
+                <div class="border">
+                <h3>BAB III</h3>
+                <h3>PENUTUP</h3>
+
+                    <p><strong>3.1 Kesimpulan</strong></p>
+                    <p>Komputer pada dasarnya merupakan sebuah mesin elektronik yang
+                    dirancang memiliki fungsi utama untuk melakukan proses perhitungan.Komputer
+                    membutuhkan tiga elemen utama untuk dapat berkerja dengan baik dalam
+                    memproses, mengola, memanipulasi, hingga mengubah data menjadi sebuah
+                    informasi yang dibutuhkan oleh pengguna. Ketiga elemen utama tersebut adalah
+                    perangkat keras (hardware), perangkat lunak (software), dan pengguna
+                    (brainware).Komputer dapat memberikan sajian atau output berupa informasi baik
+                    dalam bentuk analog maupun digital.</p>
+                </div>
+                <div class="border">
+                    <p><strong>3.2 Saran</strong></p>
+                    <p>Di harapkan setelah membaca makalah ini, pembaca akan mengetahui
+                    dan mempelajari komputer dan bagian – bagiannya akan mempermudah dalam
+                    pelaksanaannya mengakses komputer secara cepat dan tepat guna.</p>
+                </div class="border">
+                <div class="piagam">
+                  <img src="assets/piagam.jpg" alt="piagam">
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+     <script>
+         const darkSwitch = document.getElementById('darkSwitch');
+
+       
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            darkSwitch.checked = true;
+        }
+
+        darkSwitch.addEventListener('change', () => {
+            if (darkSwitch.checked) {
+            document.body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+            } else {
+            document.body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    <script>
+        const btnSos = document.getElementById("btnSosmed");
+        const drop = document.getElementById("sosmedDropdown");
+
+        btnSos.addEventListener("click", (e) => {
+            e.preventDefault();
+            drop.style.display = (drop.style.display === "flex") ? "none" : "flex";
+        });
+
+            
+        document.addEventListener("click", (e) => {
+            if (!btnSos.contains(e.target) && !drop.contains(e.target)) {
+                drop.style.display = "none";
+            }
+        });
+    </script>
+    <script src="tema.js"></script>
+</body>
+</html>

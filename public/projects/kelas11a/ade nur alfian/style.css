@@ -1,0 +1,555 @@
+:root {
+--bg: #f7fafc;
+--text :#1a202c;
+--primary :#2B6CB0;
+--accent : #3182CE;
+}
+
+body {
+margin: 0;
+padding: 0;
+line-height: 1.7;
+font-family: 'Times New Roman', Times, serif;
+scroll-behavior: smooth;
+color: var(--text);
+background: var(--bg);
+}
+
+.atas-header {
+position: sticky;
+top: 0;
+z-index: 50;
+backdrop-filter: blur(6px);
+background-color: rgba(255, 255, 255, 0.87);
+border-bottom: 1px solid white ;
+padding: 10px 0;
+}
+
+.dalam-header {
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.logo-kecil {
+width: 38px;
+height: 38px;
+object-fit: cover;
+border-radius: 80%;
+}
+
+.nama-brand {
+font-weight: 700;
+letter-spacing: 1px;
+color: var(--primary);
+}
+
+.main-nav {
+display: flex;
+gap: 14px;
+align-items: center;
+}
+
+.main-nav a {
+color: var(--text);
+text-decoration: none;
+padding: 8px 10px;
+border-radius: 6px;
+font-weight: 500;
+transition: all 0.20s ease;
+}
+
+.main-nav a:hover {
+background: rgba(43, 108, 176, 0.1);
+color: var(--primary);
+transform: translateY(-2px);
+}
+
+.main-nav a.active {
+color: var(--primary);
+font-weight: 600;
+}
+
+.wadah {
+width: 80%;
+max-width: 850px;
+margin: 0 auto;
+padding: 40px 0;
+}
+
+.cover-div {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 65vh;
+padding: 50px;
+background-color: white;
+}
+
+.cover-conten {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1000px;
+width: 100%;
+}
+
+.cover-text {
+max-width: 55%;
+color: var(--primary);
+}
+
+.cover-text h1 {
+font-size: 42px;
+color: var(--primary);
+}
+
+.cover-text h2 {
+font-size: 28px;
+color: var(--primary);
+}
+
+.cover-text .by {
+margin-top: 20px;
+font-style: italic;
+}
+
+.cover-text .pembuat {
+font-weight: 700;
+font-size: 18px;
+color: var(--primary);
+}
+
+.footer {
+margin-top: 30px;
+font-weight: 600;
+color: var(--accent);
+}
+
+.cover-logo img {
+width: 240px;
+height: 240px;
+object-fit: contain;
+}
+
+.border {
+
+background: rgba(255,255,255,0.3);       
+backdrop-filter: blur(1px)
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+margin: 40px auto;
+max-width: 900px;
+}
+
+h3 {
+color: var(--primary);
+margin-bottom: 15px;
+}
+
+h4 {
+color: var(--primary);
+margin-bottom: 15px;
+}
+
+.daftarisi a {
+color: var(--primary);
+text-decoration: none;
+}
+
+body.dark {
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+color: #E2E8F0;
+transition: all 0.5s ease;
+}
+
+body.dark .atas-header {
+background: rgba(16, 24, 32, 0.9);
+border-bottom: 1px solid rgba(100, 181, 246, 0.2);
+}
+
+body.dark .nama-brand {
+color: #5BC0BE;
+}
+
+body.dark .main-nav a {
+color: #E2E8F0;
+}
+
+body.dark .main-nav a:hover,
+body.dark .main-nav a.active {
+color: #5BC0BE;
+background: rgba(91, 192, 190, 0.15);
+}
+
+body.dark .cover-div {
+background: transparent;
+}
+
+body.dark .cover-text h1 {
+color: #5BC0BE;
+text-shadow: 0 0 12px rgba(91, 192, 190, 0.6);
+}
+
+body.dark .cover-text h2 {
+color: #E2E8F0;
+}
+
+body.dark .cover-text .pembuat {
+color: #64B5F6;
+}
+
+body.dark .footer {
+color: #5BC0BE;
+}
+
+body.dark .cover-logo img {
+filter: drop-shadow(0 0 10px rgba(91, 192, 190, 0.7));
+}
+
+body.dark .border {
+background: rgba(30, 42, 56, 0.7);
+box-shadow: 0 0 20px rgba(91, 192, 190, 0.15);
+}
+
+body.dark h3 {
+color: #5BC0BE;
+}
+
+body.dark .daftarisi a {
+color: #64B5F6;
+}
+
+body.dark .daftarisi a:hover {
+color: #5BC0BE;
+text-shadow: 0 0 8px rgba(91, 192, 190, 0.5);
+}
+
+body.dark a:hover,
+body.dark h1:hover,
+body.dark h2:hover {
+text-shadow: 0 0 10px rgba(91, 192, 190, 0.8);
+transition: 0.3s;
+}
+
+.theme-toggle {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-left: 15px;
+}
+
+.mode-label {
+font-size: 18px;
+color: var(--text);
+user-select: none;
+}
+
+.switch {
+
+position: relative;
+
+width: 42px;
+
+height: 22px;
+
+background: #CBD5E0;
+
+border-radius: 15px;
+
+cursor: pointer;
+transition: 0.3s;
+}
+
+.switch::before {
+content: "";
+position: absolute;
+top: 3px;
+left: 3px;
+width: 16px;
+height: 16px;
+background: white;
+border-radius: 50%;
+transition: 0.3s;
+
+}
+
+#darkSwitch {
+display: none;
+}
+
+#darkSwitch:checked + .switch::before {
+transform: translateX(20px);
+}
+
+#darkSwitch:checked + .switch {
+background: #2B6CB0;
+
+}
+
+body.dark .mode-label {
+color: #E2E8F0;
+
+}
+
+body.dark .switch {
+box-shadow: 0 0 8px rgba(91, 192, 190, 0.6);
+
+}
+
+body,
+.site-header,
+.main-nav a,
+.border,
+h1,
+h2,
+p,
+
+.switch {
+transition: all 0.5s ease;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark .brand-name,
+body.dark .author {
+text-shadow: 0 0 10px rgba(91, 192, 190, 0.6), 0 0 20px rgba(91, 192, 190, 0.4);
+}
+
+@keyframes glowPulse {
+0% {text-shadow: 0 0 10px rgba(91, 192, 190, 0.4);}
+50% {text-shadow: 0 0 20px rgba(91, 192, 190, 0.7);}
+100% { text-shadow: 0 0 10px rgba(91, 192, 190, 0.4);}
+}
+
+body.dark h1 {
+animation: glowPulse 3s infinite ease-in-out;
+}
+
+.main-nav a {
+position: relative;
+overflow: hidden;
+
+}
+
+.main-nav a::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 2px;
+background: linear-gradient(90deg, #5BC0BE, #64B5F6);
+border-radius: 3px;
+transition: width 0.3s ease
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+width: 100%;
+}
+
+body.dark .border:hover {
+box-shadow: 0 0 300px rgba(91, 192, 190, 0.25);
+transform: scale(1.03);
+}
+
+body.dark a:hover {
+text-shadow: 0 0 50px rgba(91, 192, 190, 0.8);
+}
+
+body.dark {
+background: linear-gradient(120deg, #0b1721, #102a38, #0c383b);
+background-size: 400% 400%;
+animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%;}
+}
+
+.border {
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+body.dark {
+background: linear-gradient(130deg, #081018, #102a38, #0f3a3b);
+background-size: 400% 400%;
+animation: gradientShift 12s ease infinite;
+}
+
+body.dark .cover-logo {
+filter: drop-shadow(0 0 12px rgba(91, 192, 190, 0.6));
+transition: 0.5s;
+}
+
+body.dark .cover-logo:hover {
+filter: drop-shadow(0 0 25px rgba(91, 192, 190, 0.9));
+transform: scale(1.05);
+}
+
+/*sosmed*/
+.sosmed-container {
+position: relative;
+}
+.sosmed-dropdown {
+position: absolute;
+top: 40px;
+left: 35;
+display: none;
+flex-direction: column;
+background: rgba(255, 255, 255, 0.9);
+padding: 12px;
+border-radius: 14px;
+backdrop-filter: blur(10px);
+width: 170px;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+z-index: 50;
+}
+
+body.dark .sosmed-dropdown {
+background: rgba(20, 25, 40, 0.2);
+box-shadow: 0 0px 30px rgba(90, 200, 200, 0.2);
+}
+
+body.dark .sosmed-dropdown a:hover {
+background: #5BC0BE;
+color: #0b132b;
+box-shadow: 0 0 10px #5BC0BE;
+}
+
+.icon {
+width: 15px;
+height: 15px;
+}
+
+body.dark .tema-menu {
+background: #1A2530;
+box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+body.dark .tema-item {
+color: #E2E8F0;
+}
+
+body.dark .tema-item:hover {
+background: rgba(79,209,197,0.15);
+color: #4FD1C5;
+}
+
+body.dark .tema-btn {
+color: #E2E8F0;
+}
+
+body.dark .tema-btn:hover {
+background: rgba(255,255,255,0.1);
+}
+.halaman h3 {
+text-align: center;
+}
+ul {
+list-style: none;
+padding-left: 0;
+margin: 10px;
+
+}
+
+ul li {
+margin: 4px;
+font-size: 16px;
+}
+
+.halaman p {
+text-align: justify;
+text-indent: 40px;
+margin-bottom: 10px;
+font-size: 16px;
+}
+.piagam img {
+  width: 300px;
+  text-align: center;
+}
+body {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+transition: background 0.4s ease;
+}
+
+/* video tema */
+.bg-video {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -10;
+object-fit: cover;
+}
+
+.tema-dropdown {
+position: relative;
+}
+.tema-btn {
+background: transparent;
+border: none;
+font-size: 16px;
+padding: 8px 12px;
+cursor: pointer;
+border-radius: 6px;
+transition: .2s;
+}
+
+.tema-btn:hover {
+background: rgba(0,0,0,0.07);
+}
+
+.tema-menu {
+position: absolute;
+top: 38px;
+right: 0;
+width: 150px;
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+overflow: hidden;
+display: none;
+z-index: 50;
+}
+
+.tema-menu.active {
+display: block;
+}
+
+.tema-item {
+padding: 10px 14px;
+cursor: pointer;
+transition: .2s;
+}
+
+.tema-item:hover {
+background: #e6f2ff;
+}
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}

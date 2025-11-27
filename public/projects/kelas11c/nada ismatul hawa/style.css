@@ -7,3 +7,16 @@
   height: 100%;
   object-fit: cover;
   z-index: -2;
+}
+.halaman {
+    background-color: rgba(255, 255, 255, 0.5); /* Putih dengan 80% opasitas (20% transparan) */
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 255.3);
+}
+
+.halaman {
+  rgba(255.255.255.255.0,5)
+}

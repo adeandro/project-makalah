@@ -1,0 +1,123 @@
+body{
+    text-align: justify;
+    color: white;
+background-size: contain;
+text-size:100%;
+background-image: url('../pp/sampul.JPG');
+}
+
+
+h1,h2,h4,h5{
+    text-align: center;
+    color: white;
+}
+
+ol,li,p{
+    color: white-space;
+}
+
+.logo{
+    width:225px;
+    padding-left:80px;
+    padding-block: -50px;
+		margin-bottom:20px;
+}
+
+
+/* Tombol Media Sosial yang Animatif*/
+.social-buttons{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-button{
+    display: inline-block;
+    margin: 0 20px;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.social-button:hover{
+    transform: rotate(360deg) scaler(1.3);
+}
+.social-button img{
+    width: 70px;
+    height: auto;
+    border-radius: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0. 6);
+    border:2px solid var(--accent-color);
+}
+
+.social-button:hover{
+    transform: rotate(360deg); scale(1.3);
+}
+
+.social-button img{
+    width: 70px;
+    height: auto;
+    border-radius: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0. 6);
+    border: 2px solid var(--accent-color);
+}
+.m{
+    width: 260px;
+    padding: 70px;
+    margin bottom: 0%;
+}
+
+nav{
+
+	position:relative;
+	width:400px;
+	height:50px;
+	background:#222;
+	border-radius:8px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+nav a{
+	position:relative;
+	display:inline-block;
+	font-weight: 500px;
+	color:white;
+	text-decoration: none;
+	padding: 0 23px;
+	z-index:1;
+
+}
+
+nav span{
+	position:absolute;
+	top:0;
+	left:0;
+	width:85px;
+	height:100%;
+	background: line-gradient(45deg,#4B3A26,#997950);
+	border-radius:8px;
+	transition:.5s;
+
+}
+
+nav a:nth-child(1):hover~span{
+	left:0;
+}
+
+nav a:nth-child(2):hover~span{
+	left:95px;
+}
+
+nav a:nth-child(3):hover~span{
+	left:189px;
+	width:110px;
+}
+
+
+nav a:nth-child(4):hover~span{
+	left:289px;
+	width:115px;
+}
+
+nav a:nth-child(5):hover~span{
+	left:413px;
+	width:115px;
+}

@@ -1,0 +1,19 @@
+body {
+  text-align: justify;
+  text-indent: 30px;
+  background-image: url("kiki.jpg");
+  background-size: contain;
+  color: #000; /* warna teks default */
+}
+
+/* Judul */
+h1, h3 {
+  text-align: center;
+  color: brown;
+}
+
+/* Paragraf, list, subjudul */
+p, ol, li, h4, h5 {
+  color: black; /* hot white */
+  text-shadow: 0.5px 0.5px 1px grey;
+}

@@ -1,0 +1,36 @@
+body{ 
+  text-align: juetify;
+  text-align: 30px;
+  background-image: url('zahh.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+.halaman {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+}
+ #audio-player {
+   margin-top: 20px;
+   width: 100%;
+ }
+ 
+ .logo {
+   width: 200px;
+   padding: 78px;
+   padding-block: -50px;
+   margin-left: 2%;
+ }
+ 
+ img{
+   border-radius: 10%;
+ }
+ .h1,h2,h3,h4{
+   text-align: center;
+   color: #cc0066;
+ }
+ .yo{
+   width: 350px;
+   padding: 78px;
+   margin-left: -10%;
+ }

@@ -1,0 +1,18 @@
+body{
+  text-align: juetify;
+  text-align: 30px;
+  background-image: url('win.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+ .halaman{
+   background: rgba(255,255,255,0.2);
+   backdrop-filter: blur(4px);
+   margin: 20px auto;
+   padding: 25px;
+   border-radius: 15px;
+   box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+ }
+

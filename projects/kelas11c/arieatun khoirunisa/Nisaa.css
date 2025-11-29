@@ -1,10 +1,10 @@
 body {
   text-align: justify;
   text-indent: 30px;
-  background-image: url('khoirun.webp');
   background-size: 100% auto;
   background-position: center;
   background-attachment: fixed;
+  background-image: url('tiwul.jpg');
   text-align: center;
 }
 
@@ -15,7 +15,7 @@ h1,h2,h3 {
 }
 p {
   text-align: center;
-  color: #fbffb2;
+  color: #fff2bf;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 .page-block {
@@ -25,9 +25,18 @@ p {
   border: 1px solid #ddd;
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
-.y {
-  width: 500px;
-  padding: 78px;
-  padding-block: -50px;
-  margin-left: 5%;
+
+
+.halaman {
+    background-color: (rgba 255, 255, 255 0.75);
+    backdrop-filter: blur(4px);
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+} 
+h4 {
+    text-align: center;
+  color: #bc8f8f;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }

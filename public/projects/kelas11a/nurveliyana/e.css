@@ -1,0 +1,27 @@
+body{ 
+  text-align: juetify;
+  text-align: 30px;
+  background-image: url('s.jpg');
+  background-size: contain;
+}
+  h1,h5{
+    text-align: cebter;
+    color: skyblue;
+  }
+  p{
+    color:skyblue;
+  }
+  
+  #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+img {
+  border-radius: 50%;
+}
